@@ -1,5 +1,5 @@
 def add_values(data):
     sum = 0
     for i in data:
-        sum %= i
+        sum += i
     return sum
