@@ -3,10 +3,9 @@ from typing import Annotated
 from typing import Callable
 from typing import ClassVar
 
+print("add执行了")
 
 MutantDict = Annotated[dict[str, Callable], "Mutant"]
-
-
 def _mutmut_trampoline(orig, mutants, call_args, call_kwargs, self_arg = None):
     """Forward call to original or mutated function, depending on the environment"""
     import os

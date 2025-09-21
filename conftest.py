@@ -1,120 +1,107 @@
-# conftest.py （改进版）
-import os
-import json
-import re
+# conftest.py
+import os, json, re
 from pathlib import Path
 import pytest
 
 LOG_DIR = Path("pytest_mutant_logs")
 LOG_DIR.mkdir(exist_ok=True)
 
-def _extract_from_longrepr_obj(lr_obj):
-    """
-    从 pytest 的 longrepr 对象尝试提取 path, lineno, exc_type, exc_msg。
-    返回 (path_or_None, lineno_or_None, exc_type_or_None, exc_msg_or_None)
-    """
-    try:
-        # many pytest versions expose reprcrash with path & lineno
-        reprcrash = getattr(lr_obj, "reprcrash", None)
-        if reprcrash is not None:
-            path = getattr(reprcrash, "path", None)
-            lineno = getattr(reprcrash, "lineno", None)
-            # reprcrash.message 常包含 "ZeroDivisionError: ..." 或 "message"
-            msg = getattr(reprcrash, "message", None)
-            # infer exception type from message if possible
-            exc_type = None
-            if msg and isinstance(msg, str):
-                m = re.match(r'([A-Za-z_0-9]+)(?:\:)?', msg)
-                if m:
-                    exc_type = m.group(1)
-            return path, lineno, exc_type, msg
-    except Exception:
-        pass
-    # try reprtraceback entries as fallback
-    try:
-        rtb = getattr(lr_obj, "reprtraceback", None)
-        if rtb is not None:
-            entries = getattr(rtb, "reprentries", []) or []
-            # pick the last entry that has a lineno/path
-            for e in reversed(entries):
-                # reprentry may have reprfileloc with path/lineno
-                rf = getattr(e, "reprfileloc", None)
-                if rf:
-                    path = getattr(rf, "path", None)
-                    lineno = getattr(rf, "lineno", None)
-                    return path, lineno, None, None
-    except Exception:
-        pass
-    return None, None, None, None
+def _first_nonempty(lines):
+    for l in lines:
+        if l and l.strip():
+            return l.strip()
+    return None
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     outcome = yield
     rep = outcome.get_result()
+    # 只关注测试执行阶段的失败
     if rep.when == "call" and rep.failed:
         mutant_id = os.environ.get("MUTANT_ID", "unknown")
         nodeid = item.nodeid
-        # 获取 longrepr 兼容不同类型：字符串或对象
         longrepr_text = getattr(rep, "longreprtext", None) or str(getattr(rep, "longrepr", ""))
-        # 初始化
+
+        # 默认字段
         file = None
         line = None
         assert_expr = None
+        failure_reason = None
         exc_type = None
         exc_msg = None
 
-        # 1) 优先从 longrepr 的对象结构中抽取（更稳）
+        # 1) 若 longrepr 是 pytest 对象，尝试用其属性抽取
         lr_obj = getattr(rep, "longrepr", None)
-        if lr_obj is not None:
-            try:
-                f, ln, et, em = _extract_from_longrepr_obj(lr_obj)
-                if f:
-                    file = f
+        try:
+            reprcrash = getattr(lr_obj, "reprcrash", None)
+            if reprcrash:
+                p = getattr(reprcrash, "path", None)
+                ln = getattr(reprcrash, "lineno", None)
+                if p:
+                    file = str(p)
                 if ln:
-                    line = int(ln)
-                if et:
-                    exc_type = et
-                if em:
-                    exc_msg = em
-            except Exception:
-                pass
+                    try:
+                        line = int(ln)
+                    except Exception:
+                        pass
+                msg = getattr(reprcrash, "message", None)
+                if msg:
+                    exc_msg = str(msg)
+                    m = re.match(r'([A-Za-z_0-9]+)(?:\:)?\s*(.*)', exc_msg)
+                    if m:
+                        exc_type = m.group(1)
+        except Exception:
+            pass
 
-        # 2) 回退：标准 traceback 格式 File "path", line N
+        # 2) 回退到文本解析：File "path", line N
         if not file or not line:
             m = re.search(r'File \"([^\"]+)\", line (\d+)', longrepr_text)
             if m:
                 file = file or m.group(1)
-                line = line or int(m.group(2))
+                try:
+                    line = line or int(m.group(2))
+                except Exception:
+                    pass
 
-        # 3) 回退：简短格式 path:lineno: ExceptionName
+        # 3) 回退到简短格式： path:lineno: ...
         if not file or not line:
-            # 匹配 like "../src/add_values.py:4: ZeroDivisionError"
-            m2 = re.search(r'([^\s:][^:\n]+):(\d+):\s*([A-Za-z_0-9]+)(?:\:?\s*(.*))?', longrepr_text)
+            m2 = re.search(r'([^\s:][^:\n]+):(\d+)(?:[:\s]|$)', longrepr_text)
             if m2:
                 file = file or m2.group(1)
-                line = line or int(m2.group(2))
-                if not exc_type and m2.group(3):
-                    exc_type = m2.group(3)
-                if not exc_msg and m2.group(4):
-                    exc_msg = (m2.group(4) or "").strip()
+                try:
+                    line = line or int(m2.group(2))
+                except Exception:
+                    pass
 
-        # 4) 提取断言表达式（若有）
-        # pytest longrepr 中断言行常以 "E       assert ..." 或直接 "assert ..." 出现
-        for l in longrepr_text.splitlines():
-            ls = l.strip()
-            if ls.startswith("E       assert") or ls.startswith("assert "):
-                # 规范化，去掉前缀的 "E       "
-                assert_expr = re.sub(r'^E\s*', '', ls)
-                break
+        # 4) 识别 check / 自定义输出 (例如 "FAILURE: check 15 == 0: MR2 failed")
+        m_check = re.search(r'FAILURE:\s*(check\s+(.+?)\s*:\s*(MR[0-9A-Za-z_\-]+|.+))', longrepr_text, re.IGNORECASE)
+        if m_check:
+            maybe_expr = m_check.group(2).strip()
+            assert_expr = maybe_expr
+            if re.search(r'MR[0-9A-Za-z_\-]+', longrepr_text, re.IGNORECASE):
+                mr = re.search(r'(MR[0-9A-Za-z_\-]+(?:_\d+)?)\s*failed', longrepr_text, re.IGNORECASE)
+                if mr:
+                    failure_reason = mr.group(0)
+            exc_type = exc_type or "check"
+            exc_msg = exc_msg or maybe_expr
 
-        # 5) 如果 exc_type 仍然空，可尝试从最末尾的异常行解析
+        # 5) 若没 extract 出断言，尝试寻找 assert 行或 "E       assert ..." 或 "assert "
+        if not assert_expr:
+            for l in longrepr_text.splitlines():
+                ls = l.strip()
+                if ls.startswith("E       assert") or ls.startswith("assert "):
+                    assert_expr = re.sub(r'^E\s*', '', ls)
+                    break
+
+        # 6) 若还没 exc_type, 尝试从最后几行解析异常类型
         if not exc_type:
-            # 找类似 "ZeroDivisionError: integer division or modulo by zero"
-            m3 = re.search(r'([A-Za-z_0-9]+Error|Exception)(?:\:)?\s*(.*)', longrepr_text.splitlines()[-1])
-            if m3:
-                exc_type = m3.group(1)
-                if not exc_msg:
-                    exc_msg = m3.group(2).strip() if m3.group(2) else None
+            last_nonempty = _first_nonempty(longrepr_text.splitlines()[-5:])
+            if last_nonempty:
+                m3 = re.search(r'([A-Za-z_0-9]+Error|Exception|AssertionError|Failure|FAILURE)(?:\:)?\s*(.*)', last_nonempty)
+                if m3:
+                    exc_type = m3.group(1)
+                    if not exc_msg:
+                        exc_msg = m3.group(2).strip() if m3.group(2) else None
 
         record = {
             "mutant_id": mutant_id,
@@ -122,9 +109,10 @@ def pytest_runtest_makereport(item, call):
             "file": file,
             "line": line,
             "assert_expr": assert_expr,
+            "failure_reason": failure_reason,
             "exc_type": exc_type,
             "exc_msg": exc_msg,
-            "longrepr": longrepr_text.replace("\n", "\\n")
+            "longrepr": longrepr_text.replace("\n","\\n")
         }
 
         safe_node = nodeid.replace("/", "__").replace("::", "__").replace(":", "_")
