@@ -1,6 +1,6 @@
 # 不需要 fixture 注入
 from textual.events import Print
-
+from mutants import runner
 from test_mutants_runner import CURRENT_MUTANT_FUNC
 from MetamorphicTestGenerator1 import MetamorphicTestGenerator1
 import pytest
@@ -8,82 +8,84 @@ import pytest_check as check
 
 print("testadd执行了")
 def applyMR_Assert(originalInput, originalResult):
+    func = runner.CURRENT_MUTANT_FUNC
+    assert func is not None, "mutant_func 没有被注入"
     # MR2: 数组元素常数加法
     transformInput2 = MetamorphicTestGenerator1.applyMR2(originalInput)
-    transformResult2 = CURRENT_MUTANT_FUNC(transformInput2)
+    transformResult2 = func(transformInput2)
     print("originalResult=", originalResult)
     print("transformResult2=", transformResult2)
 
     # MR3_1: 加法单位元 0
     transformInput3_1 = MetamorphicTestGenerator1.applyMR3_1(originalInput)
-    transformResult3_1 = CURRENT_MUTANT_FUNC(transformInput3_1)
+    transformResult3_1 = func(transformInput3_1)
 
     # MR3_2: 乘法单位元 1
     transformInput3_2 = MetamorphicTestGenerator1.applyMR3_2(originalInput)
-    transformResult3_2 = CURRENT_MUTANT_FUNC(transformInput3_2)
+    transformResult3_2 = func(transformInput3_2)
 
     # MR4: 数组元素取倒数
     transformInput4 = MetamorphicTestGenerator1.applyMR4(originalInput)
     transformInput4_1 = [int(x) for x in transformInput4]
-    transformResult4 = CURRENT_MUTANT_FUNC(transformInput4_1)
+    transformResult4 = func(transformInput4_1)
 
     # MR5: 数组缩放变换
     transformInput5 = MetamorphicTestGenerator1.applyMR5(originalInput, 2)
-    transformResult5 = CURRENT_MUTANT_FUNC(transformInput5)
+    transformResult5 = func(transformInput5)
 
     # MR6: 数组反转变换
     transformInput6 = MetamorphicTestGenerator1.applyMR6(originalInput)
-    transformResult6 = CURRENT_MUTANT_FUNC(transformInput6)
+    transformResult6 = func(transformInput6)
 
     # MR7_1: 所有元素乘以1
     transformInput7_1 = MetamorphicTestGenerator1.applyMR7_1(originalInput)
-    transformResult7_1 = CURRENT_MUTANT_FUNC(transformInput7_1)
+    transformResult7_1 = func(transformInput7_1)
 
     # MR7_2: 所有元素加0
     transformInput7_2 = MetamorphicTestGenerator1.applyMR7_2(originalInput)
-    transformResult7_2 = CURRENT_MUTANT_FUNC(transformInput7_2)
+    transformResult7_2 = func(transformInput7_2)
 
     # MR8: 重复输入数组
     transformInput8 = MetamorphicTestGenerator1.applyMR8(originalInput)
-    transformResult8 = CURRENT_MUTANT_FUNC(transformInput8)
+    transformResult8 = func(transformInput8)
 
     # MR9: 复合转换一致性
     transformInput9 = MetamorphicTestGenerator1.applyMR9(originalInput, 3)
-    transformResult9 = CURRENT_MUTANT_FUNC(transformInput9)
+    transformResult9 = func(transformInput9)
 
     # MR10: 单调性检验
     transformInput10 = MetamorphicTestGenerator1.applyMR10(originalInput)
-    transformResult10 = CURRENT_MUTANT_FUNC(transformInput10)
+    transformResult10 = func(transformInput10)
 
     # MR11: 边界值替换(把最大值替换成0)
     transformInput11 = MetamorphicTestGenerator1.applyMR11(originalInput)
-    transformResult11 = CURRENT_MUTANT_FUNC(transformInput11)
+    transformResult11 = func(transformInput11)
 
     # MR12: 数值取反变换
     transformInput12 = MetamorphicTestGenerator1.applyMR12(originalInput)
-    transformResult12 = CURRENT_MUTANT_FUNC(transformInput12)
+    transformResult12 = func(transformInput12)
 
     # MR13: 微小增量调整
     transformInput13 = MetamorphicTestGenerator1.applyMR13(originalInput)
     transformInput13_1 = [int(x) for x in transformInput13]
-    transformResult13 = CURRENT_MUTANT_FUNC(transformInput13_1)
+    transformResult13 = func(transformInput13_1)
 
     # MR14: 移除元素的效果（移除最大值）
     transformInput14 = MetamorphicTestGenerator1.applyMR14(originalInput)
-    transformResult14 = CURRENT_MUTANT_FUNC(transformInput14)
+    transformResult14 = func(transformInput14)
 
     # MR16: 重复值稳健性
     transformInput16 = MetamorphicTestGenerator1.applyMR16(originalInput)
-    transformResult16 = CURRENT_MUTANT_FUNC(transformInput16)
+    transformResult16 = func(transformInput16)
 
     # MR20: 边界值灵敏度
     transformInput20 = MetamorphicTestGenerator1.applyMR20(originalInput)
     transformInput20_1 = [int(x) for x in transformInput20]
-    transformResult20 = CURRENT_MUTANT_FUNC(transformInput20_1)
+    transformResult20 = func(transformInput20_1)
 
     # MR22: 应用恒等变换
     transformInput22 = MetamorphicTestGenerator1.applyMR22(originalInput)
-    transformResult22 = CURRENT_MUTANT_FUNC(transformInput22)
+    transformResult22 = func(transformInput22)
 
     # ---------------- Assertions ----------------
     check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
@@ -118,6 +120,7 @@ def applyMR_Assert(originalInput, originalResult):
 ])
 
 def test_add_values_with_func(originalInput):
-    assert CURRENT_MUTANT_FUNC is not None, "mutant_func 没有被注入"
-    originalResult = CURRENT_MUTANT_FUNC(originalInput)
+    func = runner.CURRENT_MUTANT_FUNC
+    assert func is not None, "mutant_func 没有被注入"
+    originalResult = func(originalInput)
     applyMR_Assert(originalInput, originalResult)
