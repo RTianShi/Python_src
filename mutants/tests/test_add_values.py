@@ -13,8 +13,6 @@ def applyMR_Assert(originalInput, originalResult):
     # MR2: 数组元素常数加法
     transformInput2 = MetamorphicTestGenerator1.applyMR2(originalInput)
     transformResult2 = func(transformInput2)
-    print("originalResult=", originalResult)
-    print("transformResult2=", transformResult2)
 
     # MR3_1: 加法单位元 0
     transformInput3_1 = MetamorphicTestGenerator1.applyMR3_1(originalInput)

@@ -1,0 +1,598 @@
+
+=== Running tests for add_values.py ===
+add执行了
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_1  -  2025-09-24T20:22:10.527565
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_1
+函数源码如下：
+def x_add_values__mutmut_1(data):
+    sum = None
+    for i in data:
+        sum += i
+    return sum
+
+testadd执行了
+FFFFFFFFFF
+=================================== FAILURES ===================================
+__________________ test_add_values_with_func[originalInput0] ___________________
+mutants/tests/test_add_values.py:123: in test_add_values_with_func
+    originalResult = func(originalInput)
+mutants/src/add_values.py:40: in x_add_values__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________ test_add_values_with_func[originalInput1] ___________________
+mutants/tests/test_add_values.py:123: in test_add_values_with_func
+    originalResult = func(originalInput)
+mutants/src/add_values.py:40: in x_add_values__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________ test_add_values_with_func[originalInput2] ___________________
+mutants/tests/test_add_values.py:123: in test_add_values_with_func
+    originalResult = func(originalInput)
+mutants/src/add_values.py:40: in x_add_values__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________ test_add_values_with_func[originalInput3] ___________________
+mutants/tests/test_add_values.py:123: in test_add_values_with_func
+    originalResult = func(originalInput)
+mutants/src/add_values.py:40: in x_add_values__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________ test_add_values_with_func[originalInput4] ___________________
+mutants/tests/test_add_values.py:123: in test_add_values_with_func
+    originalResult = func(originalInput)
+mutants/src/add_values.py:40: in x_add_values__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________ test_add_values_with_func[originalInput5] ___________________
+mutants/tests/test_add_values.py:123: in test_add_values_with_func
+    originalResult = func(originalInput)
+mutants/src/add_values.py:40: in x_add_values__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________ test_add_values_with_func[originalInput6] ___________________
+mutants/tests/test_add_values.py:123: in test_add_values_with_func
+    originalResult = func(originalInput)
+mutants/src/add_values.py:40: in x_add_values__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________ test_add_values_with_func[originalInput7] ___________________
+mutants/tests/test_add_values.py:123: in test_add_values_with_func
+    originalResult = func(originalInput)
+mutants/src/add_values.py:40: in x_add_values__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________ test_add_values_with_func[originalInput8] ___________________
+mutants/tests/test_add_values.py:123: in test_add_values_with_func
+    originalResult = func(originalInput)
+mutants/src/add_values.py:40: in x_add_values__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________ test_add_values_with_func[originalInput9] ___________________
+mutants/tests/test_add_values.py:123: in test_add_values_with_func
+    originalResult = func(originalInput)
+mutants/src/add_values.py:40: in x_add_values__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+=============================== warnings summary ===============================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput0] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput1] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput2] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput3] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput4] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput5] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput6] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput7] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput8] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput9] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+10 failed, 1 warning in 0.12s
+❌ x_add_values__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_2  -  2025-09-24T20:22:10.728685
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_2
+函数源码如下：
+def x_add_values__mutmut_2(data):
+    sum = 1
+    for i in data:
+        sum += i
+    return sum
+
+FFFFFFFFFF
+=================================== FAILURES ===================================
+__________________ test_add_values_with_func[originalInput0] ___________________
+
+FAILURE: check 44 == 43: MR5 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:93 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult5, "MR5 failed")
+
+FAILURE: check 44 == 43: MR8 failed
+FAILURE: check 66 == 64: MR9 failed
+FAILURE: check -22 == -20: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+__________________ test_add_values_with_func[originalInput1] ___________________
+
+FAILURE: check 28 == 27: MR5 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:93 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult5, "MR5 failed")
+
+FAILURE: check 28 == 27: MR8 failed
+FAILURE: check 42 == 40: MR9 failed
+FAILURE: check -14 == -12: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+__________________ test_add_values_with_func[originalInput2] ___________________
+
+FAILURE: check 30 == 29: MR5 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:93 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult5, "MR5 failed")
+
+FAILURE: check 30 == 29: MR8 failed
+FAILURE: check 45 == 43: MR9 failed
+FAILURE: check -15 == -13: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+__________________ test_add_values_with_func[originalInput3] ___________________
+
+FAILURE: check 46 == 45: MR5 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:93 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult5, "MR5 failed")
+
+FAILURE: check 46 == 45: MR8 failed
+FAILURE: check 69 == 67: MR9 failed
+FAILURE: check -23 == -21: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+__________________ test_add_values_with_func[originalInput4] ___________________
+
+FAILURE: check 8 == 7: MR5 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:93 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult5, "MR5 failed")
+
+FAILURE: check 8 == 7: MR8 failed
+FAILURE: check 12 == 10: MR9 failed
+FAILURE: check -4 == -2: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+__________________ test_add_values_with_func[originalInput5] ___________________
+
+FAILURE: check 50 == 49: MR5 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:93 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult5, "MR5 failed")
+
+FAILURE: check 50 == 49: MR8 failed
+FAILURE: check 75 == 73: MR9 failed
+FAILURE: check -25 == -23: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+__________________ test_add_values_with_func[originalInput6] ___________________
+
+FAILURE: check 24 == 23: MR5 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:93 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult5, "MR5 failed")
+
+FAILURE: check 24 == 23: MR8 failed
+FAILURE: check 36 == 34: MR9 failed
+FAILURE: check -12 == -10: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+__________________ test_add_values_with_func[originalInput7] ___________________
+
+FAILURE: check 44 == 43: MR5 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:93 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult5, "MR5 failed")
+
+FAILURE: check 44 == 43: MR8 failed
+FAILURE: check 66 == 64: MR9 failed
+FAILURE: check -22 == -20: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+__________________ test_add_values_with_func[originalInput8] ___________________
+
+FAILURE: check 24 == 23: MR5 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:93 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult5, "MR5 failed")
+
+FAILURE: check 24 == 23: MR8 failed
+FAILURE: check 36 == 34: MR9 failed
+FAILURE: check -12 == -10: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+__________________ test_add_values_with_func[originalInput9] ___________________
+
+FAILURE: check 28 == 27: MR5 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:93 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult5, "MR5 failed")
+
+FAILURE: check 28 == 27: MR8 failed
+FAILURE: check 42 == 40: MR9 failed
+FAILURE: check -14 == -12: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+=============================== warnings summary ===============================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput0] - check 44 == 43: MR5 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput1] - check 28 == 27: MR5 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput2] - check 30 == 29: MR5 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput3] - check 46 == 45: MR5 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput4] - check 8 == 7: MR5 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput5] - check 50 == 49: MR5 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput6] - check 24 == 23: MR5 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput7] - check 44 == 43: MR5 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput8] - check 24 == 23: MR5 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput9] - check 28 == 27: MR5 failed
+10 failed, 1 warning in 0.01s
+❌ x_add_values__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_3  -  2025-09-24T20:22:10.794129
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_3
+函数源码如下：
+def x_add_values__mutmut_3(data):
+    sum = 0
+    for i in data:
+        sum = i
+    return sum
+
+FFFFFFFFFF
+=================================== FAILURES ===================================
+__________________ test_add_values_with_func[originalInput0] ___________________
+
+FAILURE: check 24 == 12: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check 9 == 0: MR3_1 failed
+FAILURE: check 10 == 1: MR3_2 failed
+FAILURE: check 9 == 1: MR6 failed
+FAILURE: check 18 == 9: MR8 failed
+------------------------------------------------------------
+Failed Checks: 5
+__________________ test_add_values_with_func[originalInput1] ___________________
+
+FAILURE: check 17 == 5: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check 2 == 0: MR3_1 failed
+FAILURE: check 3 == 1: MR3_2 failed
+FAILURE: check 4 == 2: MR8 failed
+FAILURE: check 6 == 12: MR9 failed
+------------------------------------------------------------
+Failed Checks: 5
+__________________ test_add_values_with_func[originalInput2] ___________________
+
+FAILURE: check 17 == 5: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check 2 == 0: MR3_1 failed
+FAILURE: check 3 == 1: MR3_2 failed
+FAILURE: check 2 == 4: MR6 failed
+FAILURE: check 4 == 2: MR8 failed
+FAILURE: check 6 == 18: MR9 failed
+------------------------------------------------------------
+Failed Checks: 6
+__________________ test_add_values_with_func[originalInput3] ___________________
+
+FAILURE: check 20 == 5: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check 2 == 0: MR3_1 failed
+FAILURE: check 3 == 1: MR3_2 failed
+FAILURE: check 2 == 9: MR6 failed
+FAILURE: check 4 == 2: MR8 failed
+FAILURE: check 6 == 27: MR9 failed
+------------------------------------------------------------
+Failed Checks: 6
+__________________ test_add_values_with_func[originalInput4] ___________________
+
+FAILURE: check 12 == 0: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check -3 == 0: MR3_1 failed
+FAILURE: check -2 == 1: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check -3 == -1: MR6 failed
+FAILURE: check -6 == -3: MR8 failed
+FAILURE: check -9 == 27: MR9 failed
+------------------------------------------------------------
+Failed Checks: 7
+__________________ test_add_values_with_func[originalInput5] ___________________
+
+FAILURE: check 21 == 6: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check 3 == 0: MR3_1 failed
+FAILURE: check 4 == 1: MR3_2 failed
+FAILURE: check 3 == 8: MR6 failed
+FAILURE: check 6 == 3: MR8 failed
+FAILURE: check 9 == 24: MR9 failed
+------------------------------------------------------------
+Failed Checks: 6
+__________________ test_add_values_with_func[originalInput6] ___________________
+
+FAILURE: check 24 == 9: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check 6 == 0: MR3_1 failed
+FAILURE: check 7 == 1: MR3_2 failed
+FAILURE: check 6 == 1: MR6 failed
+FAILURE: check 12 == 6: MR8 failed
+------------------------------------------------------------
+Failed Checks: 5
+__________________ test_add_values_with_func[originalInput7] ___________________
+
+FAILURE: check 23 == 8: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check 5 == 0: MR3_1 failed
+FAILURE: check 6 == 1: MR3_2 failed
+FAILURE: check 5 == 1: MR6 failed
+FAILURE: check 10 == 5: MR8 failed
+FAILURE: check 15 == 21: MR9 failed
+------------------------------------------------------------
+Failed Checks: 6
+__________________ test_add_values_with_func[originalInput8] ___________________
+
+FAILURE: check 20 == 5: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check 2 == 0: MR3_1 failed
+FAILURE: check 3 == 1: MR3_2 failed
+FAILURE: check 2 == 1: MR6 failed
+FAILURE: check 4 == 2: MR8 failed
+FAILURE: check 6 == 12: MR9 failed
+------------------------------------------------------------
+Failed Checks: 6
+__________________ test_add_values_with_func[originalInput9] ___________________
+
+FAILURE: check 22 == 10: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check 7 == 0: MR3_1 failed
+FAILURE: check 8 == 1: MR3_2 failed
+FAILURE: check 7 == -2: MR6 failed
+FAILURE: check 14 == 7: MR8 failed
+------------------------------------------------------------
+Failed Checks: 5
+=============================== warnings summary ===============================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput0] - check 24 == 12: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput1] - check 17 == 5: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput2] - check 17 == 5: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput3] - check 20 == 5: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput4] - check 12 == 0: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput5] - check 21 == 6: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput6] - check 24 == 9: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput7] - check 23 == 8: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput8] - check 20 == 5: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput9] - check 22 == 10: MR2 failed
+10 failed, 1 warning in 0.01s
+❌ x_add_values__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_4  -  2025-09-24T20:22:10.854334
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_4
+函数源码如下：
+def x_add_values__mutmut_4(data):
+    sum = 0
+    for i in data:
+        sum -= i
+    return sum
+
+FFFFFFFFFF
+=================================== FAILURES ===================================
+__________________ test_add_values_with_func[originalInput0] ___________________
+
+FAILURE: check -6 == -36: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check -20 == -22: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR10 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR14 failed
+------------------------------------------------------------
+Failed Checks: 6
+__________________ test_add_values_with_func[originalInput1] ___________________
+
+FAILURE: check 2 == -28: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check -12 == -14: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR10 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR14 failed
+------------------------------------------------------------
+Failed Checks: 6
+__________________ test_add_values_with_func[originalInput2] ___________________
+
+FAILURE: check 1 == -29: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check -13 == -15: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR10 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR13 failed
+FAILURE: check bool(False): MR14 failed
+------------------------------------------------------------
+Failed Checks: 7
+__________________ test_add_values_with_func[originalInput3] ___________________
+
+FAILURE: check -4 == -40: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check -21 == -23: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR10 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR14 failed
+------------------------------------------------------------
+Failed Checks: 6
+__________________ test_add_values_with_func[originalInput4] ___________________
+
+FAILURE: check 12 == -18: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check -2 == -4: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR10 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR13 failed
+FAILURE: check bool(False): MR14 failed
+------------------------------------------------------------
+Failed Checks: 7
+__________________ test_add_values_with_func[originalInput5] ___________________
+
+FAILURE: check -6 == -42: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check -23 == -25: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR10 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR14 failed
+------------------------------------------------------------
+Failed Checks: 6
+__________________ test_add_values_with_func[originalInput6] ___________________
+
+FAILURE: check 7 == -29: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check -10 == -12: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR10 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR13 failed
+FAILURE: check bool(False): MR14 failed
+------------------------------------------------------------
+Failed Checks: 7
+__________________ test_add_values_with_func[originalInput7] ___________________
+
+FAILURE: check -3 == -39: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check -20 == -22: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR10 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR14 failed
+------------------------------------------------------------
+Failed Checks: 6
+__________________ test_add_values_with_func[originalInput8] ___________________
+
+FAILURE: check 7 == -29: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check -10 == -12: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR10 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR14 failed
+------------------------------------------------------------
+Failed Checks: 6
+__________________ test_add_values_with_func[originalInput9] ___________________
+
+FAILURE: check 2 == -28: MR2 failed
+mutants/tests/test_add_values.py:124 in test_add_values_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/test_add_values.py:89 in applyMR_Assert() -> check.equal(originalResult + len(originalInput) * 3, transformResult2, "MR2 failed")
+
+FAILURE: check -12 == -14: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR10 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR13 failed
+FAILURE: check bool(False): MR14 failed
+------------------------------------------------------------
+Failed Checks: 7
+=============================== warnings summary ===============================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput0] - check -6 == -36: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput1] - check 2 == -28: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput2] - check 1 == -29: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput3] - check -4 == -40: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput4] - check 12 == -18: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput5] - check -6 == -42: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput6] - check 7 == -29: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput7] - check -3 == -39: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput8] - check 7 == -29: MR2 failed
+FAILED mutants/tests/test_add_values.py::test_add_values_with_func[originalInput9] - check 2 == -28: MR2 failed
+10 failed, 1 warning in 0.01s
+❌ x_add_values__mutmut_4 存在失败 (退出码 1)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_orig  -  2025-09-24T20:22:10.914099
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_orig
+函数源码如下：
+def x_add_values__mutmut_orig(data):
+    sum = 0
+    for i in data:
+        sum += i
+    return sum
+
+..........
+=============================== warnings summary ===============================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_add_values__mutmut_orig 所有测试通过
