@@ -1,0 +1,1826 @@
+
+=== Running tests for single mutant file: chebyshevDist.py ===
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_1  -  2025-10-16T09:59:48.639699
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_1
+函数源码如下：
+def x_chebyshevDist__mutmut_1(p1, p2):
+    if len(p1) == len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+.Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+.Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+.Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+.Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+.Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+.Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+.Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+.Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+.Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+Error!
+.
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_chebyshevDist__mutmut_1 所有测试通过
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_10  -  2025-10-16T09:59:48.727088
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_10
+函数源码如下：
+def x_chebyshevDist__mutmut_10(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] + p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:180 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult15), "OR15 failed (MR15)")
+
+------------------------------------------------------------
+Failed Checks: 1
+_____________________________ test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_____________________________ test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:180 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult15), "OR15 failed (MR15)")
+
+------------------------------------------------------------
+Failed Checks: 1
+_____________________________ test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_____________________________ test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_____________________________ test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:180 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult15), "OR15 failed (MR15)")
+
+------------------------------------------------------------
+Failed Checks: 1
+_____________________________ test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - check bool(False): OR2 failed (MR6)
+10 failed, 1 warning in 0.02s
+❌ x_chebyshevDist__mutmut_10 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_11  -  2025-10-16T09:59:48.790059
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_11
+函数源码如下：
+def x_chebyshevDist__mutmut_11(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[1] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+.F.F.FF.FF
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+
+FAILURE: check 1.0 == 2.0: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+------------------------------------------------------------
+Failed Checks: 1
+_____________________________ test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/chebyshevDistTest.py:209: in test_chebyshevDist_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:119: in applyMR_Assert
+    transformResult14 = func(transformInput14_1, transformInput14_2)
+mutants/src/chebyshevDist.py:181: in x_chebyshevDist__mutmut_11
+    maxDiff = abs(p1[1] - p2[0])
+E   IndexError: list index out of range
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check 1.0 == 2.0: OR10 failed (MR10)
+------------------------------------------------------------
+Failed Checks: 3
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/chebyshevDistTest.py:209: in test_chebyshevDist_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:119: in applyMR_Assert
+    transformResult14 = func(transformInput14_1, transformInput14_2)
+mutants/src/chebyshevDist.py:181: in x_chebyshevDist__mutmut_11
+    maxDiff = abs(p1[1] - p2[0])
+E   IndexError: list index out of range
+_____________________________ test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check 2.0 == 3.0: OR10 failed (MR10)
+------------------------------------------------------------
+Failed Checks: 3
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+
+FAILURE: check 15.0 == 16.0: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] - check 1.0 == 2.0: OR10 failed (MR10)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] - IndexError: list index out of range
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - IndexError: list index out of range
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - check 15.0 == 16.0: OR10 failed (MR10)
+6 failed, 4 passed, 1 warning in 0.04s
+❌ x_chebyshevDist__mutmut_11 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_12  -  2025-10-16T09:59:48.873583
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_12
+函数源码如下：
+def x_chebyshevDist__mutmut_12(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[1])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+.F.FFFF..F
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+
+FAILURE: check 2.0 == 3.0: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+------------------------------------------------------------
+Failed Checks: 1
+_____________________________ test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/chebyshevDistTest.py:209: in test_chebyshevDist_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:119: in applyMR_Assert
+    transformResult14 = func(transformInput14_1, transformInput14_2)
+mutants/src/chebyshevDist.py:194: in x_chebyshevDist__mutmut_12
+    maxDiff = abs(p1[0] - p2[1])
+E   IndexError: list index out of range
+_____________________________ test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check 0.5 == 1.5: OR10 failed (MR10)
+------------------------------------------------------------
+Failed Checks: 3
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/chebyshevDistTest.py:209: in test_chebyshevDist_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:119: in applyMR_Assert
+    transformResult14 = func(transformInput14_1, transformInput14_2)
+mutants/src/chebyshevDist.py:194: in x_chebyshevDist__mutmut_12
+    maxDiff = abs(p1[0] - p2[1])
+E   IndexError: list index out of range
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] - check 2.0 == 3.0: OR10 failed (MR10)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] - IndexError: list index out of range
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - IndexError: list index out of range
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - check bool(False): OR2 failed (MR6)
+6 failed, 4 passed, 1 warning in 0.03s
+❌ x_chebyshevDist__mutmut_12 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_13  -  2025-10-16T09:59:48.938731
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_13
+函数源码如下：
+def x_chebyshevDist__mutmut_13(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(None, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:208: in x_chebyshevDist__mutmut_13
+    for i in range(None, len(p1)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:208: in x_chebyshevDist__mutmut_13
+    for i in range(None, len(p1)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:208: in x_chebyshevDist__mutmut_13
+    for i in range(None, len(p1)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:208: in x_chebyshevDist__mutmut_13
+    for i in range(None, len(p1)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:208: in x_chebyshevDist__mutmut_13
+    for i in range(None, len(p1)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:208: in x_chebyshevDist__mutmut_13
+    for i in range(None, len(p1)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:208: in x_chebyshevDist__mutmut_13
+    for i in range(None, len(p1)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:208: in x_chebyshevDist__mutmut_13
+    for i in range(None, len(p1)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:208: in x_chebyshevDist__mutmut_13
+    for i in range(None, len(p1)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:208: in x_chebyshevDist__mutmut_13
+    for i in range(None, len(p1)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.06s
+❌ x_chebyshevDist__mutmut_13 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_14  -  2025-10-16T09:59:49.042564
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_14
+函数源码如下：
+def x_chebyshevDist__mutmut_14(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, None):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:221: in x_chebyshevDist__mutmut_14
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:221: in x_chebyshevDist__mutmut_14
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:221: in x_chebyshevDist__mutmut_14
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:221: in x_chebyshevDist__mutmut_14
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:221: in x_chebyshevDist__mutmut_14
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:221: in x_chebyshevDist__mutmut_14
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:221: in x_chebyshevDist__mutmut_14
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:221: in x_chebyshevDist__mutmut_14
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:221: in x_chebyshevDist__mutmut_14
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:221: in x_chebyshevDist__mutmut_14
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.06s
+❌ x_chebyshevDist__mutmut_14 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_15  -  2025-10-16T09:59:49.144043
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_15
+函数源码如下：
+def x_chebyshevDist__mutmut_15(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_chebyshevDist__mutmut_15 所有测试通过
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_16  -  2025-10-16T09:59:49.192453
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_16
+函数源码如下：
+def x_chebyshevDist__mutmut_16(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, ):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+....FFFFFF
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - check bool(False): OR2 failed (MR6)
+6 failed, 4 passed, 1 warning in 0.01s
+❌ x_chebyshevDist__mutmut_16 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_17  -  2025-10-16T09:59:49.245385
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_17
+函数源码如下：
+def x_chebyshevDist__mutmut_17(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(1, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_chebyshevDist__mutmut_17 所有测试通过
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_18  -  2025-10-16T09:59:49.294013
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_18
+函数源码如下：
+def x_chebyshevDist__mutmut_18(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = None
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:276: in x_chebyshevDist__mutmut_18
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'float' and 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:276: in x_chebyshevDist__mutmut_18
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'float' and 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:276: in x_chebyshevDist__mutmut_18
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'float' and 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:276: in x_chebyshevDist__mutmut_18
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'float' and 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:276: in x_chebyshevDist__mutmut_18
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'float' and 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:276: in x_chebyshevDist__mutmut_18
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'float' and 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:276: in x_chebyshevDist__mutmut_18
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'float' and 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:276: in x_chebyshevDist__mutmut_18
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'float' and 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:276: in x_chebyshevDist__mutmut_18
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'float' and 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:276: in x_chebyshevDist__mutmut_18
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'float' and 'NoneType'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] - TypeError: '<' not supported between instances of 'float' and 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] - TypeError: '<' not supported between instances of 'float' and 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] - TypeError: '<' not supported between instances of 'float' and 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] - TypeError: '<' not supported between instances of 'float' and 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] - TypeError: '<' not supported between instances of 'float' and 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - TypeError: '<' not supported between instances of 'float' and 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - TypeError: '<' not supported between instances of 'float' and 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] - TypeError: '<' not supported between instances of 'float' and 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] - TypeError: '<' not supported between instances of 'float' and 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - TypeError: '<' not supported between instances of 'float' and 'NoneType'
+10 failed, 1 warning in 0.06s
+❌ x_chebyshevDist__mutmut_18 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_19  -  2025-10-16T09:59:49.394774
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_19
+函数源码如下：
+def x_chebyshevDist__mutmut_19(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(None)
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:287: in x_chebyshevDist__mutmut_19
+    diff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:287: in x_chebyshevDist__mutmut_19
+    diff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:287: in x_chebyshevDist__mutmut_19
+    diff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:287: in x_chebyshevDist__mutmut_19
+    diff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:287: in x_chebyshevDist__mutmut_19
+    diff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:287: in x_chebyshevDist__mutmut_19
+    diff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:287: in x_chebyshevDist__mutmut_19
+    diff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:287: in x_chebyshevDist__mutmut_19
+    diff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:287: in x_chebyshevDist__mutmut_19
+    diff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:287: in x_chebyshevDist__mutmut_19
+    diff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - TypeError: bad operand type for abs(): 'NoneType'
+10 failed, 1 warning in 0.06s
+❌ x_chebyshevDist__mutmut_19 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_2  -  2025-10-16T09:59:49.497728
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_2
+函数源码如下：
+def x_chebyshevDist__mutmut_2(p1, p2):
+    if len(p1) != len(p2):
+        print(None)
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_chebyshevDist__mutmut_2 所有测试通过
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_20  -  2025-10-16T09:59:49.546492
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_20
+函数源码如下：
+def x_chebyshevDist__mutmut_20(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] + p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+
+FAILURE: check 4.0 == 8.0: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+
+FAILURE: check 7.0 == 11.0: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+
+FAILURE: check 2.0 == 4.0: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+
+FAILURE: check 12.0 == 14.0: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+
+FAILURE: check 9.0 == 5.0: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+
+FAILURE: check 4.5 == 8.5: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+
+FAILURE: check 18.0 == 20.0: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+
+FAILURE: check bool(False): OR2 failed (MR6)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:149 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR2 failed (MR6)")
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check 2.0 == 4.0: OR10 failed (MR10)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 4
+_____________________________ test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check 12.0 == 18.0: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 2
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+
+FAILURE: check 45.0 == 49.0: OR10 failed (MR10)
+mutants/tests/chebyshevDistTest.py:209 in test_chebyshevDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:169 in applyMR_Assert() -> check.equal(originalResult, transformResult10, "OR10 failed (MR10)")
+
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] - check 4.0 == 8.0: OR10 failed (MR10)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] - check 7.0 == 11.0: OR10 failed (MR10)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] - check 2.0 == 4.0: OR10 failed (MR10)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] - check 12.0 == 14.0: OR10 failed (MR10)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] - check 9.0 == 5.0: OR10 failed (MR10)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - check 4.5 == 8.5: OR10 failed (MR10)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - check 18.0 == 20.0: OR10 failed (MR10)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] - check bool(False): OR2 failed (MR6)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] - check 12.0 == 18.0: OR10 failed (MR10)
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - check 45.0 == 49.0: OR10 failed (MR10)
+10 failed, 1 warning in 0.02s
+❌ x_chebyshevDist__mutmut_20 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_21  -  2025-10-16T09:59:49.601831
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_21
+函数源码如下：
+def x_chebyshevDist__mutmut_21(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff <= diff:
+            maxDiff = diff
+
+    return maxDiff
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_chebyshevDist__mutmut_21 所有测试通过
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_22  -  2025-10-16T09:59:49.650457
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_22
+函数源码如下：
+def x_chebyshevDist__mutmut_22(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = None
+
+    return maxDiff
+
+FF..FFFFFF
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/chebyshevDistTest.py:209: in test_chebyshevDist_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:44: in applyMR_Assert
+    transformResult1 = func(transformInput1_1, transformInput1_2)
+mutants/src/chebyshevDist.py:328: in x_chebyshevDist__mutmut_22
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/chebyshevDistTest.py:209: in test_chebyshevDist_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:44: in applyMR_Assert
+    transformResult1 = func(transformInput1_1, transformInput1_2)
+mutants/src/chebyshevDist.py:328: in x_chebyshevDist__mutmut_22
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:328: in x_chebyshevDist__mutmut_22
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:328: in x_chebyshevDist__mutmut_22
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/chebyshevDistTest.py:209: in test_chebyshevDist_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:54: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1, transformInput3_2)
+mutants/src/chebyshevDist.py:328: in x_chebyshevDist__mutmut_22
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/chebyshevDistTest.py:209: in test_chebyshevDist_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:74: in applyMR_Assert
+    transformResult6 = func(transformInput6_1, transformInput6_2)
+mutants/src/chebyshevDist.py:328: in x_chebyshevDist__mutmut_22
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/chebyshevDistTest.py:209: in test_chebyshevDist_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/chebyshevDistTest.py:54: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1, transformInput3_2)
+mutants/src/chebyshevDist.py:328: in x_chebyshevDist__mutmut_22
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:328: in x_chebyshevDist__mutmut_22
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+8 failed, 2 passed, 1 warning in 0.06s
+❌ x_chebyshevDist__mutmut_22 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_3  -  2025-10-16T09:59:49.747274
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_3
+函数源码如下：
+def x_chebyshevDist__mutmut_3(p1, p2):
+    if len(p1) != len(p2):
+        print('XXError!XX')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_chebyshevDist__mutmut_3 所有测试通过
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_4  -  2025-10-16T09:59:49.796069
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_4
+函数源码如下：
+def x_chebyshevDist__mutmut_4(p1, p2):
+    if len(p1) != len(p2):
+        print('error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_chebyshevDist__mutmut_4 所有测试通过
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_5  -  2025-10-16T09:59:49.843899
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_5
+函数源码如下：
+def x_chebyshevDist__mutmut_5(p1, p2):
+    if len(p1) != len(p2):
+        print('ERROR!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_chebyshevDist__mutmut_5 所有测试通过
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_6  -  2025-10-16T09:59:49.892751
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_6
+函数源码如下：
+def x_chebyshevDist__mutmut_6(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return +1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_chebyshevDist__mutmut_6 所有测试通过
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_7  -  2025-10-16T09:59:49.941723
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_7
+函数源码如下：
+def x_chebyshevDist__mutmut_7(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -2
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_chebyshevDist__mutmut_7 所有测试通过
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_8  -  2025-10-16T09:59:49.990409
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_8
+函数源码如下：
+def x_chebyshevDist__mutmut_8(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = None
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:146: in x_chebyshevDist__mutmut_8
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:146: in x_chebyshevDist__mutmut_8
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:146: in x_chebyshevDist__mutmut_8
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:146: in x_chebyshevDist__mutmut_8
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:146: in x_chebyshevDist__mutmut_8
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:146: in x_chebyshevDist__mutmut_8
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:146: in x_chebyshevDist__mutmut_8
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:146: in x_chebyshevDist__mutmut_8
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:146: in x_chebyshevDist__mutmut_8
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:146: in x_chebyshevDist__mutmut_8
+    if maxDiff < diff:
+E   TypeError: '<' not supported between instances of 'NoneType' and 'float'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - TypeError: '<' not supported between instances of 'NoneType' and 'float'
+10 failed, 1 warning in 0.06s
+❌ x_chebyshevDist__mutmut_8 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_9  -  2025-10-16T09:59:50.093102
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_9
+函数源码如下：
+def x_chebyshevDist__mutmut_9(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(None)
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_____________________________ test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:155: in x_chebyshevDist__mutmut_9
+    maxDiff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:155: in x_chebyshevDist__mutmut_9
+    maxDiff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:155: in x_chebyshevDist__mutmut_9
+    maxDiff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:155: in x_chebyshevDist__mutmut_9
+    maxDiff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:155: in x_chebyshevDist__mutmut_9
+    maxDiff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:155: in x_chebyshevDist__mutmut_9
+    maxDiff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:155: in x_chebyshevDist__mutmut_9
+    maxDiff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:155: in x_chebyshevDist__mutmut_9
+    maxDiff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:155: in x_chebyshevDist__mutmut_9
+    maxDiff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+_____________________________ test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/chebyshevDistTest.py:208: in test_chebyshevDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/chebyshevDist.py:155: in x_chebyshevDist__mutmut_9
+    maxDiff = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_10-originalInput1_20] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_11-originalInput1_21] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_12-originalInput1_22] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_13-originalInput1_23] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_14-originalInput1_24] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_15-originalInput1_25] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_16-originalInput1_26] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_17-originalInput1_27] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_18-originalInput1_28] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/chebyshevDistTest.py::test_chebyshevDist_with_func[originalInput1_19-originalInput1_29] - TypeError: bad operand type for abs(): 'NoneType'
+10 failed, 1 warning in 0.06s
+❌ x_chebyshevDist__mutmut_9 存在失败 (退出码 1)
+
+================================================================================
+RUNNING chebyshevDist.py :: x_chebyshevDist__mutmut_orig  -  2025-10-16T09:59:50.195222
+================================================================================
+
+>>> 当前使用的函数: x_chebyshevDist__mutmut_orig
+函数源码如下：
+def x_chebyshevDist__mutmut_orig(p1, p2):
+    if len(p1) != len(p2):
+        print('Error!')
+        return -1
+
+    maxDiff = abs(p1[0] - p2[0])
+    for i in range(0, len(p1)):
+        diff = abs(p1[i] - p2[i])
+
+        if maxDiff < diff:
+            maxDiff = diff
+
+    return maxDiff
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_chebyshevDist__mutmut_orig 所有测试通过

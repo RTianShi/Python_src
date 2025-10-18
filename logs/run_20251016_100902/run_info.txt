@@ -1,0 +1,8 @@
+start_time: 2025-10-16T10:09:02.254353
+run_dir: logs/run_20251016_100902
+default_log_name: cosineDistance.log
+mutant_file: cosineDistance.py
+test_file: cosineDistanceTest.py
+mutant_prefix: x_cosineDistance__mutmut
+end_time: 2025-10-16T10:09:05.293908
+final_log_path: logs/run_20251016_100902/cosineDistance.log

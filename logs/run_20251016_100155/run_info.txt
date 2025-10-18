@@ -1,0 +1,8 @@
+start_time: 2025-10-16T10:01:55.119089
+run_dir: logs/run_20251016_100155
+default_log_name: cnt_zeroes.log
+mutant_file: cnt_zeroes.py
+test_file: cnt_zeroesTest.py
+mutant_prefix: x_cnt_zeroes__mutmut
+end_time: 2025-10-16T10:01:55.119725
+final_log_path: logs/run_20251016_100155/cnt_zeroes.log

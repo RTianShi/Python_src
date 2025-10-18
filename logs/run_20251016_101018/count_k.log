@@ -1,0 +1,1125 @@
+
+=== Running tests for single mutant file: count_k.py ===
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_1  -  2025-10-16T10:10:18.439712
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_1
+函数源码如下：
+def x_count_k__mutmut_1(a, k):
+    cnt = None
+    for i in range(0, len(a)):
+        if a[i] == k:
+            cnt += 1
+
+    return cnt
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+__________________________________________ test_count_k_with_func[originalInput0-2] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:44: in x_count_k__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________ test_count_k_with_func[originalInput1-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:44: in x_count_k__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________ test_count_k_with_func[originalInput2-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:44: in x_count_k__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________ test_count_k_with_func[originalInput3-0] __________________________________________
+mutants/tests/count_kTest.py:126: in test_count_k_with_func
+    applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1, k)
+mutants/src/count_k.py:44: in x_count_k__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________ test_count_k_with_func[originalInput4-0] __________________________________________
+mutants/tests/count_kTest.py:126: in test_count_k_with_func
+    applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1, k)
+mutants/src/count_k.py:44: in x_count_k__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________ test_count_k_with_func[originalInput5-0] __________________________________________
+mutants/tests/count_kTest.py:126: in test_count_k_with_func
+    applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1, k)
+mutants/src/count_k.py:44: in x_count_k__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________ test_count_k_with_func[originalInput6-1] __________________________________________
+mutants/tests/count_kTest.py:126: in test_count_k_with_func
+    applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:25: in applyMR_Assert
+    transformResult3_2 = func(transformInput3_2, k)
+mutants/src/count_k.py:44: in x_count_k__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________ test_count_k_with_func[originalInput7-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:44: in x_count_k__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________ test_count_k_with_func[originalInput8-2] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:44: in x_count_k__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________ test_count_k_with_func[originalInput9-1] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:44: in x_count_k__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput0-2] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput1-0] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput2-0] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput3-0] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput4-0] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput5-0] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput6-1] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput7-0] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput8-2] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput9-1] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+10 failed, 1 warning in 0.07s
+❌ x_count_k__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_10  -  2025-10-16T10:10:18.586279
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_10
+函数源码如下：
+def x_count_k__mutmut_10(a, k):
+    cnt = 0
+    for i in range(0, len(a)):
+        if a[i] == k:
+            cnt -= 1
+
+    return cnt
+
+.FFFFFFF.F
+========================================================== FAILURES ==========================================================
+__________________________________________ test_count_k_with_func[originalInput1-0] __________________________________________
+
+FAILURE: check -1 == -2: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput2-0] __________________________________________
+
+FAILURE: check -2 == -3: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput3-0] __________________________________________
+
+FAILURE: check 0 == -1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput4-0] __________________________________________
+
+FAILURE: check 0 == -1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput5-0] __________________________________________
+
+FAILURE: check 0 == -1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput6-1] __________________________________________
+
+FAILURE: check 0 == -1: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput7-0] __________________________________________
+
+FAILURE: check -2 == -3: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput9-1] __________________________________________
+
+FAILURE: check -1 == -2: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput1-0] - check -1 == -2: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput2-0] - check -2 == -3: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput3-0] - check 0 == -1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput4-0] - check 0 == -1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput5-0] - check 0 == -1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput6-1] - check 0 == -1: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput7-0] - check -2 == -3: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput9-1] - check -1 == -2: MR3_2 failed
+8 failed, 2 passed, 1 warning in 0.01s
+❌ x_count_k__mutmut_10 存在失败 (退出码 1)
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_11  -  2025-10-16T10:10:18.639857
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_11
+函数源码如下：
+def x_count_k__mutmut_11(a, k):
+    cnt = 0
+    for i in range(0, len(a)):
+        if a[i] == k:
+            cnt += 2
+
+    return cnt
+
+.FFFFFFF.F
+========================================================== FAILURES ==========================================================
+__________________________________________ test_count_k_with_func[originalInput1-0] __________________________________________
+
+FAILURE: check 2 == 4: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput2-0] __________________________________________
+
+FAILURE: check 4 == 6: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput3-0] __________________________________________
+
+FAILURE: check 0 == 2: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput4-0] __________________________________________
+
+FAILURE: check 0 == 2: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput5-0] __________________________________________
+
+FAILURE: check 0 == 2: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput6-1] __________________________________________
+
+FAILURE: check 0 == 2: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput7-0] __________________________________________
+
+FAILURE: check 4 == 6: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput9-1] __________________________________________
+
+FAILURE: check 2 == 4: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput1-0] - check 2 == 4: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput2-0] - check 4 == 6: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput3-0] - check 0 == 2: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput4-0] - check 0 == 2: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput5-0] - check 0 == 2: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput6-1] - check 0 == 2: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput7-0] - check 4 == 6: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput9-1] - check 2 == 4: MR3_2 failed
+8 failed, 2 passed, 1 warning in 0.01s
+❌ x_count_k__mutmut_11 存在失败 (退出码 1)
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_2  -  2025-10-16T10:10:18.693133
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_2
+函数源码如下：
+def x_count_k__mutmut_2(a, k):
+    cnt = 1
+    for i in range(0, len(a)):
+        if a[i] == k:
+            cnt += 1
+
+    return cnt
+
+.FFFFFFF.F
+========================================================== FAILURES ==========================================================
+__________________________________________ test_count_k_with_func[originalInput1-0] __________________________________________
+
+FAILURE: check 2 == 3: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput2-0] __________________________________________
+
+FAILURE: check 3 == 4: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput3-0] __________________________________________
+
+FAILURE: check 1 == 2: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput4-0] __________________________________________
+
+FAILURE: check 1 == 2: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput5-0] __________________________________________
+
+FAILURE: check 1 == 2: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput6-1] __________________________________________
+
+FAILURE: check 1 == 2: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput7-0] __________________________________________
+
+FAILURE: check 3 == 4: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput9-1] __________________________________________
+
+FAILURE: check 2 == 3: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput1-0] - check 2 == 3: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput2-0] - check 3 == 4: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput3-0] - check 1 == 2: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput4-0] - check 1 == 2: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput5-0] - check 1 == 2: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput6-1] - check 1 == 2: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput7-0] - check 3 == 4: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput9-1] - check 2 == 3: MR3_2 failed
+8 failed, 2 passed, 1 warning in 0.01s
+❌ x_count_k__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_3  -  2025-10-16T10:10:18.745102
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_3
+函数源码如下：
+def x_count_k__mutmut_3(a, k):
+    cnt = 0
+    for i in range(None, len(a)):
+        if a[i] == k:
+            cnt += 1
+
+    return cnt
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+__________________________________________ test_count_k_with_func[originalInput0-2] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:56: in x_count_k__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput1-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:56: in x_count_k__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput2-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:56: in x_count_k__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput3-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:56: in x_count_k__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput4-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:56: in x_count_k__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput5-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:56: in x_count_k__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput6-1] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:56: in x_count_k__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput7-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:56: in x_count_k__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput8-2] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:56: in x_count_k__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput9-1] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:56: in x_count_k__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput0-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput1-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput2-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput3-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput4-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput5-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput6-1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput7-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput8-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput9-1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.04s
+❌ x_count_k__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_4  -  2025-10-16T10:10:18.822915
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_4
+函数源码如下：
+def x_count_k__mutmut_4(a, k):
+    cnt = 0
+    for i in range(0, None):
+        if a[i] == k:
+            cnt += 1
+
+    return cnt
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+__________________________________________ test_count_k_with_func[originalInput0-2] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:63: in x_count_k__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput1-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:63: in x_count_k__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput2-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:63: in x_count_k__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput3-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:63: in x_count_k__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput4-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:63: in x_count_k__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput5-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:63: in x_count_k__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput6-1] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:63: in x_count_k__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput7-0] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:63: in x_count_k__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput8-2] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:63: in x_count_k__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+__________________________________________ test_count_k_with_func[originalInput9-1] __________________________________________
+mutants/tests/count_kTest.py:125: in test_count_k_with_func
+    originalResult = func(originalInput, k)
+mutants/src/count_k.py:63: in x_count_k__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput0-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput1-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput2-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput3-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput4-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput5-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput6-1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput7-0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput8-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput9-1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.04s
+❌ x_count_k__mutmut_4 存在失败 (退出码 1)
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_5  -  2025-10-16T10:10:18.900451
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_5
+函数源码如下：
+def x_count_k__mutmut_5(a, k):
+    cnt = 0
+    for i in range(len(a)):
+        if a[i] == k:
+            cnt += 1
+
+    return cnt
+
+.FFFFFFF.F
+========================================================== FAILURES ==========================================================
+__________________________________________ test_count_k_with_func[originalInput1-0] __________________________________________
+
+FAILURE: check 1 == 2: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput2-0] __________________________________________
+
+FAILURE: check 2 == 3: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput3-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput4-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput5-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput6-1] __________________________________________
+
+FAILURE: check 0 == 1: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput7-0] __________________________________________
+
+FAILURE: check 2 == 3: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput9-1] __________________________________________
+
+FAILURE: check 1 == 2: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput1-0] - check 1 == 2: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput2-0] - check 2 == 3: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput3-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput4-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput5-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput6-1] - check 0 == 1: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput7-0] - check 2 == 3: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput9-1] - check 1 == 2: MR3_2 failed
+8 failed, 2 passed, 1 warning in 0.01s
+❌ x_count_k__mutmut_5 存在失败 (退出码 1)
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_6  -  2025-10-16T10:10:18.954385
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_6
+函数源码如下：
+def x_count_k__mutmut_6(a, k):
+    cnt = 0
+    for i in range(0, ):
+        if a[i] == k:
+            cnt += 1
+
+    return cnt
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_count_k__mutmut_6 所有测试通过
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_7  -  2025-10-16T10:10:19.002773
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_7
+函数源码如下：
+def x_count_k__mutmut_7(a, k):
+    cnt = 0
+    for i in range(1, len(a)):
+        if a[i] == k:
+            cnt += 1
+
+    return cnt
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+__________________________________________ test_count_k_with_func[originalInput0-2] __________________________________________
+
+FAILURE: check 2 == 1: MR6 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:97 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "MR6 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput1-0] __________________________________________
+
+FAILURE: check 1 == 2: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput2-0] __________________________________________
+
+FAILURE: check 2 == 3: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 2 == 1: MR6 failed
+------------------------------------------------------------
+Failed Checks: 2
+__________________________________________ test_count_k_with_func[originalInput3-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput4-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput5-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput6-1] __________________________________________
+
+FAILURE: check 0 == 1: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput7-0] __________________________________________
+
+FAILURE: check 1 == 2: MR1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:91 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "MR1 failed")
+
+FAILURE: check 1 == 2: MR3_1 failed
+FAILURE: check 1 == 2: MR6 failed
+------------------------------------------------------------
+Failed Checks: 3
+__________________________________________ test_count_k_with_func[originalInput8-2] __________________________________________
+
+FAILURE: check 1 == 2: MR1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:91 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "MR1 failed")
+
+FAILURE: check 1 == 2: MR6 failed
+------------------------------------------------------------
+Failed Checks: 2
+__________________________________________ test_count_k_with_func[originalInput9-1] __________________________________________
+
+FAILURE: check 1 == 2: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+FAILURE: check 1 == 0: MR6 failed
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput0-2] - check 2 == 1: MR6 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput1-0] - check 1 == 2: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput2-0] - check 2 == 3: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput3-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput4-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput5-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput6-1] - check 0 == 1: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput7-0] - check 1 == 2: MR1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput8-2] - check 1 == 2: MR1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput9-1] - check 1 == 2: MR3_2 failed
+10 failed, 1 warning in 0.02s
+❌ x_count_k__mutmut_7 存在失败 (退出码 1)
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_8  -  2025-10-16T10:10:19.057302
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_8
+函数源码如下：
+def x_count_k__mutmut_8(a, k):
+    cnt = 0
+    for i in range(0, len(a)):
+        if a[i] != k:
+            cnt += 1
+
+    return cnt
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+__________________________________________ test_count_k_with_func[originalInput0-2] __________________________________________
+
+FAILURE: check 3 == 4: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 3 == 4: MR3_2 failed
+------------------------------------------------------------
+Failed Checks: 2
+__________________________________________ test_count_k_with_func[originalInput1-0] __________________________________________
+
+FAILURE: check 4 == 5: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput2-0] __________________________________________
+
+FAILURE: check 3 == 4: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput3-0] __________________________________________
+
+FAILURE: check 4 == 5: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput4-0] __________________________________________
+
+FAILURE: check 5 == 6: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput5-0] __________________________________________
+
+FAILURE: check 5 == 6: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput6-1] __________________________________________
+
+FAILURE: check 4 == 5: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput7-0] __________________________________________
+
+FAILURE: check 3 == 4: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput8-2] __________________________________________
+
+FAILURE: check 3 == 4: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 3 == 4: MR3_2 failed
+------------------------------------------------------------
+Failed Checks: 2
+__________________________________________ test_count_k_with_func[originalInput9-1] __________________________________________
+
+FAILURE: check 4 == 5: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput0-2] - check 3 == 4: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput1-0] - check 4 == 5: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput2-0] - check 3 == 4: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput3-0] - check 4 == 5: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput4-0] - check 5 == 6: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput5-0] - check 5 == 6: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput6-1] - check 4 == 5: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput7-0] - check 3 == 4: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput8-2] - check 3 == 4: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput9-1] - check 4 == 5: MR3_1 failed
+10 failed, 1 warning in 0.02s
+❌ x_count_k__mutmut_8 存在失败 (退出码 1)
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_9  -  2025-10-16T10:10:19.110959
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_9
+函数源码如下：
+def x_count_k__mutmut_9(a, k):
+    cnt = 0
+    for i in range(0, len(a)):
+        if a[i] == k:
+            cnt = 1
+
+    return cnt
+
+...FFFF...
+========================================================== FAILURES ==========================================================
+__________________________________________ test_count_k_with_func[originalInput3-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput4-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput5-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput6-1] __________________________________________
+
+FAILURE: check 0 == 1: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput3-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput4-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput5-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput6-1] - check 0 == 1: MR3_2 failed
+4 failed, 6 passed, 1 warning in 0.01s
+❌ x_count_k__mutmut_9 存在失败 (退出码 1)
+
+================================================================================
+RUNNING count_k.py :: x_count_k__mutmut_orig  -  2025-10-16T10:10:19.162078
+================================================================================
+
+>>> 当前使用的函数: x_count_k__mutmut_orig
+函数源码如下：
+def x_count_k__mutmut_orig(a, k):
+    cnt = 0
+    for i in range(0, len(a)):
+        if a[i] == k:
+            cnt += 1
+
+    return cnt
+
+.FFFFFFF.F
+========================================================== FAILURES ==========================================================
+__________________________________________ test_count_k_with_func[originalInput1-0] __________________________________________
+
+FAILURE: check 1 == 2: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput2-0] __________________________________________
+
+FAILURE: check 2 == 3: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput3-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput4-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput5-0] __________________________________________
+
+FAILURE: check 0 == 1: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput6-1] __________________________________________
+
+FAILURE: check 0 == 1: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput7-0] __________________________________________
+
+FAILURE: check 2 == 3: MR3_1 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+__________________________________________ test_count_k_with_func[originalInput9-1] __________________________________________
+
+FAILURE: check 1 == 2: MR3_2 failed
+mutants/tests/count_kTest.py:126 in test_count_k_with_func() -> applyMR_Assert(originalInput, k, originalResult)
+mutants/tests/count_kTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput1-0] - check 1 == 2: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput2-0] - check 2 == 3: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput3-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput4-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput5-0] - check 0 == 1: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput6-1] - check 0 == 1: MR3_2 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput7-0] - check 2 == 3: MR3_1 failed
+FAILED mutants/tests/count_kTest.py::test_count_k_with_func[originalInput9-1] - check 1 == 2: MR3_2 failed
+8 failed, 2 passed, 1 warning in 0.01s
+❌ x_count_k__mutmut_orig 存在失败 (退出码 1)

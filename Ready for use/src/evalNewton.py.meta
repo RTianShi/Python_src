@@ -1,0 +1,25 @@
+{
+    "exit_code_by_key": {
+        "evalNewton.x_evalNewton__mutmut_1": 33,
+        "evalNewton.x_evalNewton__mutmut_2": 33,
+        "evalNewton.x_evalNewton__mutmut_3": 33,
+        "evalNewton.x_evalNewton__mutmut_4": 33,
+        "evalNewton.x_evalNewton__mutmut_5": 33,
+        "evalNewton.x_evalNewton__mutmut_6": 33,
+        "evalNewton.x_evalNewton__mutmut_7": 33,
+        "evalNewton.x_evalNewton__mutmut_8": 33,
+        "evalNewton.x_evalNewton__mutmut_9": 33,
+        "evalNewton.x_evalNewton__mutmut_10": 33,
+        "evalNewton.x_evalNewton__mutmut_11": 33,
+        "evalNewton.x_evalNewton__mutmut_12": 33,
+        "evalNewton.x_evalNewton__mutmut_13": 33,
+        "evalNewton.x_evalNewton__mutmut_14": 33,
+        "evalNewton.x_evalNewton__mutmut_15": 33,
+        "evalNewton.x_evalNewton__mutmut_16": 33,
+        "evalNewton.x_evalNewton__mutmut_17": 33,
+        "evalNewton.x_evalNewton__mutmut_18": 33,
+        "evalNewton.x_evalNewton__mutmut_19": 33,
+        "evalNewton.x_evalNewton__mutmut_20": 33
+    },
+    "hash_by_function_name": {}
+}

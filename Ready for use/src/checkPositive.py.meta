@@ -1,0 +1,14 @@
+{
+    "exit_code_by_key": {
+        "checkPositive.x_checkPositive__mutmut_1": 33,
+        "checkPositive.x_checkPositive__mutmut_2": 33,
+        "checkPositive.x_checkPositive__mutmut_3": 33,
+        "checkPositive.x_checkPositive__mutmut_4": 33,
+        "checkPositive.x_checkPositive__mutmut_5": 33,
+        "checkPositive.x_checkPositive__mutmut_6": 33,
+        "checkPositive.x_checkPositive__mutmut_7": 33,
+        "checkPositive.x_checkPositive__mutmut_8": 33,
+        "checkPositive.x_checkPositive__mutmut_9": 33
+    },
+    "hash_by_function_name": {}
+}

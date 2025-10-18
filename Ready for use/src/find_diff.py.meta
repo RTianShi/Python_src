@@ -1,0 +1,13 @@
+{
+    "exit_code_by_key": {
+        "find_diff.x_find_diff__mutmut_1": 33,
+        "find_diff.x_find_diff__mutmut_2": 33,
+        "find_diff.x_find_diff__mutmut_3": 33,
+        "find_diff.x_find_diff__mutmut_4": 33,
+        "find_diff.x_find_diff__mutmut_5": 33,
+        "find_diff.x_find_diff__mutmut_6": 33,
+        "find_diff.x_find_diff__mutmut_7": 33,
+        "find_diff.x_find_diff__mutmut_8": 33
+    },
+    "hash_by_function_name": {}
+}

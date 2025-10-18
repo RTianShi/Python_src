@@ -1,0 +1,1947 @@
+
+=== Running tests for single mutant file: canberraDist.py ===
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_1  -  2025-10-16T10:05:59.394053
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_1
+函数源码如下：
+def x_canberraDist__mutmut_1(a, b):
+
+    sum = None
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:54: in x_canberraDist__mutmut_1
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:54: in x_canberraDist__mutmut_1
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:54: in x_canberraDist__mutmut_1
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:54: in x_canberraDist__mutmut_1
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:54: in x_canberraDist__mutmut_1
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:54: in x_canberraDist__mutmut_1
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:54: in x_canberraDist__mutmut_1
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:54: in x_canberraDist__mutmut_1
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:54: in x_canberraDist__mutmut_1
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:54: in x_canberraDist__mutmut_1
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'float'
+10 failed, 1 warning in 0.09s
+❌ x_canberraDist__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_10  -  2025-10-16T10:05:59.558568
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_10
+函数源码如下：
+def x_canberraDist__mutmut_10(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] + b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+
+FAILURE: check bool(False): OR3_2 failed (MR3_2)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:134 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult3_2), "OR3_2 failed (MR3_2)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+
+FAILURE: check bool(False): OR3_2 failed (MR3_2)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:134 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult3_2), "OR3_2 failed (MR3_2)")
+
+FAILURE: check bool(False): OR13 failed (MR13)
+------------------------------------------------------------
+Failed Checks: 2
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+
+FAILURE: check bool(False): OR3_2 failed (MR3_2)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:134 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult3_2), "OR3_2 failed (MR3_2)")
+
+FAILURE: check bool(False): OR13 failed (MR13)
+------------------------------------------------------------
+Failed Checks: 2
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+
+FAILURE: check bool(False): OR3_2 failed (MR3_2)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:134 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult3_2), "OR3_2 failed (MR3_2)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+------------------------------------------------------------
+Failed Checks: 2
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+
+FAILURE: check bool(False): OR3_2 failed (MR3_2)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:134 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult3_2), "OR3_2 failed (MR3_2)")
+
+FAILURE: check bool(False): OR13 failed (MR13)
+------------------------------------------------------------
+Failed Checks: 2
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+
+FAILURE: check bool(False): OR3_2 failed (MR3_2)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:134 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult3_2), "OR3_2 failed (MR3_2)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+
+FAILURE: check bool(False): OR3_2 failed (MR3_2)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:134 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult3_2), "OR3_2 failed (MR3_2)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 4
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+
+FAILURE: check bool(False): OR3_2 failed (MR3_2)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:134 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult3_2), "OR3_2 failed (MR3_2)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check bool(False): OR3_2 failed (MR3_2)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:134 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult3_2), "OR3_2 failed (MR3_2)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+
+FAILURE: check bool(False): OR3_2 failed (MR3_2)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:134 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult3_2), "OR3_2 failed (MR3_2)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - check bool(False): OR3_2 failed (MR3_2)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - check bool(False): OR3_2 failed (MR3_2)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - check bool(False): OR3_2 failed (MR3_2)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - check bool(False): OR3_2 failed (MR3_2)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - check bool(False): OR3_2 failed (MR3_2)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - check bool(False): OR3_2 failed (MR3_2)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - check bool(False): OR3_2 failed (MR3_2)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - check bool(False): OR3_2 failed (MR3_2)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR3_2 failed (MR3_2)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - check bool(False): OR3_2 failed (MR3_2)
+10 failed, 1 warning in 0.02s
+❌ x_canberraDist__mutmut_10 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_11  -  2025-10-16T10:05:59.612650
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_11
+函数源码如下：
+def x_canberraDist__mutmut_11(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = None
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:174: in x_canberraDist__mutmut_11
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:174: in x_canberraDist__mutmut_11
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:174: in x_canberraDist__mutmut_11
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:174: in x_canberraDist__mutmut_11
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:174: in x_canberraDist__mutmut_11
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:174: in x_canberraDist__mutmut_11
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:174: in x_canberraDist__mutmut_11
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:174: in x_canberraDist__mutmut_11
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:174: in x_canberraDist__mutmut_11
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:174: in x_canberraDist__mutmut_11
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+10 failed, 1 warning in 0.06s
+❌ x_canberraDist__mutmut_11 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_12  -  2025-10-16T10:05:59.713654
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_12
+函数源码如下：
+def x_canberraDist__mutmut_12(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) - abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 3
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 3
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 3
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 5
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 5
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 5
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 5
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 5
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 4
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 5
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - check bool(False): OR8 failed (MR8)
+10 failed, 1 warning in 0.02s
+❌ x_canberraDist__mutmut_12 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_13  -  2025-10-16T10:05:59.770283
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_13
+函数源码如下：
+def x_canberraDist__mutmut_13(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(None) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:195: in x_canberraDist__mutmut_13
+    denom = abs(None) + abs(b[i])
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:195: in x_canberraDist__mutmut_13
+    denom = abs(None) + abs(b[i])
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:195: in x_canberraDist__mutmut_13
+    denom = abs(None) + abs(b[i])
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:195: in x_canberraDist__mutmut_13
+    denom = abs(None) + abs(b[i])
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:195: in x_canberraDist__mutmut_13
+    denom = abs(None) + abs(b[i])
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:195: in x_canberraDist__mutmut_13
+    denom = abs(None) + abs(b[i])
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:195: in x_canberraDist__mutmut_13
+    denom = abs(None) + abs(b[i])
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:195: in x_canberraDist__mutmut_13
+    denom = abs(None) + abs(b[i])
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:195: in x_canberraDist__mutmut_13
+    denom = abs(None) + abs(b[i])
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:195: in x_canberraDist__mutmut_13
+    denom = abs(None) + abs(b[i])
+E   TypeError: bad operand type for abs(): 'NoneType'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - TypeError: bad operand type for abs(): 'NoneType'
+10 failed, 1 warning in 0.06s
+❌ x_canberraDist__mutmut_13 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_14  -  2025-10-16T10:05:59.870035
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_14
+函数源码如下：
+def x_canberraDist__mutmut_14(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(None)
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:207: in x_canberraDist__mutmut_14
+    denom = abs(a[i]) + abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:207: in x_canberraDist__mutmut_14
+    denom = abs(a[i]) + abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:207: in x_canberraDist__mutmut_14
+    denom = abs(a[i]) + abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:207: in x_canberraDist__mutmut_14
+    denom = abs(a[i]) + abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:207: in x_canberraDist__mutmut_14
+    denom = abs(a[i]) + abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:207: in x_canberraDist__mutmut_14
+    denom = abs(a[i]) + abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:207: in x_canberraDist__mutmut_14
+    denom = abs(a[i]) + abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:207: in x_canberraDist__mutmut_14
+    denom = abs(a[i]) + abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:207: in x_canberraDist__mutmut_14
+    denom = abs(a[i]) + abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:207: in x_canberraDist__mutmut_14
+    denom = abs(a[i]) + abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - TypeError: bad operand type for abs(): 'NoneType'
+10 failed, 1 warning in 0.06s
+❌ x_canberraDist__mutmut_14 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_15  -  2025-10-16T10:05:59.972459
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_15
+函数源码如下：
+def x_canberraDist__mutmut_15(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 and denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_canberraDist__mutmut_15 所有测试通过
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_16  -  2025-10-16T10:06:00.021800
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_16
+函数源码如下：
+def x_canberraDist__mutmut_16(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num != 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_canberraDist__mutmut_16 所有测试通过
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_17  -  2025-10-16T10:06:00.070237
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_17
+函数源码如下：
+def x_canberraDist__mutmut_17(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 1 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+..F..F..F.
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR5 failed (MR5)
+3 failed, 7 passed, 1 warning in 0.01s
+❌ x_canberraDist__mutmut_17 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_18  -  2025-10-16T10:06:00.119547
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_18
+函数源码如下：
+def x_canberraDist__mutmut_18(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom != 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_canberraDist__mutmut_18 所有测试通过
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_19  -  2025-10-16T10:06:00.168334
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_19
+函数源码如下：
+def x_canberraDist__mutmut_19(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 1:
+            continue
+        sum += num/denom
+
+    return sum
+
+........F.
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR5 failed (MR5)
+1 failed, 9 passed, 1 warning in 0.01s
+❌ x_canberraDist__mutmut_19 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_2  -  2025-10-16T10:06:00.217292
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_2
+函数源码如下：
+def x_canberraDist__mutmut_2(a, b):
+
+    sum = 1
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_canberraDist__mutmut_2 所有测试通过
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_20  -  2025-10-16T10:06:00.265251
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_20
+函数源码如下：
+def x_canberraDist__mutmut_20(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            break
+        sum += num/denom
+
+    return sum
+
+FFF.F.F...
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+
+FAILURE: check bool(False): OR13 failed (MR13)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:158 in applyMR_Assert() -> check.is_true(originalResult >= transformResult13, "OR13 failed (MR13)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - check bool(False): OR13 failed (MR13)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - check bool(False): OR6 failed (MR6)
+5 failed, 5 passed, 1 warning in 0.01s
+❌ x_canberraDist__mutmut_20 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_21  -  2025-10-16T10:06:00.317631
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_21
+函数源码如下：
+def x_canberraDist__mutmut_21(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum = num/denom
+
+    return sum
+
+FFF....FF.
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 3
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 3
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR6 failed (MR6)
+5 failed, 5 passed, 1 warning in 0.01s
+❌ x_canberraDist__mutmut_21 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_22  -  2025-10-16T10:06:00.369840
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_22
+函数源码如下：
+def x_canberraDist__mutmut_22(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum -= num/denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 4
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 4
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 6
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 4
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 5
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 6
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 3
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 6
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 6
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+
+FAILURE: check bool(False): OR8 failed (MR8)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:149 in applyMR_Assert() -> check.is_true(originalResult <= transformResult8, "OR8 failed (MR8)")
+
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+FAILURE: check bool(False): OR16 failed (MR16)
+FAILURE: check bool(False): OR19 failed (MR19)
+------------------------------------------------------------
+Failed Checks: 6
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR8 failed (MR8)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - check bool(False): OR8 failed (MR8)
+10 failed, 1 warning in 0.02s
+❌ x_canberraDist__mutmut_22 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_23  -  2025-10-16T10:06:00.425946
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_23
+函数源码如下：
+def x_canberraDist__mutmut_23(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num * denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+FAILURE: check bool(False): OR13 failed (MR13)
+------------------------------------------------------------
+Failed Checks: 2
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+FAILURE: check bool(False): OR13 failed (MR13)
+------------------------------------------------------------
+Failed Checks: 2
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+FAILURE: check bool(False): OR13 failed (MR13)
+------------------------------------------------------------
+Failed Checks: 2
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+FAILURE: check bool(False): OR13 failed (MR13)
+------------------------------------------------------------
+Failed Checks: 2
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+FAILURE: check bool(False): OR13 failed (MR13)
+------------------------------------------------------------
+Failed Checks: 2
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+FAILURE: check bool(False): OR13 failed (MR13)
+------------------------------------------------------------
+Failed Checks: 2
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:137 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult5), "OR5 failed (MR5)")
+
+FAILURE: check bool(False): OR13 failed (MR13)
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - check bool(False): OR5 failed (MR5)
+10 failed, 1 warning in 0.01s
+❌ x_canberraDist__mutmut_23 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_3  -  2025-10-16T10:06:00.480793
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_3
+函数源码如下：
+def x_canberraDist__mutmut_3(a, b):
+
+    sum = 0
+
+    for i in range(None, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:73: in x_canberraDist__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:73: in x_canberraDist__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:73: in x_canberraDist__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:73: in x_canberraDist__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:73: in x_canberraDist__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:73: in x_canberraDist__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:73: in x_canberraDist__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:73: in x_canberraDist__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:73: in x_canberraDist__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:73: in x_canberraDist__mutmut_3
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.06s
+❌ x_canberraDist__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_4  -  2025-10-16T10:06:00.579382
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_4
+函数源码如下：
+def x_canberraDist__mutmut_4(a, b):
+
+    sum = 0
+
+    for i in range(0, None):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:85: in x_canberraDist__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:85: in x_canberraDist__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:85: in x_canberraDist__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:85: in x_canberraDist__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:85: in x_canberraDist__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:85: in x_canberraDist__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:85: in x_canberraDist__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:85: in x_canberraDist__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:85: in x_canberraDist__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:85: in x_canberraDist__mutmut_4
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.06s
+❌ x_canberraDist__mutmut_4 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_5  -  2025-10-16T10:06:00.676973
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_5
+函数源码如下：
+def x_canberraDist__mutmut_5(a, b):
+
+    sum = 0
+
+    for i in range(len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_canberraDist__mutmut_5 所有测试通过
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_6  -  2025-10-16T10:06:00.725400
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_6
+函数源码如下：
+def x_canberraDist__mutmut_6(a, b):
+
+    sum = 0
+
+    for i in range(0, ):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_canberraDist__mutmut_6 所有测试通过
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_7  -  2025-10-16T10:06:00.773401
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_7
+函数源码如下：
+def x_canberraDist__mutmut_7(a, b):
+
+    sum = 0
+
+    for i in range(1, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+FFF...FFF.
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+
+FAILURE: check bool(False): OR6 failed (MR6)
+mutants/tests/canberraDistTest.py:188 in test_canberraDist_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/canberraDistTest.py:140 in applyMR_Assert() -> check.is_true(is_close(originalResult, transformResult6), "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - check bool(False): OR6 failed (MR6)
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR6 failed (MR6)
+6 failed, 4 passed, 1 warning in 0.01s
+❌ x_canberraDist__mutmut_7 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_8  -  2025-10-16T10:06:00.824678
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_8
+函数源码如下：
+def x_canberraDist__mutmut_8(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = None
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:138: in x_canberraDist__mutmut_8
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:138: in x_canberraDist__mutmut_8
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:138: in x_canberraDist__mutmut_8
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:138: in x_canberraDist__mutmut_8
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:138: in x_canberraDist__mutmut_8
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:138: in x_canberraDist__mutmut_8
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:138: in x_canberraDist__mutmut_8
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:138: in x_canberraDist__mutmut_8
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:138: in x_canberraDist__mutmut_8
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:138: in x_canberraDist__mutmut_8
+    sum += num/denom
+E   TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+10 failed, 1 warning in 0.06s
+❌ x_canberraDist__mutmut_8 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_9  -  2025-10-16T10:06:00.921125
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_9
+函数源码如下：
+def x_canberraDist__mutmut_9(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(None)
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________ test_canberraDist_with_func[originalInput1_10-originalInput1_20] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:146: in x_canberraDist__mutmut_9
+    num = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_11-originalInput1_21] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:146: in x_canberraDist__mutmut_9
+    num = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_12-originalInput1_22] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:146: in x_canberraDist__mutmut_9
+    num = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_13-originalInput1_23] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:146: in x_canberraDist__mutmut_9
+    num = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_14-originalInput1_24] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:146: in x_canberraDist__mutmut_9
+    num = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_15-originalInput1_25] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:146: in x_canberraDist__mutmut_9
+    num = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_16-originalInput1_26] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:146: in x_canberraDist__mutmut_9
+    num = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_17-originalInput1_27] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:146: in x_canberraDist__mutmut_9
+    num = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_18-originalInput1_28] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:146: in x_canberraDist__mutmut_9
+    num = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________ test_canberraDist_with_func[originalInput1_19-originalInput1_29] ______________________________
+mutants/tests/canberraDistTest.py:187: in test_canberraDist_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/canberraDist.py:146: in x_canberraDist__mutmut_9
+    num = abs(None)
+E   TypeError: bad operand type for abs(): 'NoneType'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_10-originalInput1_20] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_11-originalInput1_21] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_12-originalInput1_22] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_13-originalInput1_23] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_14-originalInput1_24] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_15-originalInput1_25] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_16-originalInput1_26] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_17-originalInput1_27] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_18-originalInput1_28] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/canberraDistTest.py::test_canberraDist_with_func[originalInput1_19-originalInput1_29] - TypeError: bad operand type for abs(): 'NoneType'
+10 failed, 1 warning in 0.06s
+❌ x_canberraDist__mutmut_9 存在失败 (退出码 1)
+
+================================================================================
+RUNNING canberraDist.py :: x_canberraDist__mutmut_orig  -  2025-10-16T10:06:01.019813
+================================================================================
+
+>>> 当前使用的函数: x_canberraDist__mutmut_orig
+函数源码如下：
+def x_canberraDist__mutmut_orig(a, b):
+
+    sum = 0
+
+    for i in range(0, len(a)):
+        num = abs(a[i] - b[i])
+        denom = abs(a[i]) + abs(b[i])
+        if num == 0 or denom == 0:
+            continue
+        sum += num/denom
+
+    return sum
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_canberraDist__mutmut_orig 所有测试通过

@@ -1,0 +1,12 @@
+{
+    "exit_code_by_key": {
+        "dec_array.x_dec_array__mutmut_1": 33,
+        "dec_array.x_dec_array__mutmut_2": 33,
+        "dec_array.x_dec_array__mutmut_3": 33,
+        "dec_array.x_dec_array__mutmut_4": 33,
+        "dec_array.x_dec_array__mutmut_5": 33,
+        "dec_array.x_dec_array__mutmut_6": 33,
+        "dec_array.x_dec_array__mutmut_7": 33
+    },
+    "hash_by_function_name": {}
+}

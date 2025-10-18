@@ -1,0 +1,8 @@
+start_time: 2025-10-16T09:58:53.604876
+run_dir: logs/run_20251016_095853
+default_log_name: cal_AbsoluteDiff.log
+mutant_file: cal_AbsoluteDiff.py
+test_file: cal_AbsoluteDiffTest.py
+mutant_prefix: x_cal_AbsoluteDiff__mutmut
+end_time: 2025-10-16T09:58:54.068932
+final_log_path: logs/run_20251016_095853/cal_AbsoluteDiff.log

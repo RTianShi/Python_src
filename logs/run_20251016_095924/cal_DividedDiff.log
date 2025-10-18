@@ -1,0 +1,2654 @@
+
+=== Running tests for single mutant file: cal_DividedDiff.py ===
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_1  -  2025-10-16T09:59:24.201267
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_1
+函数源码如下：
+def x_cal_DividedDiff__mutmut_1(x, y):
+    divdiff = None
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:48: in x_cal_DividedDiff__mutmut_1
+    a = [divdiff[0]]
+E   TypeError: 'NoneType' object is not subscriptable
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:48: in x_cal_DividedDiff__mutmut_1
+    a = [divdiff[0]]
+E   TypeError: 'NoneType' object is not subscriptable
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:48: in x_cal_DividedDiff__mutmut_1
+    a = [divdiff[0]]
+E   TypeError: 'NoneType' object is not subscriptable
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:48: in x_cal_DividedDiff__mutmut_1
+    a = [divdiff[0]]
+E   TypeError: 'NoneType' object is not subscriptable
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:48: in x_cal_DividedDiff__mutmut_1
+    a = [divdiff[0]]
+E   TypeError: 'NoneType' object is not subscriptable
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:48: in x_cal_DividedDiff__mutmut_1
+    a = [divdiff[0]]
+E   TypeError: 'NoneType' object is not subscriptable
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:48: in x_cal_DividedDiff__mutmut_1
+    a = [divdiff[0]]
+E   TypeError: 'NoneType' object is not subscriptable
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:48: in x_cal_DividedDiff__mutmut_1
+    a = [divdiff[0]]
+E   TypeError: 'NoneType' object is not subscriptable
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:48: in x_cal_DividedDiff__mutmut_1
+    a = [divdiff[0]]
+E   TypeError: 'NoneType' object is not subscriptable
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:48: in x_cal_DividedDiff__mutmut_1
+    a = [divdiff[0]]
+E   TypeError: 'NoneType' object is not subscriptable
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object is not subscriptable
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object is not subscriptable
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object is not subscriptable
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object is not subscriptable
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object is not subscriptable
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object is not subscriptable
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object is not subscriptable
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object is not subscriptable
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object is not subscriptable
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object is not subscriptable
+10 failed, 1 warning in 0.10s
+❌ x_cal_DividedDiff__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_10  -  2025-10-16T09:59:24.375092
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_10
+函数源码如下：
+def x_cal_DividedDiff__mutmut_10(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(None, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:159: in x_cal_DividedDiff__mutmut_10
+    for j in range(None, n - i):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:159: in x_cal_DividedDiff__mutmut_10
+    for j in range(None, n - i):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:159: in x_cal_DividedDiff__mutmut_10
+    for j in range(None, n - i):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:159: in x_cal_DividedDiff__mutmut_10
+    for j in range(None, n - i):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:159: in x_cal_DividedDiff__mutmut_10
+    for j in range(None, n - i):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:159: in x_cal_DividedDiff__mutmut_10
+    for j in range(None, n - i):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:159: in x_cal_DividedDiff__mutmut_10
+    for j in range(None, n - i):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:159: in x_cal_DividedDiff__mutmut_10
+    for j in range(None, n - i):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:159: in x_cal_DividedDiff__mutmut_10
+    for j in range(None, n - i):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:159: in x_cal_DividedDiff__mutmut_10
+    for j in range(None, n - i):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_10 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_11  -  2025-10-16T09:59:24.482159
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_11
+函数源码如下：
+def x_cal_DividedDiff__mutmut_11(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, None):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:171: in x_cal_DividedDiff__mutmut_11
+    for j in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:171: in x_cal_DividedDiff__mutmut_11
+    for j in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:171: in x_cal_DividedDiff__mutmut_11
+    for j in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:171: in x_cal_DividedDiff__mutmut_11
+    for j in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:171: in x_cal_DividedDiff__mutmut_11
+    for j in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:171: in x_cal_DividedDiff__mutmut_11
+    for j in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:171: in x_cal_DividedDiff__mutmut_11
+    for j in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:171: in x_cal_DividedDiff__mutmut_11
+    for j in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:171: in x_cal_DividedDiff__mutmut_11
+    for j in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:171: in x_cal_DividedDiff__mutmut_11
+    for j in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_11 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_12  -  2025-10-16T09:59:24.588339
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_12
+函数源码如下：
+def x_cal_DividedDiff__mutmut_12(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:187: in x_cal_DividedDiff__mutmut_12
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:187: in x_cal_DividedDiff__mutmut_12
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:187: in x_cal_DividedDiff__mutmut_12
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:187: in x_cal_DividedDiff__mutmut_12
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:187: in x_cal_DividedDiff__mutmut_12
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:187: in x_cal_DividedDiff__mutmut_12
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:187: in x_cal_DividedDiff__mutmut_12
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:187: in x_cal_DividedDiff__mutmut_12
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:187: in x_cal_DividedDiff__mutmut_12
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:187: in x_cal_DividedDiff__mutmut_12
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.06s
+❌ x_cal_DividedDiff__mutmut_12 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_13  -  2025-10-16T09:59:24.692261
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_13
+函数源码如下：
+def x_cal_DividedDiff__mutmut_13(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, ):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:199: in x_cal_DividedDiff__mutmut_13
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:199: in x_cal_DividedDiff__mutmut_13
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:199: in x_cal_DividedDiff__mutmut_13
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:199: in x_cal_DividedDiff__mutmut_13
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:199: in x_cal_DividedDiff__mutmut_13
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:199: in x_cal_DividedDiff__mutmut_13
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:199: in x_cal_DividedDiff__mutmut_13
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:199: in x_cal_DividedDiff__mutmut_13
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:199: in x_cal_DividedDiff__mutmut_13
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:199: in x_cal_DividedDiff__mutmut_13
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_13 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_14  -  2025-10-16T09:59:24.797446
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_14
+函数源码如下：
+def x_cal_DividedDiff__mutmut_14(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(1, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:211: in x_cal_DividedDiff__mutmut_14
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:211: in x_cal_DividedDiff__mutmut_14
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:211: in x_cal_DividedDiff__mutmut_14
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:211: in x_cal_DividedDiff__mutmut_14
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:211: in x_cal_DividedDiff__mutmut_14
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:211: in x_cal_DividedDiff__mutmut_14
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:211: in x_cal_DividedDiff__mutmut_14
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:211: in x_cal_DividedDiff__mutmut_14
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:211: in x_cal_DividedDiff__mutmut_14
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:211: in x_cal_DividedDiff__mutmut_14
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_14 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_15  -  2025-10-16T09:59:24.902993
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_15
+函数源码如下：
+def x_cal_DividedDiff__mutmut_15(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n + i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:220: in x_cal_DividedDiff__mutmut_15
+    denominator = x[j + i] - x[j]
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:220: in x_cal_DividedDiff__mutmut_15
+    denominator = x[j + i] - x[j]
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:220: in x_cal_DividedDiff__mutmut_15
+    denominator = x[j + i] - x[j]
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:220: in x_cal_DividedDiff__mutmut_15
+    denominator = x[j + i] - x[j]
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:220: in x_cal_DividedDiff__mutmut_15
+    denominator = x[j + i] - x[j]
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:220: in x_cal_DividedDiff__mutmut_15
+    denominator = x[j + i] - x[j]
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:220: in x_cal_DividedDiff__mutmut_15
+    denominator = x[j + i] - x[j]
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:220: in x_cal_DividedDiff__mutmut_15
+    denominator = x[j + i] - x[j]
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:220: in x_cal_DividedDiff__mutmut_15
+    denominator = x[j + i] - x[j]
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:220: in x_cal_DividedDiff__mutmut_15
+    denominator = x[j + i] - x[j]
+E   IndexError: list index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list index out of range
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_15 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_16  -  2025-10-16T09:59:25.009509
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_16
+函数源码如下：
+def x_cal_DividedDiff__mutmut_16(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = None
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:233: in x_cal_DividedDiff__mutmut_16
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:233: in x_cal_DividedDiff__mutmut_16
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:233: in x_cal_DividedDiff__mutmut_16
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:233: in x_cal_DividedDiff__mutmut_16
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:233: in x_cal_DividedDiff__mutmut_16
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:233: in x_cal_DividedDiff__mutmut_16
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:233: in x_cal_DividedDiff__mutmut_16
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:233: in x_cal_DividedDiff__mutmut_16
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:233: in x_cal_DividedDiff__mutmut_16
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:233: in x_cal_DividedDiff__mutmut_16
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_16 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_17  -  2025-10-16T09:59:25.117641
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_17
+函数源码如下：
+def x_cal_DividedDiff__mutmut_17(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] + x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:247: in x_cal_DividedDiff__mutmut_17
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:247: in x_cal_DividedDiff__mutmut_17
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:247: in x_cal_DividedDiff__mutmut_17
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:247: in x_cal_DividedDiff__mutmut_17
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:247: in x_cal_DividedDiff__mutmut_17
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:247: in x_cal_DividedDiff__mutmut_17
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:247: in x_cal_DividedDiff__mutmut_17
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:247: in x_cal_DividedDiff__mutmut_17
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:247: in x_cal_DividedDiff__mutmut_17
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:247: in x_cal_DividedDiff__mutmut_17
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_17 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_18  -  2025-10-16T09:59:25.222937
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_18
+函数源码如下：
+def x_cal_DividedDiff__mutmut_18(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j - i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:259: in x_cal_DividedDiff__mutmut_18
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:259: in x_cal_DividedDiff__mutmut_18
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:259: in x_cal_DividedDiff__mutmut_18
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:259: in x_cal_DividedDiff__mutmut_18
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:259: in x_cal_DividedDiff__mutmut_18
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:259: in x_cal_DividedDiff__mutmut_18
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:259: in x_cal_DividedDiff__mutmut_18
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:259: in x_cal_DividedDiff__mutmut_18
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:259: in x_cal_DividedDiff__mutmut_18
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:259: in x_cal_DividedDiff__mutmut_18
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.06s
+❌ x_cal_DividedDiff__mutmut_18 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_19  -  2025-10-16T09:59:25.326087
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_19
+函数源码如下：
+def x_cal_DividedDiff__mutmut_19(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = None
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:271: in x_cal_DividedDiff__mutmut_19
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:271: in x_cal_DividedDiff__mutmut_19
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:271: in x_cal_DividedDiff__mutmut_19
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:271: in x_cal_DividedDiff__mutmut_19
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:271: in x_cal_DividedDiff__mutmut_19
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:271: in x_cal_DividedDiff__mutmut_19
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:271: in x_cal_DividedDiff__mutmut_19
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:271: in x_cal_DividedDiff__mutmut_19
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:271: in x_cal_DividedDiff__mutmut_19
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:271: in x_cal_DividedDiff__mutmut_19
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.06s
+❌ x_cal_DividedDiff__mutmut_19 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_2  -  2025-10-16T09:59:25.431170
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_2
+函数源码如下：
+def x_cal_DividedDiff__mutmut_2(x, y):
+    divdiff = y.copy()
+    n = None
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:62: in x_cal_DividedDiff__mutmut_2
+    for i in range(1, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:62: in x_cal_DividedDiff__mutmut_2
+    for i in range(1, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:62: in x_cal_DividedDiff__mutmut_2
+    for i in range(1, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:62: in x_cal_DividedDiff__mutmut_2
+    for i in range(1, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:62: in x_cal_DividedDiff__mutmut_2
+    for i in range(1, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:62: in x_cal_DividedDiff__mutmut_2
+    for i in range(1, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:62: in x_cal_DividedDiff__mutmut_2
+    for i in range(1, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:62: in x_cal_DividedDiff__mutmut_2
+    for i in range(1, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:62: in x_cal_DividedDiff__mutmut_2
+    for i in range(1, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:62: in x_cal_DividedDiff__mutmut_2
+    for i in range(1, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_20  -  2025-10-16T09:59:25.537890
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_20
+函数源码如下：
+def x_cal_DividedDiff__mutmut_20(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] + divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:283: in x_cal_DividedDiff__mutmut_20
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:283: in x_cal_DividedDiff__mutmut_20
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:283: in x_cal_DividedDiff__mutmut_20
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:283: in x_cal_DividedDiff__mutmut_20
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:283: in x_cal_DividedDiff__mutmut_20
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:283: in x_cal_DividedDiff__mutmut_20
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:283: in x_cal_DividedDiff__mutmut_20
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:283: in x_cal_DividedDiff__mutmut_20
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:283: in x_cal_DividedDiff__mutmut_20
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:283: in x_cal_DividedDiff__mutmut_20
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.06s
+❌ x_cal_DividedDiff__mutmut_20 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_21  -  2025-10-16T09:59:25.641833
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_21
+函数源码如下：
+def x_cal_DividedDiff__mutmut_21(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j - 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:295: in x_cal_DividedDiff__mutmut_21
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:295: in x_cal_DividedDiff__mutmut_21
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:295: in x_cal_DividedDiff__mutmut_21
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:295: in x_cal_DividedDiff__mutmut_21
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:295: in x_cal_DividedDiff__mutmut_21
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:295: in x_cal_DividedDiff__mutmut_21
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:295: in x_cal_DividedDiff__mutmut_21
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:295: in x_cal_DividedDiff__mutmut_21
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:295: in x_cal_DividedDiff__mutmut_21
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:295: in x_cal_DividedDiff__mutmut_21
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.06s
+❌ x_cal_DividedDiff__mutmut_21 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_22  -  2025-10-16T09:59:25.747091
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_22
+函数源码如下：
+def x_cal_DividedDiff__mutmut_22(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 2] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:305: in x_cal_DividedDiff__mutmut_22
+    divdiff[j] = divdiff[j + 2] - divdiff[j] / denominator
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:305: in x_cal_DividedDiff__mutmut_22
+    divdiff[j] = divdiff[j + 2] - divdiff[j] / denominator
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:305: in x_cal_DividedDiff__mutmut_22
+    divdiff[j] = divdiff[j + 2] - divdiff[j] / denominator
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:305: in x_cal_DividedDiff__mutmut_22
+    divdiff[j] = divdiff[j + 2] - divdiff[j] / denominator
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:305: in x_cal_DividedDiff__mutmut_22
+    divdiff[j] = divdiff[j + 2] - divdiff[j] / denominator
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:305: in x_cal_DividedDiff__mutmut_22
+    divdiff[j] = divdiff[j + 2] - divdiff[j] / denominator
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:305: in x_cal_DividedDiff__mutmut_22
+    divdiff[j] = divdiff[j + 2] - divdiff[j] / denominator
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:305: in x_cal_DividedDiff__mutmut_22
+    divdiff[j] = divdiff[j + 2] - divdiff[j] / denominator
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:305: in x_cal_DividedDiff__mutmut_22
+    divdiff[j] = divdiff[j + 2] - divdiff[j] / denominator
+E   IndexError: list index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:305: in x_cal_DividedDiff__mutmut_22
+    divdiff[j] = divdiff[j + 2] - divdiff[j] / denominator
+E   IndexError: list index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list index out of range
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_22 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_23  -  2025-10-16T09:59:25.851754
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_23
+函数源码如下：
+def x_cal_DividedDiff__mutmut_23(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] * denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:319: in x_cal_DividedDiff__mutmut_23
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:319: in x_cal_DividedDiff__mutmut_23
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:319: in x_cal_DividedDiff__mutmut_23
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:319: in x_cal_DividedDiff__mutmut_23
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:319: in x_cal_DividedDiff__mutmut_23
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:319: in x_cal_DividedDiff__mutmut_23
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:319: in x_cal_DividedDiff__mutmut_23
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:319: in x_cal_DividedDiff__mutmut_23
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:319: in x_cal_DividedDiff__mutmut_23
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:319: in x_cal_DividedDiff__mutmut_23
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_23 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_24  -  2025-10-16T09:59:25.957837
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_24
+函数源码如下：
+def x_cal_DividedDiff__mutmut_24(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = None
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:331: in x_cal_DividedDiff__mutmut_24
+    a[i] = None
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:331: in x_cal_DividedDiff__mutmut_24
+    a[i] = None
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:331: in x_cal_DividedDiff__mutmut_24
+    a[i] = None
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:331: in x_cal_DividedDiff__mutmut_24
+    a[i] = None
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:331: in x_cal_DividedDiff__mutmut_24
+    a[i] = None
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:331: in x_cal_DividedDiff__mutmut_24
+    a[i] = None
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:331: in x_cal_DividedDiff__mutmut_24
+    a[i] = None
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:331: in x_cal_DividedDiff__mutmut_24
+    a[i] = None
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:331: in x_cal_DividedDiff__mutmut_24
+    a[i] = None
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:331: in x_cal_DividedDiff__mutmut_24
+    a[i] = None
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_24 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_25  -  2025-10-16T09:59:26.064075
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_25
+函数源码如下：
+def x_cal_DividedDiff__mutmut_25(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[1]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:343: in x_cal_DividedDiff__mutmut_25
+    a[i] = divdiff[1]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:343: in x_cal_DividedDiff__mutmut_25
+    a[i] = divdiff[1]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:343: in x_cal_DividedDiff__mutmut_25
+    a[i] = divdiff[1]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:343: in x_cal_DividedDiff__mutmut_25
+    a[i] = divdiff[1]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:343: in x_cal_DividedDiff__mutmut_25
+    a[i] = divdiff[1]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:343: in x_cal_DividedDiff__mutmut_25
+    a[i] = divdiff[1]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:343: in x_cal_DividedDiff__mutmut_25
+    a[i] = divdiff[1]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:343: in x_cal_DividedDiff__mutmut_25
+    a[i] = divdiff[1]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:343: in x_cal_DividedDiff__mutmut_25
+    a[i] = divdiff[1]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:343: in x_cal_DividedDiff__mutmut_25
+    a[i] = divdiff[1]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.06s
+❌ x_cal_DividedDiff__mutmut_25 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_3  -  2025-10-16T09:59:26.167924
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_3
+函数源码如下：
+def x_cal_DividedDiff__mutmut_3(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = None
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:79: in x_cal_DividedDiff__mutmut_3
+    a[i] = divdiff[0]
+E   TypeError: 'NoneType' object does not support item assignment
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:79: in x_cal_DividedDiff__mutmut_3
+    a[i] = divdiff[0]
+E   TypeError: 'NoneType' object does not support item assignment
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:79: in x_cal_DividedDiff__mutmut_3
+    a[i] = divdiff[0]
+E   TypeError: 'NoneType' object does not support item assignment
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:79: in x_cal_DividedDiff__mutmut_3
+    a[i] = divdiff[0]
+E   TypeError: 'NoneType' object does not support item assignment
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:79: in x_cal_DividedDiff__mutmut_3
+    a[i] = divdiff[0]
+E   TypeError: 'NoneType' object does not support item assignment
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:79: in x_cal_DividedDiff__mutmut_3
+    a[i] = divdiff[0]
+E   TypeError: 'NoneType' object does not support item assignment
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:79: in x_cal_DividedDiff__mutmut_3
+    a[i] = divdiff[0]
+E   TypeError: 'NoneType' object does not support item assignment
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:79: in x_cal_DividedDiff__mutmut_3
+    a[i] = divdiff[0]
+E   TypeError: 'NoneType' object does not support item assignment
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:79: in x_cal_DividedDiff__mutmut_3
+    a[i] = divdiff[0]
+E   TypeError: 'NoneType' object does not support item assignment
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:79: in x_cal_DividedDiff__mutmut_3
+    a[i] = divdiff[0]
+E   TypeError: 'NoneType' object does not support item assignment
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object does not support item assignment
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object does not support item assignment
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object does not support item assignment
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object does not support item assignment
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object does not support item assignment
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object does not support item assignment
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object does not support item assignment
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object does not support item assignment
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object does not support item assignment
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object does not support item assignment
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_4  -  2025-10-16T09:59:26.274591
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_4
+函数源码如下：
+def x_cal_DividedDiff__mutmut_4(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[1]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:91: in x_cal_DividedDiff__mutmut_4
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:91: in x_cal_DividedDiff__mutmut_4
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:91: in x_cal_DividedDiff__mutmut_4
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:91: in x_cal_DividedDiff__mutmut_4
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:91: in x_cal_DividedDiff__mutmut_4
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:91: in x_cal_DividedDiff__mutmut_4
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:91: in x_cal_DividedDiff__mutmut_4
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:91: in x_cal_DividedDiff__mutmut_4
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:91: in x_cal_DividedDiff__mutmut_4
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:91: in x_cal_DividedDiff__mutmut_4
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_4 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_5  -  2025-10-16T09:59:26.379882
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_5
+函数源码如下：
+def x_cal_DividedDiff__mutmut_5(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(None, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:98: in x_cal_DividedDiff__mutmut_5
+    for i in range(None, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:98: in x_cal_DividedDiff__mutmut_5
+    for i in range(None, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:98: in x_cal_DividedDiff__mutmut_5
+    for i in range(None, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:98: in x_cal_DividedDiff__mutmut_5
+    for i in range(None, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:98: in x_cal_DividedDiff__mutmut_5
+    for i in range(None, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:98: in x_cal_DividedDiff__mutmut_5
+    for i in range(None, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:98: in x_cal_DividedDiff__mutmut_5
+    for i in range(None, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:98: in x_cal_DividedDiff__mutmut_5
+    for i in range(None, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:98: in x_cal_DividedDiff__mutmut_5
+    for i in range(None, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:98: in x_cal_DividedDiff__mutmut_5
+    for i in range(None, n):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_5 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_6  -  2025-10-16T09:59:26.487044
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_6
+函数源码如下：
+def x_cal_DividedDiff__mutmut_6(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, None):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:110: in x_cal_DividedDiff__mutmut_6
+    for i in range(1, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:110: in x_cal_DividedDiff__mutmut_6
+    for i in range(1, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:110: in x_cal_DividedDiff__mutmut_6
+    for i in range(1, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:110: in x_cal_DividedDiff__mutmut_6
+    for i in range(1, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:110: in x_cal_DividedDiff__mutmut_6
+    for i in range(1, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:110: in x_cal_DividedDiff__mutmut_6
+    for i in range(1, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:110: in x_cal_DividedDiff__mutmut_6
+    for i in range(1, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:110: in x_cal_DividedDiff__mutmut_6
+    for i in range(1, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:110: in x_cal_DividedDiff__mutmut_6
+    for i in range(1, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:110: in x_cal_DividedDiff__mutmut_6
+    for i in range(1, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_6 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_7  -  2025-10-16T09:59:26.593886
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_7
+函数源码如下：
+def x_cal_DividedDiff__mutmut_7(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:125: in x_cal_DividedDiff__mutmut_7
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:125: in x_cal_DividedDiff__mutmut_7
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:125: in x_cal_DividedDiff__mutmut_7
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:125: in x_cal_DividedDiff__mutmut_7
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:125: in x_cal_DividedDiff__mutmut_7
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:125: in x_cal_DividedDiff__mutmut_7
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:125: in x_cal_DividedDiff__mutmut_7
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:125: in x_cal_DividedDiff__mutmut_7
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:125: in x_cal_DividedDiff__mutmut_7
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:125: in x_cal_DividedDiff__mutmut_7
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - ZeroDivisionError: float division by zero
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_7 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_8  -  2025-10-16T09:59:26.702505
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_8
+函数源码如下：
+def x_cal_DividedDiff__mutmut_8(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, ):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:137: in x_cal_DividedDiff__mutmut_8
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:137: in x_cal_DividedDiff__mutmut_8
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:137: in x_cal_DividedDiff__mutmut_8
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:137: in x_cal_DividedDiff__mutmut_8
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:137: in x_cal_DividedDiff__mutmut_8
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:137: in x_cal_DividedDiff__mutmut_8
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:137: in x_cal_DividedDiff__mutmut_8
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:137: in x_cal_DividedDiff__mutmut_8
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:137: in x_cal_DividedDiff__mutmut_8
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:137: in x_cal_DividedDiff__mutmut_8
+    divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+E   ZeroDivisionError: float division by zero
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - ZeroDivisionError: float division by zero
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - ZeroDivisionError: float division by zero
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_8 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_9  -  2025-10-16T09:59:26.810389
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_9
+函数源码如下：
+def x_cal_DividedDiff__mutmut_9(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(2, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:151: in x_cal_DividedDiff__mutmut_9
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:151: in x_cal_DividedDiff__mutmut_9
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:151: in x_cal_DividedDiff__mutmut_9
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:151: in x_cal_DividedDiff__mutmut_9
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:151: in x_cal_DividedDiff__mutmut_9
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:151: in x_cal_DividedDiff__mutmut_9
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:151: in x_cal_DividedDiff__mutmut_9
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:151: in x_cal_DividedDiff__mutmut_9
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:151: in x_cal_DividedDiff__mutmut_9
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:151: in x_cal_DividedDiff__mutmut_9
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_9 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_DividedDiff.py :: x_cal_DividedDiff__mutmut_orig  -  2025-10-16T09:59:26.914588
+================================================================================
+
+>>> 当前使用的函数: x_cal_DividedDiff__mutmut_orig
+函数源码如下：
+def x_cal_DividedDiff__mutmut_orig(x, y):
+    divdiff = y.copy()
+    n = len(x)
+    a = [divdiff[0]]
+
+    for i in range(1, n):
+        for j in range(0, n - i):
+            denominator = x[j + i] - x[j]
+            divdiff[j] = divdiff[j + 1] - divdiff[j] / denominator
+
+        a[i] = divdiff[0]
+    return a
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+____________________________ test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:43: in x_cal_DividedDiff__mutmut_orig
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:43: in x_cal_DividedDiff__mutmut_orig
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:43: in x_cal_DividedDiff__mutmut_orig
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:43: in x_cal_DividedDiff__mutmut_orig
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:43: in x_cal_DividedDiff__mutmut_orig
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:43: in x_cal_DividedDiff__mutmut_orig
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:43: in x_cal_DividedDiff__mutmut_orig
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:43: in x_cal_DividedDiff__mutmut_orig
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:43: in x_cal_DividedDiff__mutmut_orig
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+____________________________ test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] _____________________________
+mutants/tests/cal_DividedDiffTest.py:161: in test_cal_DividedDiff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_DividedDiff.py:43: in x_cal_DividedDiff__mutmut_orig
+    a[i] = divdiff[0]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_10-originalInput1_20] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_11-originalInput1_21] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_12-originalInput1_22] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_13-originalInput1_23] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_14-originalInput1_24] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_15-originalInput1_25] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_16-originalInput1_26] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_17-originalInput1_27] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_18-originalInput1_28] - IndexError: list assignment index out of range
+FAILED mutants/tests/cal_DividedDiffTest.py::test_cal_DividedDiff_with_func[originalInput1_19-originalInput1_29] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.07s
+❌ x_cal_DividedDiff__mutmut_orig 存在失败 (退出码 1)

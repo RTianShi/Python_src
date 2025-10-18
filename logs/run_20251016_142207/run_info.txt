@@ -1,0 +1,8 @@
+start_time: 2025-10-16T14:22:07.945659
+run_dir: logs/run_20251016_142207
+default_log_name: chiSquare.log
+mutant_file: chiSquare.py
+test_file: chiSquareTest.py
+mutant_prefix: x_chiSquare__mutmut
+end_time: 2025-10-16T14:22:16.181317
+final_log_path: logs/run_20251016_142207/chiSquare.log

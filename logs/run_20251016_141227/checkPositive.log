@@ -1,0 +1,484 @@
+
+=== Running tests for single mutant file: checkPositive.py ===
+
+================================================================================
+RUNNING checkPositive.py :: x_checkPositive__mutmut_1  -  2025-10-16T14:12:27.944627
+================================================================================
+
+>>> 当前使用的函数: x_checkPositive__mutmut_1
+函数源码如下：
+def x_checkPositive__mutmut_1(n):
+
+    for i in range(None, len(n)):
+        if n[i] <= 0:
+            return False
+    return True
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+_______________________________ test_checkPositive_with_func[originalInput0] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:41: in x_checkPositive__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput1] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:41: in x_checkPositive__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput2] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:41: in x_checkPositive__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput3] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:41: in x_checkPositive__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput4] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:41: in x_checkPositive__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput5] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:41: in x_checkPositive__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput6] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:41: in x_checkPositive__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput7] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:41: in x_checkPositive__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput8] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:41: in x_checkPositive__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput9] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:41: in x_checkPositive__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput5] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput6] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput7] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput8] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput9] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.07s
+❌ x_checkPositive__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkPositive.py :: x_checkPositive__mutmut_2  -  2025-10-16T14:12:28.102730
+================================================================================
+
+>>> 当前使用的函数: x_checkPositive__mutmut_2
+函数源码如下：
+def x_checkPositive__mutmut_2(n):
+
+    for i in range(0, None):
+        if n[i] <= 0:
+            return False
+    return True
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+_______________________________ test_checkPositive_with_func[originalInput0] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:47: in x_checkPositive__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput1] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:47: in x_checkPositive__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput2] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:47: in x_checkPositive__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput3] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:47: in x_checkPositive__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput4] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:47: in x_checkPositive__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput5] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:47: in x_checkPositive__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput6] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:47: in x_checkPositive__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput7] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:47: in x_checkPositive__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput8] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:47: in x_checkPositive__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________________ test_checkPositive_with_func[originalInput9] ________________________________
+mutants/tests/checkPositiveTest.py:128: in test_checkPositive_with_func
+    originalResult = func(originalInput)
+mutants/src/checkPositive.py:47: in x_checkPositive__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput5] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput6] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput7] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput8] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput9] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.04s
+❌ x_checkPositive__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkPositive.py :: x_checkPositive__mutmut_3  -  2025-10-16T14:12:28.177690
+================================================================================
+
+>>> 当前使用的函数: x_checkPositive__mutmut_3
+函数源码如下：
+def x_checkPositive__mutmut_3(n):
+
+    for i in range(len(n)):
+        if n[i] <= 0:
+            return False
+    return True
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_checkPositive__mutmut_3 所有测试通过
+
+================================================================================
+RUNNING checkPositive.py :: x_checkPositive__mutmut_4  -  2025-10-16T14:12:28.226206
+================================================================================
+
+>>> 当前使用的函数: x_checkPositive__mutmut_4
+函数源码如下：
+def x_checkPositive__mutmut_4(n):
+
+    for i in range(0, ):
+        if n[i] <= 0:
+            return False
+    return True
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_checkPositive__mutmut_4 所有测试通过
+
+================================================================================
+RUNNING checkPositive.py :: x_checkPositive__mutmut_5  -  2025-10-16T14:12:28.274475
+================================================================================
+
+>>> 当前使用的函数: x_checkPositive__mutmut_5
+函数源码如下：
+def x_checkPositive__mutmut_5(n):
+
+    for i in range(1, len(n)):
+        if n[i] <= 0:
+            return False
+    return True
+
+..F.F..F..
+================================================= FAILURES ==================================================
+_______________________________ test_checkPositive_with_func[originalInput2] ________________________________
+
+FAILURE: check True == False: MR1 failed
+mutants/tests/checkPositiveTest.py:129 in test_checkPositive_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkPositiveTest.py:91 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "MR1 failed")
+
+FAILURE: check True == False: MR6 failed
+FAILURE: check True == False: MR8 failed
+FAILURE: check True == False: MR16 failed
+FAILURE: check True == False: MR19 failed
+------------------------------------------------------------
+Failed Checks: 5
+_______________________________ test_checkPositive_with_func[originalInput4] ________________________________
+
+FAILURE: check False == True: MR9 failed
+mutants/tests/checkPositiveTest.py:129 in test_checkPositive_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkPositiveTest.py:101 in applyMR_Assert() -> check.equal(originalResult, transformResult9, "MR9 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_______________________________ test_checkPositive_with_func[originalInput7] ________________________________
+
+FAILURE: check True == False: MR6 failed
+mutants/tests/checkPositiveTest.py:129 in test_checkPositive_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkPositiveTest.py:97 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "MR6 failed")
+
+FAILURE: check True == False: MR8 failed
+FAILURE: check True == False: MR16 failed
+FAILURE: check True == False: MR19 failed
+------------------------------------------------------------
+Failed Checks: 4
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput2] - check True == False: MR1 failed
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput4] - check False == True: MR9 failed
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput7] - check True == False: MR6 failed
+3 failed, 7 passed, 1 warning in 0.01s
+❌ x_checkPositive__mutmut_5 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkPositive.py :: x_checkPositive__mutmut_6  -  2025-10-16T14:12:28.324997
+================================================================================
+
+>>> 当前使用的函数: x_checkPositive__mutmut_6
+函数源码如下：
+def x_checkPositive__mutmut_6(n):
+
+    for i in range(0, len(n)):
+        if n[i] < 0:
+            return False
+    return True
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_checkPositive__mutmut_6 所有测试通过
+
+================================================================================
+RUNNING checkPositive.py :: x_checkPositive__mutmut_7  -  2025-10-16T14:12:28.373050
+================================================================================
+
+>>> 当前使用的函数: x_checkPositive__mutmut_7
+函数源码如下：
+def x_checkPositive__mutmut_7(n):
+
+    for i in range(0, len(n)):
+        if n[i] <= 1:
+            return False
+    return True
+
+FF.F.FF.F.
+================================================= FAILURES ==================================================
+_______________________________ test_checkPositive_with_func[originalInput0] ________________________________
+
+FAILURE: check True == False: MR3_2 failed
+mutants/tests/checkPositiveTest.py:129 in test_checkPositive_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkPositiveTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+FAILURE: check True == False: MR4 failed
+------------------------------------------------------------
+Failed Checks: 2
+_______________________________ test_checkPositive_with_func[originalInput1] ________________________________
+
+FAILURE: check False == True: MR5 failed
+mutants/tests/checkPositiveTest.py:129 in test_checkPositive_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkPositiveTest.py:96 in applyMR_Assert() -> check.equal(originalResult, transformResult5, "MR5 failed")
+
+FAILURE: check False == True: MR9 failed
+------------------------------------------------------------
+Failed Checks: 2
+_______________________________ test_checkPositive_with_func[originalInput3] ________________________________
+
+FAILURE: check True == False: MR3_2 failed
+mutants/tests/checkPositiveTest.py:129 in test_checkPositive_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkPositiveTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+FAILURE: check True == False: MR4 failed
+------------------------------------------------------------
+Failed Checks: 2
+_______________________________ test_checkPositive_with_func[originalInput5] ________________________________
+
+FAILURE: check True == False: MR3_2 failed
+mutants/tests/checkPositiveTest.py:129 in test_checkPositive_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkPositiveTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+FAILURE: check True == False: MR4 failed
+------------------------------------------------------------
+Failed Checks: 2
+_______________________________ test_checkPositive_with_func[originalInput6] ________________________________
+
+FAILURE: check True == False: MR3_2 failed
+mutants/tests/checkPositiveTest.py:129 in test_checkPositive_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkPositiveTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+FAILURE: check True == False: MR4 failed
+------------------------------------------------------------
+Failed Checks: 2
+_______________________________ test_checkPositive_with_func[originalInput8] ________________________________
+
+FAILURE: check True == False: MR3_2 failed
+mutants/tests/checkPositiveTest.py:129 in test_checkPositive_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkPositiveTest.py:94 in applyMR_Assert() -> check.equal(originalResult, transformResult3_2, "MR3_2 failed")
+
+FAILURE: check True == False: MR4 failed
+------------------------------------------------------------
+Failed Checks: 2
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput0] - check True == False: MR3_2 failed
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput1] - check False == True: MR5 failed
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput3] - check True == False: MR3_2 failed
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput5] - check True == False: MR3_2 failed
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput6] - check True == False: MR3_2 failed
+FAILED mutants/tests/checkPositiveTest.py::test_checkPositive_with_func[originalInput8] - check True == False: MR3_2 failed
+6 failed, 4 passed, 1 warning in 0.01s
+❌ x_checkPositive__mutmut_7 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkPositive.py :: x_checkPositive__mutmut_8  -  2025-10-16T14:12:28.425532
+================================================================================
+
+>>> 当前使用的函数: x_checkPositive__mutmut_8
+函数源码如下：
+def x_checkPositive__mutmut_8(n):
+
+    for i in range(0, len(n)):
+        if n[i] <= 0:
+            return True
+    return True
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_checkPositive__mutmut_8 所有测试通过
+
+================================================================================
+RUNNING checkPositive.py :: x_checkPositive__mutmut_9  -  2025-10-16T14:12:28.474949
+================================================================================
+
+>>> 当前使用的函数: x_checkPositive__mutmut_9
+函数源码如下：
+def x_checkPositive__mutmut_9(n):
+
+    for i in range(0, len(n)):
+        if n[i] <= 0:
+            return False
+    return False
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_checkPositive__mutmut_9 所有测试通过
+
+================================================================================
+RUNNING checkPositive.py :: x_checkPositive__mutmut_orig  -  2025-10-16T14:12:28.522760
+================================================================================
+
+>>> 当前使用的函数: x_checkPositive__mutmut_orig
+函数源码如下：
+def x_checkPositive__mutmut_orig(n):
+
+    for i in range(0, len(n)):
+        if n[i] <= 0:
+            return False
+    return True
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_checkPositive__mutmut_orig 所有测试通过

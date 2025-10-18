@@ -1,0 +1,888 @@
+
+=== Running tests for single mutant file: checkNonNegative.py ===
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_1  -  2025-10-16T14:09:05.468777
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_1
+函数源码如下：
+def x_checkNonNegative__mutmut_1(n):
+
+    for i in range(None, len(n)):
+        if n[i] < 0:
+            return False
+    return True
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+______________________________ test_checkNonNegative_with_func[originalInput0] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput1] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput2] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput3] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput4] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput5] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput6] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput7] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput8] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput9] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.07s
+❌ x_checkNonNegative__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_2  -  2025-10-16T14:09:05.622507
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_2
+函数源码如下：
+def x_checkNonNegative__mutmut_2(n):
+
+    for i in range(0, None):
+        if n[i] < 0:
+            return False
+    return True
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+______________________________ test_checkNonNegative_with_func[originalInput0] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput1] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput2] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput3] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput4] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput5] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput6] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput7] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput8] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________ test_checkNonNegative_with_func[originalInput9] ______________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.04s
+❌ x_checkNonNegative__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_3  -  2025-10-16T14:09:05.700910
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_3
+函数源码如下：
+def x_checkNonNegative__mutmut_3(n):
+
+    for i in range(len(n)):
+        if n[i] < 0:
+            return False
+    return True
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+______________________________ test_checkNonNegative_with_func[originalInput0] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput1] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput2] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput3] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput4] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput5] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput6] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput7] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput8] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput9] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+FAILURE: check False == True: MR12 failed
+------------------------------------------------------------
+Failed Checks: 2
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - check False == True: MR2 failed
+10 failed, 1 warning in 0.02s
+❌ x_checkNonNegative__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_4  -  2025-10-16T14:09:05.757168
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_4
+函数源码如下：
+def x_checkNonNegative__mutmut_4(n):
+
+    for i in range(0, ):
+        if n[i] < 0:
+            return False
+    return True
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_checkNonNegative__mutmut_4 所有测试通过
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_5  -  2025-10-16T14:09:05.806033
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_5
+函数源码如下：
+def x_checkNonNegative__mutmut_5(n):
+
+    for i in range(1, len(n)):
+        if n[i] < 0:
+            return False
+    return True
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+______________________________ test_checkNonNegative_with_func[originalInput0] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput1] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput2] ______________________________
+
+FAILURE: check True == False: MR1 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:91 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "MR1 failed")
+
+FAILURE: check True == False: MR6 failed
+FAILURE: check True == False: MR8 failed
+FAILURE: check True == False: MR12 failed
+FAILURE: check True == False: MR16 failed
+FAILURE: check True == False: MR19 failed
+------------------------------------------------------------
+Failed Checks: 6
+______________________________ test_checkNonNegative_with_func[originalInput3] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput4] ______________________________
+
+FAILURE: check True == False: MR1 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:91 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "MR1 failed")
+
+FAILURE: check True == False: MR6 failed
+FAILURE: check True == False: MR8 failed
+FAILURE: check True == False: MR12 failed
+FAILURE: check True == False: MR16 failed
+FAILURE: check True == False: MR19 failed
+------------------------------------------------------------
+Failed Checks: 6
+______________________________ test_checkNonNegative_with_func[originalInput5] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput6] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput7] ______________________________
+
+FAILURE: check True == False: MR6 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:97 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "MR6 failed")
+
+FAILURE: check True == False: MR8 failed
+FAILURE: check True == False: MR12 failed
+FAILURE: check True == False: MR16 failed
+FAILURE: check True == False: MR19 failed
+------------------------------------------------------------
+Failed Checks: 5
+______________________________ test_checkNonNegative_with_func[originalInput8] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput9] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+FAILURE: check False == True: MR12 failed
+------------------------------------------------------------
+Failed Checks: 2
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - check True == False: MR1 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - check True == False: MR1 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - check True == False: MR6 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - check False == True: MR2 failed
+10 failed, 1 warning in 0.01s
+❌ x_checkNonNegative__mutmut_5 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_6  -  2025-10-16T14:09:05.861937
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_6
+函数源码如下：
+def x_checkNonNegative__mutmut_6(n):
+
+    for i in range(0, len(n)):
+        if n[i] <= 0:
+            return False
+    return True
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+______________________________ test_checkNonNegative_with_func[originalInput0] ______________________________
+
+FAILURE: check True == False: MR3_1 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check True == False: MR11 failed
+FAILURE: check True == False: MR12 failed
+------------------------------------------------------------
+Failed Checks: 3
+______________________________ test_checkNonNegative_with_func[originalInput1] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+FAILURE: check False == True: MR13 failed
+FAILURE: check False == True: MR20 failed
+------------------------------------------------------------
+Failed Checks: 3
+______________________________ test_checkNonNegative_with_func[originalInput2] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput3] ______________________________
+
+FAILURE: check True == False: MR3_1 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check True == False: MR11 failed
+FAILURE: check True == False: MR12 failed
+------------------------------------------------------------
+Failed Checks: 3
+______________________________ test_checkNonNegative_with_func[originalInput4] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput5] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+FAILURE: check False == True: MR10 failed
+FAILURE: check False == True: MR13 failed
+FAILURE: check False == True: MR20 failed
+------------------------------------------------------------
+Failed Checks: 4
+______________________________ test_checkNonNegative_with_func[originalInput6] ______________________________
+
+FAILURE: check True == False: MR3_1 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check True == False: MR11 failed
+FAILURE: check True == False: MR12 failed
+------------------------------------------------------------
+Failed Checks: 3
+______________________________ test_checkNonNegative_with_func[originalInput7] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput8] ______________________________
+
+FAILURE: check True == False: MR3_1 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check True == False: MR11 failed
+FAILURE: check True == False: MR12 failed
+------------------------------------------------------------
+Failed Checks: 3
+______________________________ test_checkNonNegative_with_func[originalInput9] ______________________________
+
+FAILURE: check False == True: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - check True == False: MR3_1 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - check True == False: MR3_1 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - check True == False: MR3_1 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - check True == False: MR3_1 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - check False == True: MR12 failed
+10 failed, 1 warning in 0.02s
+❌ x_checkNonNegative__mutmut_6 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_7  -  2025-10-16T14:09:05.922736
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_7
+函数源码如下：
+def x_checkNonNegative__mutmut_7(n):
+
+    for i in range(0, len(n)):
+        if n[i] < 1:
+            return False
+    return True
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+______________________________ test_checkNonNegative_with_func[originalInput0] ______________________________
+
+FAILURE: check True == False: MR3_1 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check True == False: MR4 failed
+FAILURE: check True == False: MR11 failed
+FAILURE: check True == False: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+______________________________ test_checkNonNegative_with_func[originalInput1] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput2] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput3] ______________________________
+
+FAILURE: check True == False: MR3_1 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check True == False: MR4 failed
+FAILURE: check True == False: MR11 failed
+FAILURE: check True == False: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+______________________________ test_checkNonNegative_with_func[originalInput4] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput5] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput6] ______________________________
+
+FAILURE: check True == False: MR3_1 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check True == False: MR4 failed
+FAILURE: check True == False: MR11 failed
+FAILURE: check True == False: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+______________________________ test_checkNonNegative_with_func[originalInput7] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput8] ______________________________
+
+FAILURE: check True == False: MR3_1 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:93 in applyMR_Assert() -> check.equal(originalResult, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check True == False: MR4 failed
+FAILURE: check True == False: MR11 failed
+FAILURE: check True == False: MR12 failed
+------------------------------------------------------------
+Failed Checks: 4
+______________________________ test_checkNonNegative_with_func[originalInput9] ______________________________
+
+FAILURE: check False == True: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - check True == False: MR3_1 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - check True == False: MR3_1 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - check True == False: MR3_1 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - check True == False: MR3_1 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - check False == True: MR12 failed
+10 failed, 1 warning in 0.01s
+❌ x_checkNonNegative__mutmut_7 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_8  -  2025-10-16T14:09:05.978618
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_8
+函数源码如下：
+def x_checkNonNegative__mutmut_8(n):
+
+    for i in range(0, len(n)):
+        if n[i] < 0:
+            return True
+    return True
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_checkNonNegative__mutmut_8 所有测试通过
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_9  -  2025-10-16T14:09:06.030178
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_9
+函数源码如下：
+def x_checkNonNegative__mutmut_9(n):
+
+    for i in range(0, len(n)):
+        if n[i] < 0:
+            return False
+    return False
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_checkNonNegative__mutmut_9 所有测试通过
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_orig  -  2025-10-16T14:09:06.080565
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_orig
+函数源码如下：
+def x_checkNonNegative__mutmut_orig(n):
+
+    for i in range(0, len(n)):
+        if n[i] < 0:
+            return False
+    return True
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+______________________________ test_checkNonNegative_with_func[originalInput0] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput1] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput2] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput3] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput4] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput5] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput6] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput7] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput8] ______________________________
+
+FAILURE: check True == False: MR12 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:104 in applyMR_Assert() -> check.equal(originalResult, transformResult12, "MR12 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________ test_checkNonNegative_with_func[originalInput9] ______________________________
+
+FAILURE: check False == True: MR2 failed
+mutants/tests/checkNonNegativeTest.py:129 in test_checkNonNegative_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:92 in applyMR_Assert() -> check.equal(originalResult, transformResult2, "MR2 failed")
+
+FAILURE: check False == True: MR12 failed
+------------------------------------------------------------
+Failed Checks: 2
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - check False == True: MR2 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - check True == False: MR12 failed
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - check False == True: MR2 failed
+10 failed, 1 warning in 0.01s
+❌ x_checkNonNegative__mutmut_orig 存在失败 (退出码 1)

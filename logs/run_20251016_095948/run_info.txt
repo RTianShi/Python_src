@@ -1,0 +1,8 @@
+start_time: 2025-10-16T09:59:48.638180
+run_dir: logs/run_20251016_095948
+default_log_name: chebyshevDist.log
+mutant_file: chebyshevDist.py
+test_file: chebyshevDistTest.py
+mutant_prefix: x_chebyshevDist__mutmut
+end_time: 2025-10-16T09:59:50.242515
+final_log_path: logs/run_20251016_095948/chebyshevDist.log

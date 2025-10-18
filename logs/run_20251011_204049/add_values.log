@@ -1,0 +1,186 @@
+
+=== Running tests for add_values.py ===
+add执行了
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_1  -  2025-10-11T20:40:49.257187
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_1
+函数源码如下：
+def x_add_values__mutmut_1(data):
+    sum = None
+    for i in data:
+        sum += i
+    return sum
+
+add执行了
+
+================================================================================== ERRORS ===================================================================================
+______________________________________________________________ ERROR collecting tests/test_bi_SearchFromTo.py _______________________________________________________________
+ImportError while importing test module '/home/rts/下载/Python_src/mutants/tests/test_bi_SearchFromTo.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../anaconda3/envs/mutmut39/lib/python3.9/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_bi_SearchFromTo.py:3: in <module>
+    from bi_SearchFromTo import bi_SearchFromTo
+E   ModuleNotFoundError: No module named 'bi_SearchFromTo'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+ERROR mutants/tests/test_bi_SearchFromTo.py
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 warning, 1 error in 0.06s
+❌ x_add_values__mutmut_1 存在失败 (退出码 2)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_2  -  2025-10-11T20:40:49.394712
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_2
+函数源码如下：
+def x_add_values__mutmut_2(data):
+    sum = 1
+    for i in data:
+        sum += i
+    return sum
+
+
+================================================================================== ERRORS ===================================================================================
+______________________________________________________________ ERROR collecting tests/test_bi_SearchFromTo.py _______________________________________________________________
+ImportError while importing test module '/home/rts/下载/Python_src/mutants/tests/test_bi_SearchFromTo.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../anaconda3/envs/mutmut39/lib/python3.9/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_bi_SearchFromTo.py:3: in <module>
+    from bi_SearchFromTo import bi_SearchFromTo
+E   ModuleNotFoundError: No module named 'bi_SearchFromTo'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+ERROR mutants/tests/test_bi_SearchFromTo.py
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 warning, 1 error in 0.05s
+❌ x_add_values__mutmut_2 存在失败 (退出码 2)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_3  -  2025-10-11T20:40:49.483594
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_3
+函数源码如下：
+def x_add_values__mutmut_3(data):
+    sum = 0
+    for i in data:
+        sum = i
+    return sum
+
+
+================================================================================== ERRORS ===================================================================================
+______________________________________________________________ ERROR collecting tests/test_bi_SearchFromTo.py _______________________________________________________________
+ImportError while importing test module '/home/rts/下载/Python_src/mutants/tests/test_bi_SearchFromTo.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../anaconda3/envs/mutmut39/lib/python3.9/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_bi_SearchFromTo.py:3: in <module>
+    from bi_SearchFromTo import bi_SearchFromTo
+E   ModuleNotFoundError: No module named 'bi_SearchFromTo'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+ERROR mutants/tests/test_bi_SearchFromTo.py
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 warning, 1 error in 0.05s
+❌ x_add_values__mutmut_3 存在失败 (退出码 2)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_4  -  2025-10-11T20:40:49.569023
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_4
+函数源码如下：
+def x_add_values__mutmut_4(data):
+    sum = 0
+    for i in data:
+        sum -= i
+    return sum
+
+
+================================================================================== ERRORS ===================================================================================
+______________________________________________________________ ERROR collecting tests/test_bi_SearchFromTo.py _______________________________________________________________
+ImportError while importing test module '/home/rts/下载/Python_src/mutants/tests/test_bi_SearchFromTo.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../anaconda3/envs/mutmut39/lib/python3.9/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_bi_SearchFromTo.py:3: in <module>
+    from bi_SearchFromTo import bi_SearchFromTo
+E   ModuleNotFoundError: No module named 'bi_SearchFromTo'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+ERROR mutants/tests/test_bi_SearchFromTo.py
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 warning, 1 error in 0.05s
+❌ x_add_values__mutmut_4 存在失败 (退出码 2)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_orig  -  2025-10-11T20:40:49.656393
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_orig
+函数源码如下：
+def x_add_values__mutmut_orig(data):
+    sum = 0
+    for i in data:
+        sum += i
+    return sum
+
+
+================================================================================== ERRORS ===================================================================================
+______________________________________________________________ ERROR collecting tests/test_bi_SearchFromTo.py _______________________________________________________________
+ImportError while importing test module '/home/rts/下载/Python_src/mutants/tests/test_bi_SearchFromTo.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../anaconda3/envs/mutmut39/lib/python3.9/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_bi_SearchFromTo.py:3: in <module>
+    from bi_SearchFromTo import bi_SearchFromTo
+E   ModuleNotFoundError: No module named 'bi_SearchFromTo'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+ERROR mutants/tests/test_bi_SearchFromTo.py
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 warning, 1 error in 0.05s
+❌ x_add_values__mutmut_orig 存在失败 (退出码 2)
+
+=== Running tests for array_calc.py ===

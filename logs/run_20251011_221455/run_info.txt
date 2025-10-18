@@ -1,0 +1,8 @@
+start_time: 2025-10-11T22:14:55.848701
+run_dir: logs/run_20251011_221455
+default_log_name: array_calc.log
+mutant_file: array_calc.py
+test_file: array_calcTest.py
+mutant_prefix: x_array_calc__mutmut
+end_time: 2025-10-11T22:14:56.410899
+final_log_path: logs/run_20251011_221455/array_calc.log

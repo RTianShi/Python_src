@@ -1,0 +1,8 @@
+start_time: 2025-10-11T22:00:48.404631
+run_dir: logs/run_20251011_220048
+default_log_name: add_values.log
+mutant_file: add_values.py
+test_file: test_add_values.py
+mutant_prefix: x_add_values__mutmut
+end_time: 2025-10-11T22:00:48.843918
+final_log_path: logs/run_20251011_220048/add_values.log

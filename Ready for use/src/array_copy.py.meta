@@ -1,0 +1,7 @@
+{
+    "exit_code_by_key": {
+        "array_copy.x_array_copy__mutmut_1": 33,
+        "array_copy.x_array_copy__mutmut_2": 33
+    },
+    "hash_by_function_name": {}
+}

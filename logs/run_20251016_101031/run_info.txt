@@ -1,0 +1,8 @@
+start_time: 2025-10-16T10:10:31.807703
+run_dir: logs/run_20251016_101031
+default_log_name: count_non_zeroes.log
+mutant_file: count_non_zeroes.py
+test_file: count_non_zeroesTest.py
+mutant_prefix: x_count_non_zeroes__mutmut
+end_time: 2025-10-16T10:10:32.638646
+final_log_path: logs/run_20251016_101031/count_non_zeroes.log

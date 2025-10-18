@@ -1,0 +1,679 @@
+
+=== Running tests for add_values.py ===
+add执行了
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_1  -  2025-10-11T20:43:30.260717
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_1
+函数源码如下：
+def x_add_values__mutmut_1(data):
+    sum = None
+    for i in data:
+        sum += i
+    return sum
+
+add执行了
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+______________________________________________________________________ test_add_values[originalInput0] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput1] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput2] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput3] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput4] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput5] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput6] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput7] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput8] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput9] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput0] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput1] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput2] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput3] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput4] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput5] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput6] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput7] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput8] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput9] - KeyError: 'MUTANT_UNDER_TEST'
+10 failed, 1 warning in 0.14s
+❌ x_add_values__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_2  -  2025-10-11T20:43:30.484873
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_2
+函数源码如下：
+def x_add_values__mutmut_2(data):
+    sum = 1
+    for i in data:
+        sum += i
+    return sum
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+______________________________________________________________________ test_add_values[originalInput0] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput1] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput2] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput3] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput4] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput5] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput6] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput7] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput8] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput9] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput0] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput1] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput2] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput3] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput4] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput5] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput6] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput7] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput8] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput9] - KeyError: 'MUTANT_UNDER_TEST'
+10 failed, 1 warning in 0.10s
+❌ x_add_values__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_3  -  2025-10-11T20:43:30.629072
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_3
+函数源码如下：
+def x_add_values__mutmut_3(data):
+    sum = 0
+    for i in data:
+        sum = i
+    return sum
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+______________________________________________________________________ test_add_values[originalInput0] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput1] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput2] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput3] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput4] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput5] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput6] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput7] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput8] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput9] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput0] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput1] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput2] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput3] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput4] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput5] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput6] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput7] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput8] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput9] - KeyError: 'MUTANT_UNDER_TEST'
+10 failed, 1 warning in 0.10s
+❌ x_add_values__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_4  -  2025-10-11T20:43:30.768699
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_4
+函数源码如下：
+def x_add_values__mutmut_4(data):
+    sum = 0
+    for i in data:
+        sum -= i
+    return sum
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+______________________________________________________________________ test_add_values[originalInput0] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput1] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput2] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput3] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput4] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput5] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput6] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput7] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput8] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput9] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput0] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput1] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput2] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput3] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput4] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput5] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput6] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput7] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput8] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput9] - KeyError: 'MUTANT_UNDER_TEST'
+10 failed, 1 warning in 0.10s
+❌ x_add_values__mutmut_4 存在失败 (退出码 1)
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_orig  -  2025-10-11T20:43:30.911436
+================================================================================
+
+>>> 当前使用的函数: x_add_values__mutmut_orig
+函数源码如下：
+def x_add_values__mutmut_orig(data):
+    sum = 0
+    for i in data:
+        sum += i
+    return sum
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+______________________________________________________________________ test_add_values[originalInput0] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput1] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput2] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput3] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput4] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput5] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput6] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput7] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput8] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+______________________________________________________________________ test_add_values[originalInput9] ______________________________________________________________________
+tests/test_add_values.py:114: in test_add_values
+    originalResult = add_values(originalInput)
+mutants/src/add_values.py:66: in add_values
+    result = _mutmut_trampoline(x_add_values__mutmut_orig, x_add_values__mutmut_mutants, args, kwargs)
+mutants/src/add_values.py:12: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput0] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput1] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput2] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput3] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput4] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput5] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput6] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput7] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput8] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/test_add_values.py::test_add_values[originalInput9] - KeyError: 'MUTANT_UNDER_TEST'
+10 failed, 1 warning in 0.10s
+❌ x_add_values__mutmut_orig 存在失败 (退出码 1)

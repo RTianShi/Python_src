@@ -1,0 +1,8 @@
+start_time: 2025-10-16T10:00:40.500994
+run_dir: logs/run_20251016_100040
+default_log_name: checkPositive.log
+mutant_file: checkPositive.py
+test_file: checkPositiveTest.py
+mutant_prefix: x_checkPositive__mutmut
+end_time: 2025-10-16T10:00:41.280457
+final_log_path: logs/run_20251016_100040/checkPositive.log

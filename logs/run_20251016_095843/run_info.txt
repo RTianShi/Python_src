@@ -1,0 +1,8 @@
+start_time: 2025-10-16T09:58:43.556157
+run_dir: logs/run_20251016_095843
+default_log_name: bubble.log
+mutant_file: bubble.py
+test_file: bubbleTest.py
+mutant_prefix: x_bubble__mutmut
+end_time: 2025-10-16T09:58:45.078152
+final_log_path: logs/run_20251016_095843/bubble.log

@@ -1,0 +1,29 @@
+{
+    "exit_code_by_key": {
+        "quantile.x_quantile__mutmut_1": 33,
+        "quantile.x_quantile__mutmut_2": 33,
+        "quantile.x_quantile__mutmut_3": 33,
+        "quantile.x_quantile__mutmut_4": 33,
+        "quantile.x_quantile__mutmut_5": 33,
+        "quantile.x_quantile__mutmut_6": 33,
+        "quantile.x_quantile__mutmut_7": 33,
+        "quantile.x_quantile__mutmut_8": 33,
+        "quantile.x_quantile__mutmut_9": 33,
+        "quantile.x_quantile__mutmut_10": 33,
+        "quantile.x_quantile__mutmut_11": 33,
+        "quantile.x_quantile__mutmut_12": 33,
+        "quantile.x_quantile__mutmut_13": 33,
+        "quantile.x_quantile__mutmut_14": 33,
+        "quantile.x_quantile__mutmut_15": 33,
+        "quantile.x_quantile__mutmut_16": 33,
+        "quantile.x_quantile__mutmut_17": 33,
+        "quantile.x_quantile__mutmut_18": 33,
+        "quantile.x_quantile__mutmut_19": 33,
+        "quantile.x_quantile__mutmut_20": 33,
+        "quantile.x_quantile__mutmut_21": 33,
+        "quantile.x_quantile__mutmut_22": 33,
+        "quantile.x_quantile__mutmut_23": 33,
+        "quantile.x_quantile__mutmut_24": 33
+    },
+    "hash_by_function_name": {}
+}

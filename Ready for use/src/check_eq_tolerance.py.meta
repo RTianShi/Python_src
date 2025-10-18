@@ -1,0 +1,17 @@
+{
+    "exit_code_by_key": {
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_1": 33,
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_2": 33,
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_3": 33,
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_4": 33,
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_5": 33,
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_6": 33,
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_7": 33,
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_8": 33,
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_9": 33,
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_10": 33,
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_11": 33,
+        "check_eq_tolerance.x_check_eq_tolerance__mutmut_12": 33
+    },
+    "hash_by_function_name": {}
+}

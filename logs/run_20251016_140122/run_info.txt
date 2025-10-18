@@ -1,0 +1,8 @@
+start_time: 2025-10-16T14:01:22.105283
+run_dir: logs/run_20251016_140122
+default_log_name: cal_Diff.log
+mutant_file: cal_Diff.py
+test_file: cal_DiffTest.py
+mutant_prefix: x_cal_Diff__mutmut
+end_time: 2025-10-16T14:01:22.832696
+final_log_path: logs/run_20251016_140122/cal_Diff.log

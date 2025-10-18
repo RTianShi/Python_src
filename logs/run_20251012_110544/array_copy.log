@@ -1,0 +1,146 @@
+
+=== Running tests for single mutant file: array_copy.py ===
+
+================================================================================
+RUNNING array_copy.py :: x_array_copy__mutmut_1  -  2025-10-12T11:05:44.284177
+================================================================================
+
+>>> 当前使用的函数: x_array_copy__mutmut_1
+函数源码如下：
+def x_array_copy__mutmut_1(data):
+    b = None
+    for i in data:
+        b.append(data)
+
+    return b
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+_________________________________________________________________ test_array_copy_with_func[originalInput0] _________________________________________________________________
+mutants/tests/array_copyTest.py:123: in test_array_copy_with_func
+    originalResult = func(originalInput)
+mutants/src/array_copy.py:42: in x_array_copy__mutmut_1
+    b.append(data)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_________________________________________________________________ test_array_copy_with_func[originalInput1] _________________________________________________________________
+mutants/tests/array_copyTest.py:123: in test_array_copy_with_func
+    originalResult = func(originalInput)
+mutants/src/array_copy.py:42: in x_array_copy__mutmut_1
+    b.append(data)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_________________________________________________________________ test_array_copy_with_func[originalInput2] _________________________________________________________________
+mutants/tests/array_copyTest.py:123: in test_array_copy_with_func
+    originalResult = func(originalInput)
+mutants/src/array_copy.py:42: in x_array_copy__mutmut_1
+    b.append(data)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_________________________________________________________________ test_array_copy_with_func[originalInput3] _________________________________________________________________
+mutants/tests/array_copyTest.py:123: in test_array_copy_with_func
+    originalResult = func(originalInput)
+mutants/src/array_copy.py:42: in x_array_copy__mutmut_1
+    b.append(data)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_________________________________________________________________ test_array_copy_with_func[originalInput4] _________________________________________________________________
+mutants/tests/array_copyTest.py:123: in test_array_copy_with_func
+    originalResult = func(originalInput)
+mutants/src/array_copy.py:42: in x_array_copy__mutmut_1
+    b.append(data)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_________________________________________________________________ test_array_copy_with_func[originalInput5] _________________________________________________________________
+mutants/tests/array_copyTest.py:123: in test_array_copy_with_func
+    originalResult = func(originalInput)
+mutants/src/array_copy.py:42: in x_array_copy__mutmut_1
+    b.append(data)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_________________________________________________________________ test_array_copy_with_func[originalInput6] _________________________________________________________________
+mutants/tests/array_copyTest.py:123: in test_array_copy_with_func
+    originalResult = func(originalInput)
+mutants/src/array_copy.py:42: in x_array_copy__mutmut_1
+    b.append(data)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_________________________________________________________________ test_array_copy_with_func[originalInput7] _________________________________________________________________
+mutants/tests/array_copyTest.py:123: in test_array_copy_with_func
+    originalResult = func(originalInput)
+mutants/src/array_copy.py:42: in x_array_copy__mutmut_1
+    b.append(data)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_________________________________________________________________ test_array_copy_with_func[originalInput8] _________________________________________________________________
+mutants/tests/array_copyTest.py:123: in test_array_copy_with_func
+    originalResult = func(originalInput)
+mutants/src/array_copy.py:42: in x_array_copy__mutmut_1
+    b.append(data)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_________________________________________________________________ test_array_copy_with_func[originalInput9] _________________________________________________________________
+mutants/tests/array_copyTest.py:123: in test_array_copy_with_func
+    originalResult = func(originalInput)
+mutants/src/array_copy.py:42: in x_array_copy__mutmut_1
+    b.append(data)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/array_copyTest.py::test_array_copy_with_func[originalInput0] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_copyTest.py::test_array_copy_with_func[originalInput1] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_copyTest.py::test_array_copy_with_func[originalInput2] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_copyTest.py::test_array_copy_with_func[originalInput3] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_copyTest.py::test_array_copy_with_func[originalInput4] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_copyTest.py::test_array_copy_with_func[originalInput5] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_copyTest.py::test_array_copy_with_func[originalInput6] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_copyTest.py::test_array_copy_with_func[originalInput7] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_copyTest.py::test_array_copy_with_func[originalInput8] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_copyTest.py::test_array_copy_with_func[originalInput9] - AttributeError: 'NoneType' object has no attribute 'append'
+10 failed, 1 warning in 0.09s
+❌ x_array_copy__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING array_copy.py :: x_array_copy__mutmut_2  -  2025-10-12T11:05:44.509323
+================================================================================
+
+>>> 当前使用的函数: x_array_copy__mutmut_2
+函数源码如下：
+def x_array_copy__mutmut_2(data):
+    b = []
+    for i in data:
+        b.append(None)
+
+    return b
+
+..........
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_array_copy__mutmut_2 所有测试通过
+
+================================================================================
+RUNNING array_copy.py :: x_array_copy__mutmut_orig  -  2025-10-12T11:05:44.557155
+================================================================================
+
+>>> 当前使用的函数: x_array_copy__mutmut_orig
+函数源码如下：
+def x_array_copy__mutmut_orig(data):
+    b = []
+    for i in data:
+        b.append(data)
+
+    return b
+
+..........
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_array_copy__mutmut_orig 所有测试通过

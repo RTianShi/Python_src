@@ -1,0 +1,8 @@
+start_time: 2025-10-16T09:59:39.247168
+run_dir: logs/run_20251016_095939
+default_log_name: canberraDist.log
+mutant_file: canberraDist.py
+test_file: canberraDistTest.py
+mutant_prefix: x_canberraDist__mutmut
+end_time: 2025-10-16T09:59:40.928267
+final_log_path: logs/run_20251016_095939/canberraDist.log

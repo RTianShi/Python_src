@@ -1,0 +1,15 @@
+{
+    "exit_code_by_key": {
+        "geometric_mean.x_geometric_mean__mutmut_1": 33,
+        "geometric_mean.x_geometric_mean__mutmut_2": 33,
+        "geometric_mean.x_geometric_mean__mutmut_3": 33,
+        "geometric_mean.x_geometric_mean__mutmut_4": 33,
+        "geometric_mean.x_geometric_mean__mutmut_5": 33,
+        "geometric_mean.x_geometric_mean__mutmut_6": 33,
+        "geometric_mean.x_geometric_mean__mutmut_7": 33,
+        "geometric_mean.x_geometric_mean__mutmut_8": 33,
+        "geometric_mean.x_geometric_mean__mutmut_9": 33,
+        "geometric_mean.x_geometric_mean__mutmut_10": 33
+    },
+    "hash_by_function_name": {}
+}

@@ -1,0 +1,26 @@
+{
+    "exit_code_by_key": {
+        "errorRate.x_errorRate__mutmut_1": 33,
+        "errorRate.x_errorRate__mutmut_2": 33,
+        "errorRate.x_errorRate__mutmut_3": 33,
+        "errorRate.x_errorRate__mutmut_4": 33,
+        "errorRate.x_errorRate__mutmut_5": 33,
+        "errorRate.x_errorRate__mutmut_6": 33,
+        "errorRate.x_errorRate__mutmut_7": 33,
+        "errorRate.x_errorRate__mutmut_8": 33,
+        "errorRate.x_errorRate__mutmut_9": 33,
+        "errorRate.x_errorRate__mutmut_10": 33,
+        "errorRate.x_errorRate__mutmut_11": 33,
+        "errorRate.x_errorRate__mutmut_12": 33,
+        "errorRate.x_errorRate__mutmut_13": 33,
+        "errorRate.x_errorRate__mutmut_14": 33,
+        "errorRate.x_errorRate__mutmut_15": 33,
+        "errorRate.x_errorRate__mutmut_16": 33,
+        "errorRate.x_errorRate__mutmut_17": 33,
+        "errorRate.x_errorRate__mutmut_18": 33,
+        "errorRate.x_errorRate__mutmut_19": 33,
+        "errorRate.x_errorRate__mutmut_20": 33,
+        "errorRate.x_errorRate__mutmut_21": 33
+    },
+    "hash_by_function_name": {}
+}

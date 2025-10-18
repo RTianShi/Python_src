@@ -1,0 +1,8 @@
+start_time: 2025-10-15T21:05:58.529616
+run_dir: logs/run_20251015_210558
+default_log_name: autoCorrelation.log
+mutant_file: autoCorrelation.py
+test_file: autoCorrelationTest.py
+mutant_prefix: x_autoCorrelation__mutmut
+end_time: 2025-10-15T21:05:59.576183
+final_log_path: logs/run_20251015_210558/autoCorrelation.log

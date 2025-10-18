@@ -1,0 +1,8 @@
+start_time: 2025-10-16T09:54:18.159058
+run_dir: logs/run_20251016_095418
+default_log_name: average.log
+mutant_file: average.py
+test_file: averageTest.py
+mutant_prefix: x_average__mutmut
+end_time: 2025-10-16T09:54:18.645812
+final_log_path: logs/run_20251016_095418/average.log

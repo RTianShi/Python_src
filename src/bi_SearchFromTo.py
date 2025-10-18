@@ -16,4 +16,3 @@ def bi_SearchFromTo(elements, key, froom, to):
             else:
                 return mid
     return -(low + 1)
-

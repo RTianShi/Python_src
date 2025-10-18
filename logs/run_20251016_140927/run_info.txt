@@ -1,0 +1,8 @@
+start_time: 2025-10-16T14:09:27.972287
+run_dir: logs/run_20251016_140927
+default_log_name: checkNonNegative.log
+mutant_file: checkNonNegative.py
+test_file: checkNonNegativeTest.py
+mutant_prefix: x_checkNonNegative__mutmut
+end_time: 2025-10-16T14:09:28.616783
+final_log_path: logs/run_20251016_140927/checkNonNegative.log

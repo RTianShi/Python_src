@@ -1,0 +1,23 @@
+{
+    "exit_code_by_key": {
+        "selection_sort.x_selection_sort__mutmut_1": 33,
+        "selection_sort.x_selection_sort__mutmut_2": 33,
+        "selection_sort.x_selection_sort__mutmut_3": 33,
+        "selection_sort.x_selection_sort__mutmut_4": 33,
+        "selection_sort.x_selection_sort__mutmut_5": 33,
+        "selection_sort.x_selection_sort__mutmut_6": 33,
+        "selection_sort.x_selection_sort__mutmut_7": 33,
+        "selection_sort.x_selection_sort__mutmut_8": 33,
+        "selection_sort.x_selection_sort__mutmut_9": 33,
+        "selection_sort.x_selection_sort__mutmut_10": 33,
+        "selection_sort.x_selection_sort__mutmut_11": 33,
+        "selection_sort.x_selection_sort__mutmut_12": 33,
+        "selection_sort.x_selection_sort__mutmut_13": 33,
+        "selection_sort.x_selection_sort__mutmut_14": 33,
+        "selection_sort.x_selection_sort__mutmut_15": 33,
+        "selection_sort.x_selection_sort__mutmut_16": 33,
+        "selection_sort.x_selection_sort__mutmut_17": 33,
+        "selection_sort.x_selection_sort__mutmut_18": 33
+    },
+    "hash_by_function_name": {}
+}

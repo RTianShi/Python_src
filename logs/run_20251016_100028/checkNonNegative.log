@@ -1,0 +1,962 @@
+
+=== Running tests for single mutant file: checkNonNegative.py ===
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_1  -  2025-10-16T10:00:28.634801
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_1
+函数源码如下：
+def x_checkNonNegative__mutmut_1(n):
+
+    for i in range(None, len(n)):
+        if n[i] < 0:
+            return False
+    return True
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_checkNonNegative_with_func[originalInput0] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput1] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput2] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput3] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput4] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput5] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput6] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput7] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput8] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput9] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:41: in x_checkNonNegative__mutmut_1
+    for i in range(None, len(n)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.07s
+❌ x_checkNonNegative__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_2  -  2025-10-16T10:00:28.777758
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_2
+函数源码如下：
+def x_checkNonNegative__mutmut_2(n):
+
+    for i in range(0, None):
+        if n[i] < 0:
+            return False
+    return True
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_checkNonNegative_with_func[originalInput0] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput1] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput2] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput3] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput4] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput5] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput6] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput7] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput8] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+______________________________________ test_checkNonNegative_with_func[originalInput9] _______________________________________
+mutants/tests/checkNonNegativeTest.py:128: in test_checkNonNegative_with_func
+    originalResult = func(originalInput)
+mutants/src/checkNonNegative.py:47: in x_checkNonNegative__mutmut_2
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.04s
+❌ x_checkNonNegative__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_3  -  2025-10-16T10:00:28.852272
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_3
+函数源码如下：
+def x_checkNonNegative__mutmut_3(n):
+
+    for i in range(len(n)):
+        if n[i] < 0:
+            return False
+    return True
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_checkNonNegative_with_func[originalInput0] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput1] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput2] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput3] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput4] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput5] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput6] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput7] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput8] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput9] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+10 failed, 1 warning in 0.03s
+❌ x_checkNonNegative__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_4  -  2025-10-16T10:00:28.924307
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_4
+函数源码如下：
+def x_checkNonNegative__mutmut_4(n):
+
+    for i in range(0, ):
+        if n[i] < 0:
+            return False
+    return True
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_checkNonNegative_with_func[originalInput0] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput1] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput2] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput3] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput4] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput5] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput6] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput7] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput8] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput9] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+10 failed, 1 warning in 0.03s
+❌ x_checkNonNegative__mutmut_4 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_5  -  2025-10-16T10:00:28.996224
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_5
+函数源码如下：
+def x_checkNonNegative__mutmut_5(n):
+
+    for i in range(1, len(n)):
+        if n[i] < 0:
+            return False
+    return True
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_checkNonNegative_with_func[originalInput0] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput1] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput2] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput3] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput4] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput5] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput6] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput7] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput8] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput9] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+10 failed, 1 warning in 0.03s
+❌ x_checkNonNegative__mutmut_5 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_6  -  2025-10-16T10:00:29.066491
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_6
+函数源码如下：
+def x_checkNonNegative__mutmut_6(n):
+
+    for i in range(0, len(n)):
+        if n[i] <= 0:
+            return False
+    return True
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_checkNonNegative_with_func[originalInput0] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput1] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput2] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput3] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput4] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput5] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput6] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput7] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput8] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput9] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+10 failed, 1 warning in 0.03s
+❌ x_checkNonNegative__mutmut_6 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_7  -  2025-10-16T10:00:29.137799
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_7
+函数源码如下：
+def x_checkNonNegative__mutmut_7(n):
+
+    for i in range(0, len(n)):
+        if n[i] < 1:
+            return False
+    return True
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_checkNonNegative_with_func[originalInput0] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput1] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput2] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput3] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput4] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput5] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput6] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput7] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput8] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput9] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+10 failed, 1 warning in 0.03s
+❌ x_checkNonNegative__mutmut_7 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_8  -  2025-10-16T10:00:29.208116
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_8
+函数源码如下：
+def x_checkNonNegative__mutmut_8(n):
+
+    for i in range(0, len(n)):
+        if n[i] < 0:
+            return True
+    return True
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_checkNonNegative_with_func[originalInput0] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput1] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput2] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput3] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput4] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput5] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput6] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput7] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput8] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput9] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+10 failed, 1 warning in 0.03s
+❌ x_checkNonNegative__mutmut_8 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_9  -  2025-10-16T10:00:29.279173
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_9
+函数源码如下：
+def x_checkNonNegative__mutmut_9(n):
+
+    for i in range(0, len(n)):
+        if n[i] < 0:
+            return False
+    return False
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_checkNonNegative_with_func[originalInput0] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput1] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput2] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput3] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput4] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput5] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput6] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput7] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput8] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput9] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+10 failed, 1 warning in 0.03s
+❌ x_checkNonNegative__mutmut_9 存在失败 (退出码 1)
+
+================================================================================
+RUNNING checkNonNegative.py :: x_checkNonNegative__mutmut_orig  -  2025-10-16T10:00:29.350316
+================================================================================
+
+>>> 当前使用的函数: x_checkNonNegative__mutmut_orig
+函数源码如下：
+def x_checkNonNegative__mutmut_orig(n):
+
+    for i in range(0, len(n)):
+        if n[i] < 0:
+            return False
+    return True
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_checkNonNegative_with_func[originalInput0] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput1] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput2] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput3] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput4] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput5] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput6] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput7] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput8] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+______________________________________ test_checkNonNegative_with_func[originalInput9] _______________________________________
+mutants/tests/checkNonNegativeTest.py:129: in test_checkNonNegative_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/checkNonNegativeTest.py:79: in applyMR_Assert
+    transformInput19 = MetamorphicTestGenerator3.applyMR19(originalInput, 2)
+E   AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput0] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput1] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput2] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput3] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput4] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput5] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput6] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput7] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput8] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+FAILED mutants/tests/checkNonNegativeTest.py::test_checkNonNegative_with_func[originalInput9] - AttributeError: type object 'MetamorphicTestGenerator3' has no attribute 'applyMR19'
+10 failed, 1 warning in 0.03s
+❌ x_checkNonNegative__mutmut_orig 存在失败 (退出码 1)

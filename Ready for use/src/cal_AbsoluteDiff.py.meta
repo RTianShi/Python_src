@@ -1,0 +1,11 @@
+{
+    "exit_code_by_key": {
+        "cal_AbsoluteDiff.x_cal_AbsoluteDiff__mutmut_1": 33,
+        "cal_AbsoluteDiff.x_cal_AbsoluteDiff__mutmut_2": 33,
+        "cal_AbsoluteDiff.x_cal_AbsoluteDiff__mutmut_3": 33,
+        "cal_AbsoluteDiff.x_cal_AbsoluteDiff__mutmut_4": 33,
+        "cal_AbsoluteDiff.x_cal_AbsoluteDiff__mutmut_5": 33,
+        "cal_AbsoluteDiff.x_cal_AbsoluteDiff__mutmut_6": 33
+    },
+    "hash_by_function_name": {}
+}

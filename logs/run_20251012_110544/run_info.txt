@@ -1,0 +1,8 @@
+start_time: 2025-10-12T11:05:44.283449
+run_dir: logs/run_20251012_110544
+default_log_name: array_copy.log
+mutant_file: array_copy.py
+test_file: array_copyTest.py
+mutant_prefix: x_array_copy__mutmut
+end_time: 2025-10-12T11:05:44.603869
+final_log_path: logs/run_20251012_110544/array_copy.log

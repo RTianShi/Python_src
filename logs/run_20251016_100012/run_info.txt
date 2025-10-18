@@ -1,0 +1,8 @@
+start_time: 2025-10-16T10:00:12.520405
+run_dir: logs/run_20251016_100012
+default_log_name: check_equal.log
+mutant_file: check_equal.py
+test_file: check_equalTest.py
+mutant_prefix: x_check_equal__mutmut
+end_time: 2025-10-16T10:00:13.296556
+final_log_path: logs/run_20251016_100012/check_equal.log

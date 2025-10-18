@@ -1,0 +1,8 @@
+start_time: 2025-10-16T10:10:18.438961
+run_dir: logs/run_20251016_101018
+default_log_name: count_k.log
+mutant_file: count_k.py
+test_file: count_kTest.py
+mutant_prefix: x_count_k__mutmut
+end_time: 2025-10-16T10:10:19.216127
+final_log_path: logs/run_20251016_101018/count_k.log

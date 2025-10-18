@@ -1,0 +1,725 @@
+
+=== Running tests for single mutant file: array_calc.py ===
+
+================================================================================
+RUNNING array_calc.py :: _mutmut_signature  -  2025-10-11T21:53:35.981093
+================================================================================
+
+>>> 当前使用的函数: _mutmut_signature
+函数源码如下：
+def signature(obj, *, follow_wrapped=True):
+    """Get a signature object for the passed callable."""
+    return Signature.from_callable(obj, follow_wrapped=follow_wrapped)
+
+test_array_calc 执行了
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+________________________________________________________________ test_array_calc_with_func[originalInput0-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: signature() takes 1 positional argument but 2 were given
+________________________________________________________________ test_array_calc_with_func[originalInput1-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: signature() takes 1 positional argument but 2 were given
+________________________________________________________________ test_array_calc_with_func[originalInput2-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: signature() takes 1 positional argument but 2 were given
+________________________________________________________________ test_array_calc_with_func[originalInput3-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: signature() takes 1 positional argument but 2 were given
+________________________________________________________________ test_array_calc_with_func[originalInput4-1] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: signature() takes 1 positional argument but 2 were given
+________________________________________________________________ test_array_calc_with_func[originalInput5-3] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: signature() takes 1 positional argument but 2 were given
+________________________________________________________________ test_array_calc_with_func[originalInput6-4] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: signature() takes 1 positional argument but 2 were given
+________________________________________________________________ test_array_calc_with_func[originalInput7-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: signature() takes 1 positional argument but 2 were given
+________________________________________________________________ test_array_calc_with_func[originalInput8-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: signature() takes 1 positional argument but 2 were given
+________________________________________________________________ test_array_calc_with_func[originalInput9-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: signature() takes 1 positional argument but 2 were given
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput0-2] - TypeError: signature() takes 1 positional argument but 2 were given
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput1-2] - TypeError: signature() takes 1 positional argument but 2 were given
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput2-2] - TypeError: signature() takes 1 positional argument but 2 were given
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput3-2] - TypeError: signature() takes 1 positional argument but 2 were given
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput4-1] - TypeError: signature() takes 1 positional argument but 2 were given
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput5-3] - TypeError: signature() takes 1 positional argument but 2 were given
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput6-4] - TypeError: signature() takes 1 positional argument but 2 were given
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput7-2] - TypeError: signature() takes 1 positional argument but 2 were given
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput8-2] - TypeError: signature() takes 1 positional argument but 2 were given
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput9-2] - TypeError: signature() takes 1 positional argument but 2 were given
+10 failed, 1 warning in 0.05s
+❌ _mutmut_signature 存在失败 (退出码 1)
+
+================================================================================
+RUNNING array_calc.py :: _mutmut_trampoline  -  2025-10-11T21:53:36.108135
+================================================================================
+
+>>> 当前使用的函数: _mutmut_trampoline
+函数源码如下：
+def _mutmut_trampoline(orig, mutants, call_args, call_kwargs, self_arg = None):
+    """Forward call to original or mutated function, depending on the environment"""
+    import os
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+    if mutant_under_test == 'fail':
+        from mutmut.__main__ import MutmutProgrammaticFailException
+        raise MutmutProgrammaticFailException('Failed programmatically')      
+    elif mutant_under_test == 'stats':
+        from mutmut.__main__ import record_trampoline_hit
+        record_trampoline_hit(orig.__module__ + '.' + orig.__name__)
+        result = orig(*call_args, **call_kwargs)
+        return result
+    prefix = orig.__module__ + '.' + orig.__name__ + '__mutmut_'
+    if not mutant_under_test.startswith(prefix):
+        result = orig(*call_args, **call_kwargs)
+        return result
+    mutant_name = mutant_under_test.rpartition('.')[-1]
+    if self_arg:
+        # call to a class method where self is not bound
+        result = mutants[mutant_name](self_arg, *call_args, **call_kwargs)
+    else:
+        result = mutants[mutant_name](*call_args, **call_kwargs)
+    return result
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+________________________________________________________________ test_array_calc_with_func[originalInput0-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+________________________________________________________________ test_array_calc_with_func[originalInput1-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+________________________________________________________________ test_array_calc_with_func[originalInput2-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+________________________________________________________________ test_array_calc_with_func[originalInput3-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+________________________________________________________________ test_array_calc_with_func[originalInput4-1] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+________________________________________________________________ test_array_calc_with_func[originalInput5-3] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+________________________________________________________________ test_array_calc_with_func[originalInput6-4] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+________________________________________________________________ test_array_calc_with_func[originalInput7-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+________________________________________________________________ test_array_calc_with_func[originalInput8-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+________________________________________________________________ test_array_calc_with_func[originalInput9-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+E   TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput0-2] - TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput1-2] - TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput2-2] - TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput3-2] - TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput4-1] - TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput5-3] - TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput6-4] - TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput7-2] - TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput8-2] - TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput9-2] - TypeError: _mutmut_trampoline() missing 2 required positional arguments: 'call_args' and 'call_kwargs'
+10 failed, 1 warning in 0.02s
+❌ _mutmut_trampoline 存在失败 (退出码 1)
+
+================================================================================
+RUNNING array_calc.py :: array_calc  -  2025-10-11T21:53:36.170876
+================================================================================
+
+>>> 当前使用的函数: array_calc
+函数源码如下：
+def array_calc(*args, **kwargs):
+    result = _mutmut_trampoline(x_array_calc__mutmut_orig, x_array_calc__mutmut_mutants, args, kwargs)
+    return result 
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+________________________________________________________________ test_array_calc_with_func[originalInput0-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:91: in array_calc
+    result = _mutmut_trampoline(x_array_calc__mutmut_orig, x_array_calc__mutmut_mutants, args, kwargs)
+mutants/src/array_calc.py:13: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+________________________________________________________________ test_array_calc_with_func[originalInput1-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:91: in array_calc
+    result = _mutmut_trampoline(x_array_calc__mutmut_orig, x_array_calc__mutmut_mutants, args, kwargs)
+mutants/src/array_calc.py:13: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+________________________________________________________________ test_array_calc_with_func[originalInput2-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:91: in array_calc
+    result = _mutmut_trampoline(x_array_calc__mutmut_orig, x_array_calc__mutmut_mutants, args, kwargs)
+mutants/src/array_calc.py:13: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+________________________________________________________________ test_array_calc_with_func[originalInput3-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:91: in array_calc
+    result = _mutmut_trampoline(x_array_calc__mutmut_orig, x_array_calc__mutmut_mutants, args, kwargs)
+mutants/src/array_calc.py:13: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+________________________________________________________________ test_array_calc_with_func[originalInput4-1] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:91: in array_calc
+    result = _mutmut_trampoline(x_array_calc__mutmut_orig, x_array_calc__mutmut_mutants, args, kwargs)
+mutants/src/array_calc.py:13: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+________________________________________________________________ test_array_calc_with_func[originalInput5-3] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:91: in array_calc
+    result = _mutmut_trampoline(x_array_calc__mutmut_orig, x_array_calc__mutmut_mutants, args, kwargs)
+mutants/src/array_calc.py:13: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+________________________________________________________________ test_array_calc_with_func[originalInput6-4] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:91: in array_calc
+    result = _mutmut_trampoline(x_array_calc__mutmut_orig, x_array_calc__mutmut_mutants, args, kwargs)
+mutants/src/array_calc.py:13: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+________________________________________________________________ test_array_calc_with_func[originalInput7-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:91: in array_calc
+    result = _mutmut_trampoline(x_array_calc__mutmut_orig, x_array_calc__mutmut_mutants, args, kwargs)
+mutants/src/array_calc.py:13: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+________________________________________________________________ test_array_calc_with_func[originalInput8-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:91: in array_calc
+    result = _mutmut_trampoline(x_array_calc__mutmut_orig, x_array_calc__mutmut_mutants, args, kwargs)
+mutants/src/array_calc.py:13: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+________________________________________________________________ test_array_calc_with_func[originalInput9-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:91: in array_calc
+    result = _mutmut_trampoline(x_array_calc__mutmut_orig, x_array_calc__mutmut_mutants, args, kwargs)
+mutants/src/array_calc.py:13: in _mutmut_trampoline
+    mutant_under_test = os.environ['MUTANT_UNDER_TEST']
+../../anaconda3/envs/mutmut39/lib/python3.9/os.py:679: in __getitem__
+    raise KeyError(key) from None
+E   KeyError: 'MUTANT_UNDER_TEST'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput0-2] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput1-2] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput2-2] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput3-2] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput4-1] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput5-3] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput6-4] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput7-2] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput8-2] - KeyError: 'MUTANT_UNDER_TEST'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput9-2] - KeyError: 'MUTANT_UNDER_TEST'
+10 failed, 1 warning in 0.10s
+❌ array_calc 存在失败 (退出码 1)
+
+================================================================================
+RUNNING array_calc.py :: x_array_calc__mutmut_1  -  2025-10-11T21:53:36.311484
+================================================================================
+
+>>> 当前使用的函数: x_array_calc__mutmut_1
+函数源码如下：
+def x_array_calc__mutmut_1(a, k):
+    b = None
+    for i in range(0, len(a)):
+        b.append(a[i]/k)
+    return b
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+________________________________________________________________ test_array_calc_with_func[originalInput0-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:41: in x_array_calc__mutmut_1
+    b.append(a[i]/k)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+________________________________________________________________ test_array_calc_with_func[originalInput1-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:41: in x_array_calc__mutmut_1
+    b.append(a[i]/k)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+________________________________________________________________ test_array_calc_with_func[originalInput2-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:41: in x_array_calc__mutmut_1
+    b.append(a[i]/k)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+________________________________________________________________ test_array_calc_with_func[originalInput3-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:41: in x_array_calc__mutmut_1
+    b.append(a[i]/k)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+________________________________________________________________ test_array_calc_with_func[originalInput4-1] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:41: in x_array_calc__mutmut_1
+    b.append(a[i]/k)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+________________________________________________________________ test_array_calc_with_func[originalInput5-3] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:41: in x_array_calc__mutmut_1
+    b.append(a[i]/k)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+________________________________________________________________ test_array_calc_with_func[originalInput6-4] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:41: in x_array_calc__mutmut_1
+    b.append(a[i]/k)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+________________________________________________________________ test_array_calc_with_func[originalInput7-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:41: in x_array_calc__mutmut_1
+    b.append(a[i]/k)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+________________________________________________________________ test_array_calc_with_func[originalInput8-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:41: in x_array_calc__mutmut_1
+    b.append(a[i]/k)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+________________________________________________________________ test_array_calc_with_func[originalInput9-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:41: in x_array_calc__mutmut_1
+    b.append(a[i]/k)
+E   AttributeError: 'NoneType' object has no attribute 'append'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput0-2] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput1-2] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput2-2] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput3-2] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput4-1] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput5-3] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput6-4] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput7-2] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput8-2] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput9-2] - AttributeError: 'NoneType' object has no attribute 'append'
+10 failed, 1 warning in 0.03s
+❌ x_array_calc__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING array_calc.py :: x_array_calc__mutmut_2  -  2025-10-11T21:53:36.385984
+================================================================================
+
+>>> 当前使用的函数: x_array_calc__mutmut_2
+函数源码如下：
+def x_array_calc__mutmut_2(a, k):
+    b = []
+    for i in range(None, len(a)):
+        b.append(a[i]/k)
+    return b
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+________________________________________________________________ test_array_calc_with_func[originalInput0-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:45: in x_array_calc__mutmut_2
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput1-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:45: in x_array_calc__mutmut_2
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput2-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:45: in x_array_calc__mutmut_2
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput3-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:45: in x_array_calc__mutmut_2
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput4-1] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:45: in x_array_calc__mutmut_2
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput5-3] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:45: in x_array_calc__mutmut_2
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput6-4] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:45: in x_array_calc__mutmut_2
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput7-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:45: in x_array_calc__mutmut_2
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput8-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:45: in x_array_calc__mutmut_2
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput9-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:45: in x_array_calc__mutmut_2
+    for i in range(None, len(a)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput0-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput1-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput2-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput3-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput4-1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput5-3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput6-4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput7-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput8-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput9-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.03s
+❌ x_array_calc__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING array_calc.py :: x_array_calc__mutmut_3  -  2025-10-11T21:53:36.458243
+================================================================================
+
+>>> 当前使用的函数: x_array_calc__mutmut_3
+函数源码如下：
+def x_array_calc__mutmut_3(a, k):
+    b = []
+    for i in range(0, None):
+        b.append(a[i]/k)
+    return b
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+________________________________________________________________ test_array_calc_with_func[originalInput0-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:50: in x_array_calc__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput1-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:50: in x_array_calc__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput2-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:50: in x_array_calc__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput3-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:50: in x_array_calc__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput4-1] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:50: in x_array_calc__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput5-3] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:50: in x_array_calc__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput6-4] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:50: in x_array_calc__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput7-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:50: in x_array_calc__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput8-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:50: in x_array_calc__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+________________________________________________________________ test_array_calc_with_func[originalInput9-2] ________________________________________________________________
+mutants/tests/array_calcTest.py:159: in test_array_calc_with_func
+    originalResult = func(originalInput, k)
+mutants/src/array_calc.py:50: in x_array_calc__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput0-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput1-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput2-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput3-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput4-1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput5-3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput6-4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput7-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput8-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/array_calcTest.py::test_array_calc_with_func[originalInput9-2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.03s
+❌ x_array_calc__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING array_calc.py :: x_array_calc__mutmut_4  -  2025-10-11T21:53:36.527804
+================================================================================
+
+>>> 当前使用的函数: x_array_calc__mutmut_4
+函数源码如下：
+def x_array_calc__mutmut_4(a, k):
+    b = []
+    for i in range(len(a)):
+        b.append(a[i]/k)
+    return b
+
+..........
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_array_calc__mutmut_4 所有测试通过
+
+================================================================================
+RUNNING array_calc.py :: x_array_calc__mutmut_5  -  2025-10-11T21:53:36.576152
+================================================================================
+
+>>> 当前使用的函数: x_array_calc__mutmut_5
+函数源码如下：
+def x_array_calc__mutmut_5(a, k):
+    b = []
+    for i in range(0, ):
+        b.append(a[i]/k)
+    return b
+
+..........
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_array_calc__mutmut_5 所有测试通过
+
+================================================================================
+RUNNING array_calc.py :: x_array_calc__mutmut_6  -  2025-10-11T21:53:36.625601
+================================================================================
+
+>>> 当前使用的函数: x_array_calc__mutmut_6
+函数源码如下：
+def x_array_calc__mutmut_6(a, k):
+    b = []
+    for i in range(1, len(a)):
+        b.append(a[i]/k)
+    return b
+
+..........
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_array_calc__mutmut_6 所有测试通过
+
+================================================================================
+RUNNING array_calc.py :: x_array_calc__mutmut_7  -  2025-10-11T21:53:36.674467
+================================================================================
+
+>>> 当前使用的函数: x_array_calc__mutmut_7
+函数源码如下：
+def x_array_calc__mutmut_7(a, k):
+    b = []
+    for i in range(0, len(a)):
+        b.append(None)
+    return b
+
+..........
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_array_calc__mutmut_7 所有测试通过
+
+================================================================================
+RUNNING array_calc.py :: x_array_calc__mutmut_8  -  2025-10-11T21:53:36.720177
+================================================================================
+
+>>> 当前使用的函数: x_array_calc__mutmut_8
+函数源码如下：
+def x_array_calc__mutmut_8(a, k):
+    b = []
+    for i in range(0, len(a)):
+        b.append(a[i] * k)
+    return b
+
+..........
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_array_calc__mutmut_8 所有测试通过
+
+================================================================================
+RUNNING array_calc.py :: x_array_calc__mutmut_orig  -  2025-10-11T21:53:36.766794
+================================================================================
+
+>>> 当前使用的函数: x_array_calc__mutmut_orig
+函数源码如下：
+def x_array_calc__mutmut_orig(a, k):
+    b = []
+    for i in range(0, len(a)):
+        b.append(a[i]/k)
+    return b
+
+..........
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_array_calc__mutmut_orig 所有测试通过

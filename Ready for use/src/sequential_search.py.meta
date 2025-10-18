@@ -1,0 +1,13 @@
+{
+    "exit_code_by_key": {
+        "sequential_search.x_sequential_search__mutmut_1": 33,
+        "sequential_search.x_sequential_search__mutmut_2": 33,
+        "sequential_search.x_sequential_search__mutmut_3": 33,
+        "sequential_search.x_sequential_search__mutmut_4": 33,
+        "sequential_search.x_sequential_search__mutmut_5": 33,
+        "sequential_search.x_sequential_search__mutmut_6": 33,
+        "sequential_search.x_sequential_search__mutmut_7": 33,
+        "sequential_search.x_sequential_search__mutmut_8": 33
+    },
+    "hash_by_function_name": {}
+}

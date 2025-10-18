@@ -1,0 +1,8 @@
+{
+    "exit_code_by_key": {
+        "s_add.x_s_add__mutmut_1": 33,
+        "s_add.x_s_add__mutmut_2": 33,
+        "s_add.x_s_add__mutmut_3": 33
+    },
+    "hash_by_function_name": {}
+}

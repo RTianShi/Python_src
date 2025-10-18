@@ -1,0 +1,759 @@
+
+=== Running tests for single mutant file: cal_Diff.py ===
+
+================================================================================
+RUNNING cal_Diff.py :: x_cal_Diff__mutmut_1  -  2025-10-16T13:47:22.512695
+================================================================================
+
+>>> 当前使用的函数: x_cal_Diff__mutmut_1
+函数源码如下：
+def x_cal_Diff__mutmut_1(x, y):
+    z = None
+
+    for i in range(0, len(x)):
+        z.append(y[i] - x[i])
+
+    return z
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+_______________________ test_cal_Diff_with_func[originalInput1_10-originalInput1_20] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:44: in x_cal_Diff__mutmut_1
+    z.append(y[i] - x[i])
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_______________________ test_cal_Diff_with_func[originalInput1_11-originalInput1_21] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:44: in x_cal_Diff__mutmut_1
+    z.append(y[i] - x[i])
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_______________________ test_cal_Diff_with_func[originalInput1_12-originalInput1_22] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:44: in x_cal_Diff__mutmut_1
+    z.append(y[i] - x[i])
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_______________________ test_cal_Diff_with_func[originalInput1_13-originalInput1_23] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:44: in x_cal_Diff__mutmut_1
+    z.append(y[i] - x[i])
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_______________________ test_cal_Diff_with_func[originalInput1_14-originalInput1_24] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:44: in x_cal_Diff__mutmut_1
+    z.append(y[i] - x[i])
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_______________________ test_cal_Diff_with_func[originalInput1_15-originalInput1_25] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:44: in x_cal_Diff__mutmut_1
+    z.append(y[i] - x[i])
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_______________________ test_cal_Diff_with_func[originalInput1_16-originalInput1_26] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:44: in x_cal_Diff__mutmut_1
+    z.append(y[i] - x[i])
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_______________________ test_cal_Diff_with_func[originalInput1_17-originalInput1_27] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:44: in x_cal_Diff__mutmut_1
+    z.append(y[i] - x[i])
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_______________________ test_cal_Diff_with_func[originalInput1_18-originalInput1_28] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:44: in x_cal_Diff__mutmut_1
+    z.append(y[i] - x[i])
+E   AttributeError: 'NoneType' object has no attribute 'append'
+_______________________ test_cal_Diff_with_func[originalInput1_19-originalInput1_29] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:44: in x_cal_Diff__mutmut_1
+    z.append(y[i] - x[i])
+E   AttributeError: 'NoneType' object has no attribute 'append'
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_10-originalInput1_20] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_11-originalInput1_21] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_12-originalInput1_22] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_13-originalInput1_23] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_14-originalInput1_24] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_15-originalInput1_25] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_16-originalInput1_26] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_17-originalInput1_27] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_18-originalInput1_28] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_19-originalInput1_29] - AttributeError: 'NoneType' object has no attribute 'append'
+10 failed, 1 warning in 0.13s
+❌ x_cal_Diff__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_Diff.py :: x_cal_Diff__mutmut_2  -  2025-10-16T13:47:22.768293
+================================================================================
+
+>>> 当前使用的函数: x_cal_Diff__mutmut_2
+函数源码如下：
+def x_cal_Diff__mutmut_2(x, y):
+    z = []
+
+    for i in range(None, len(x)):
+        z.append(y[i] - x[i])
+
+    return z
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+_______________________ test_cal_Diff_with_func[originalInput1_10-originalInput1_20] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:50: in x_cal_Diff__mutmut_2
+    for i in range(None, len(x)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_11-originalInput1_21] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:50: in x_cal_Diff__mutmut_2
+    for i in range(None, len(x)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_12-originalInput1_22] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:50: in x_cal_Diff__mutmut_2
+    for i in range(None, len(x)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_13-originalInput1_23] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:50: in x_cal_Diff__mutmut_2
+    for i in range(None, len(x)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_14-originalInput1_24] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:50: in x_cal_Diff__mutmut_2
+    for i in range(None, len(x)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_15-originalInput1_25] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:50: in x_cal_Diff__mutmut_2
+    for i in range(None, len(x)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_16-originalInput1_26] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:50: in x_cal_Diff__mutmut_2
+    for i in range(None, len(x)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_17-originalInput1_27] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:50: in x_cal_Diff__mutmut_2
+    for i in range(None, len(x)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_18-originalInput1_28] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:50: in x_cal_Diff__mutmut_2
+    for i in range(None, len(x)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_19-originalInput1_29] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:50: in x_cal_Diff__mutmut_2
+    for i in range(None, len(x)):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.04s
+❌ x_cal_Diff__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_Diff.py :: x_cal_Diff__mutmut_3  -  2025-10-16T13:47:22.851045
+================================================================================
+
+>>> 当前使用的函数: x_cal_Diff__mutmut_3
+函数源码如下：
+def x_cal_Diff__mutmut_3(x, y):
+    z = []
+
+    for i in range(0, None):
+        z.append(y[i] - x[i])
+
+    return z
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+_______________________ test_cal_Diff_with_func[originalInput1_10-originalInput1_20] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:57: in x_cal_Diff__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_11-originalInput1_21] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:57: in x_cal_Diff__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_12-originalInput1_22] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:57: in x_cal_Diff__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_13-originalInput1_23] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:57: in x_cal_Diff__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_14-originalInput1_24] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:57: in x_cal_Diff__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_15-originalInput1_25] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:57: in x_cal_Diff__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_16-originalInput1_26] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:57: in x_cal_Diff__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_17-originalInput1_27] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:57: in x_cal_Diff__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_18-originalInput1_28] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:57: in x_cal_Diff__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+_______________________ test_cal_Diff_with_func[originalInput1_19-originalInput1_29] ________________________
+mutants/tests/cal_DiffTest.py:174: in test_cal_Diff_with_func
+    originalResult = func(originalInput1_1, originalInput1_2)
+mutants/src/cal_Diff.py:57: in x_cal_Diff__mutmut_3
+    for i in range(0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_10-originalInput1_20] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_11-originalInput1_21] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_12-originalInput1_22] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_13-originalInput1_23] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_14-originalInput1_24] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_15-originalInput1_25] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_16-originalInput1_26] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_17-originalInput1_27] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_18-originalInput1_28] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_19-originalInput1_29] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.04s
+❌ x_cal_Diff__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_Diff.py :: x_cal_Diff__mutmut_4  -  2025-10-16T13:47:22.935348
+================================================================================
+
+>>> 当前使用的函数: x_cal_Diff__mutmut_4
+函数源码如下：
+def x_cal_Diff__mutmut_4(x, y):
+    z = []
+
+    for i in range(len(x)):
+        z.append(y[i] - x[i])
+
+    return z
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cal_Diff__mutmut_4 所有测试通过
+
+================================================================================
+RUNNING cal_Diff.py :: x_cal_Diff__mutmut_5  -  2025-10-16T13:47:22.985524
+================================================================================
+
+>>> 当前使用的函数: x_cal_Diff__mutmut_5
+函数源码如下：
+def x_cal_Diff__mutmut_5(x, y):
+    z = []
+
+    for i in range(0, ):
+        z.append(y[i] - x[i])
+
+    return z
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+_______________________ test_cal_Diff_with_func[originalInput1_10-originalInput1_20] ________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:154 in applyMR_Assert() -> check.is_true(array_negation(format_array(originalResult, 2), format_array(transformResult15, 2)),
+
+------------------------------------------------------------
+Failed Checks: 1
+_______________________ test_cal_Diff_with_func[originalInput1_11-originalInput1_21] ________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:154 in applyMR_Assert() -> check.is_true(array_negation(format_array(originalResult, 2), format_array(transformResult15, 2)),
+
+------------------------------------------------------------
+Failed Checks: 1
+_______________________ test_cal_Diff_with_func[originalInput1_12-originalInput1_22] ________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:154 in applyMR_Assert() -> check.is_true(array_negation(format_array(originalResult, 2), format_array(transformResult15, 2)),
+
+------------------------------------------------------------
+Failed Checks: 1
+_______________________ test_cal_Diff_with_func[originalInput1_13-originalInput1_23] ________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:154 in applyMR_Assert() -> check.is_true(array_negation(format_array(originalResult, 2), format_array(transformResult15, 2)),
+
+------------------------------------------------------------
+Failed Checks: 1
+_______________________ test_cal_Diff_with_func[originalInput1_14-originalInput1_24] ________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:154 in applyMR_Assert() -> check.is_true(array_negation(format_array(originalResult, 2), format_array(transformResult15, 2)),
+
+------------------------------------------------------------
+Failed Checks: 1
+_______________________ test_cal_Diff_with_func[originalInput1_15-originalInput1_25] ________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:154 in applyMR_Assert() -> check.is_true(array_negation(format_array(originalResult, 2), format_array(transformResult15, 2)),
+
+------------------------------------------------------------
+Failed Checks: 1
+_______________________ test_cal_Diff_with_func[originalInput1_16-originalInput1_26] ________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:154 in applyMR_Assert() -> check.is_true(array_negation(format_array(originalResult, 2), format_array(transformResult15, 2)),
+
+------------------------------------------------------------
+Failed Checks: 1
+_______________________ test_cal_Diff_with_func[originalInput1_17-originalInput1_27] ________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:154 in applyMR_Assert() -> check.is_true(array_negation(format_array(originalResult, 2), format_array(transformResult15, 2)),
+
+------------------------------------------------------------
+Failed Checks: 1
+_______________________ test_cal_Diff_with_func[originalInput1_18-originalInput1_28] ________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:154 in applyMR_Assert() -> check.is_true(array_negation(format_array(originalResult, 2), format_array(transformResult15, 2)),
+
+------------------------------------------------------------
+Failed Checks: 1
+_______________________ test_cal_Diff_with_func[originalInput1_19-originalInput1_29] ________________________
+
+FAILURE: check bool(False): OR15 failed (MR15)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:154 in applyMR_Assert() -> check.is_true(array_negation(format_array(originalResult, 2), format_array(transformResult15, 2)),
+
+------------------------------------------------------------
+Failed Checks: 1
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_10-originalInput1_20] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_11-originalInput1_21] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_12-originalInput1_22] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_13-originalInput1_23] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_14-originalInput1_24] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_15-originalInput1_25] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_16-originalInput1_26] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_17-originalInput1_27] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_18-originalInput1_28] - check bool(False): OR15 failed (MR15)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_19-originalInput1_29] - check bool(False): OR15 failed (MR15)
+10 failed, 1 warning in 0.05s
+❌ x_cal_Diff__mutmut_5 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_Diff.py :: x_cal_Diff__mutmut_6  -  2025-10-16T13:47:23.080923
+================================================================================
+
+>>> 当前使用的函数: x_cal_Diff__mutmut_6
+函数源码如下：
+def x_cal_Diff__mutmut_6(x, y):
+    z = []
+
+    for i in range(1, len(x)):
+        z.append(y[i] - x[i])
+
+    return z
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cal_Diff__mutmut_6 所有测试通过
+
+================================================================================
+RUNNING cal_Diff.py :: x_cal_Diff__mutmut_7  -  2025-10-16T13:47:23.132390
+================================================================================
+
+>>> 当前使用的函数: x_cal_Diff__mutmut_7
+函数源码如下：
+def x_cal_Diff__mutmut_7(x, y):
+    z = []
+
+    for i in range(0, len(x)):
+        z.append(None)
+
+    return z
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+_______________________ test_cal_Diff_with_func[originalInput1_10-originalInput1_20] ________________________
+mutants/tests/cal_DiffTest.py:175: in test_cal_Diff_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143: in applyMR_Assert
+    check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+mutants/tests/cal_DiffTest.py:14: in format_array
+    return [round(x * factor) / factor for x in arr]
+mutants/tests/cal_DiffTest.py:14: in <listcomp>
+    return [round(x * factor) / factor for x in arr]
+E   TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+_______________________ test_cal_Diff_with_func[originalInput1_11-originalInput1_21] ________________________
+mutants/tests/cal_DiffTest.py:175: in test_cal_Diff_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143: in applyMR_Assert
+    check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+mutants/tests/cal_DiffTest.py:14: in format_array
+    return [round(x * factor) / factor for x in arr]
+mutants/tests/cal_DiffTest.py:14: in <listcomp>
+    return [round(x * factor) / factor for x in arr]
+E   TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+_______________________ test_cal_Diff_with_func[originalInput1_12-originalInput1_22] ________________________
+mutants/tests/cal_DiffTest.py:175: in test_cal_Diff_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143: in applyMR_Assert
+    check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+mutants/tests/cal_DiffTest.py:14: in format_array
+    return [round(x * factor) / factor for x in arr]
+mutants/tests/cal_DiffTest.py:14: in <listcomp>
+    return [round(x * factor) / factor for x in arr]
+E   TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+_______________________ test_cal_Diff_with_func[originalInput1_13-originalInput1_23] ________________________
+mutants/tests/cal_DiffTest.py:175: in test_cal_Diff_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143: in applyMR_Assert
+    check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+mutants/tests/cal_DiffTest.py:14: in format_array
+    return [round(x * factor) / factor for x in arr]
+mutants/tests/cal_DiffTest.py:14: in <listcomp>
+    return [round(x * factor) / factor for x in arr]
+E   TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+_______________________ test_cal_Diff_with_func[originalInput1_14-originalInput1_24] ________________________
+mutants/tests/cal_DiffTest.py:175: in test_cal_Diff_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143: in applyMR_Assert
+    check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+mutants/tests/cal_DiffTest.py:14: in format_array
+    return [round(x * factor) / factor for x in arr]
+mutants/tests/cal_DiffTest.py:14: in <listcomp>
+    return [round(x * factor) / factor for x in arr]
+E   TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+_______________________ test_cal_Diff_with_func[originalInput1_15-originalInput1_25] ________________________
+mutants/tests/cal_DiffTest.py:175: in test_cal_Diff_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143: in applyMR_Assert
+    check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+mutants/tests/cal_DiffTest.py:14: in format_array
+    return [round(x * factor) / factor for x in arr]
+mutants/tests/cal_DiffTest.py:14: in <listcomp>
+    return [round(x * factor) / factor for x in arr]
+E   TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+_______________________ test_cal_Diff_with_func[originalInput1_16-originalInput1_26] ________________________
+mutants/tests/cal_DiffTest.py:175: in test_cal_Diff_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143: in applyMR_Assert
+    check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+mutants/tests/cal_DiffTest.py:14: in format_array
+    return [round(x * factor) / factor for x in arr]
+mutants/tests/cal_DiffTest.py:14: in <listcomp>
+    return [round(x * factor) / factor for x in arr]
+E   TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+_______________________ test_cal_Diff_with_func[originalInput1_17-originalInput1_27] ________________________
+mutants/tests/cal_DiffTest.py:175: in test_cal_Diff_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143: in applyMR_Assert
+    check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+mutants/tests/cal_DiffTest.py:14: in format_array
+    return [round(x * factor) / factor for x in arr]
+mutants/tests/cal_DiffTest.py:14: in <listcomp>
+    return [round(x * factor) / factor for x in arr]
+E   TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+_______________________ test_cal_Diff_with_func[originalInput1_18-originalInput1_28] ________________________
+mutants/tests/cal_DiffTest.py:175: in test_cal_Diff_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143: in applyMR_Assert
+    check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+mutants/tests/cal_DiffTest.py:14: in format_array
+    return [round(x * factor) / factor for x in arr]
+mutants/tests/cal_DiffTest.py:14: in <listcomp>
+    return [round(x * factor) / factor for x in arr]
+E   TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+_______________________ test_cal_Diff_with_func[originalInput1_19-originalInput1_29] ________________________
+mutants/tests/cal_DiffTest.py:175: in test_cal_Diff_with_func
+    applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143: in applyMR_Assert
+    check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+mutants/tests/cal_DiffTest.py:14: in format_array
+    return [round(x * factor) / factor for x in arr]
+mutants/tests/cal_DiffTest.py:14: in <listcomp>
+    return [round(x * factor) / factor for x in arr]
+E   TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_10-originalInput1_20] - TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_11-originalInput1_21] - TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_12-originalInput1_22] - TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_13-originalInput1_23] - TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_14-originalInput1_24] - TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_15-originalInput1_25] - TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_16-originalInput1_26] - TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_17-originalInput1_27] - TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_18-originalInput1_28] - TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_19-originalInput1_29] - TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+10 failed, 1 warning in 0.06s
+❌ x_cal_Diff__mutmut_7 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_Diff.py :: x_cal_Diff__mutmut_8  -  2025-10-16T13:47:23.239951
+================================================================================
+
+>>> 当前使用的函数: x_cal_Diff__mutmut_8
+函数源码如下：
+def x_cal_Diff__mutmut_8(x, y):
+    z = []
+
+    for i in range(0, len(x)):
+        z.append(y[i] + x[i])
+
+    return z
+
+FFFFFFFFFF
+================================================= FAILURES ==================================================
+_______________________ test_cal_Diff_with_func[originalInput1_10-originalInput1_20] ________________________
+
+FAILURE: check [5.3, 7.3, 9.3, 11.3, 13.3] == [11.3, 13.3, 15.3, 17.3, 19.3]: OR2 failed (MR2)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143 in applyMR_Assert() -> check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+
+FAILURE: check [5.3, 7.3, 9.3, 11.3, 13.3] == [5.3, 9.3, 13.3, 17.3, 21.3]: OR10 failed (MR10)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_______________________ test_cal_Diff_with_func[originalInput1_11-originalInput1_21] ________________________
+
+FAILURE: check [15.8, 26.8, 37.8, 48.8] == [21.8, 32.8, 43.8, 54.8]: OR2 failed (MR2)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143 in applyMR_Assert() -> check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+
+FAILURE: check [15.8, 26.8, 37.8, 48.8] == [15.8, 28.8, 41.8, 54.8]: OR10 failed (MR10)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_______________________ test_cal_Diff_with_func[originalInput1_12-originalInput1_22] ________________________
+
+FAILURE: check [8.17, 18.08, 23.57, 25.1] == [14.17, 24.08, 29.57, 31.1]: OR2 failed (MR2)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143 in applyMR_Assert() -> check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+
+FAILURE: check [8.17, 18.08, 23.57, 25.1] == [8.17, 20.08, 27.57, 31.1]: OR10 failed (MR10)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_______________________ test_cal_Diff_with_func[originalInput1_13-originalInput1_23] ________________________
+
+FAILURE: check [8.17, 9.89, 13.27, 16.01, 19.09] == [14.17, 15.89, 19.27, 22.01, 25.09]: OR2 failed (MR2)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143 in applyMR_Assert() -> check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+
+FAILURE: check [8.17, 9.89, 13.27, 16.01, 19.09] == [8.17, 11.89, 17.27, 22.01, 27.09]: OR10 failed (MR10)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_______________________ test_cal_Diff_with_func[originalInput1_14-originalInput1_24] ________________________
+
+FAILURE: check [4.23, 10.81, 14.1, 12.44] == [10.23, 16.81, 20.1, 18.44]: OR2 failed (MR2)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143 in applyMR_Assert() -> check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+
+FAILURE: check [4.23, 10.81, 14.1, 12.44] == [4.23, 12.81, 18.1, 18.44]: OR10 failed (MR10)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_______________________ test_cal_Diff_with_func[originalInput1_15-originalInput1_25] ________________________
+
+FAILURE: check [12.81, 27.45, 38.56, 44.75] == [18.81, 33.45, 44.56, 50.75]: OR2 failed (MR2)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143 in applyMR_Assert() -> check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+
+FAILURE: check [12.81, 27.45, 38.56, 44.75] == [12.81, 29.45, 42.56, 50.75]: OR10 failed (MR10)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_______________________ test_cal_Diff_with_func[originalInput1_16-originalInput1_26] ________________________
+
+FAILURE: check [5.42, 8.36, 11.54, 14.69, 17.76] == [11.42, 14.36, 17.54, 20.69, 23.76]: OR2 failed (MR2)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143 in applyMR_Assert() -> check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+
+FAILURE: check [5.42, 8.36, 11.54, 14.69, 17.76] == [5.42, 10.36, 15.54, 20.69, 25.76]: OR10 failed (MR10)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_______________________ test_cal_Diff_with_func[originalInput1_17-originalInput1_27] ________________________
+
+FAILURE: check [9.36, 7.36, 13.36] == [15.36, 13.36, 19.36]: OR2 failed (MR2)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143 in applyMR_Assert() -> check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+
+FAILURE: check [9.36, 7.36, 13.36] == [9.36, 9.36, 17.36]: OR10 failed (MR10)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_______________________ test_cal_Diff_with_func[originalInput1_18-originalInput1_28] ________________________
+
+FAILURE: check [102.47, 107.48, 109.79, 107.1] == [108.47, 113.48, 115.79, 113.1]: OR2 failed (MR2)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143 in applyMR_Assert() -> check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+
+FAILURE: check [102.47, 107.48, 109.79, 107.1] == [102.47, 109.48, 113.79, 113.1]: OR10 failed (MR10)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+_______________________ test_cal_Diff_with_func[originalInput1_19-originalInput1_29] ________________________
+
+FAILURE: check [9.36, 7.36, 13.36] == [15.36, 13.36, 19.36]: OR2 failed (MR2)
+mutants/tests/cal_DiffTest.py:175 in test_cal_Diff_with_func() -> applyMR_Assert(originalInput1_1, originalInput1_2, originalResult)
+mutants/tests/cal_DiffTest.py:143 in applyMR_Assert() -> check.equal(format_array(originalResult, 2), format_array(transformResult2, 2), "OR2 failed (MR2)")
+
+FAILURE: check [9.36, 7.36, 13.36] == [9.36, 9.36, 17.36]: OR10 failed (MR10)
+FAILURE: check bool(False): OR15 failed (MR15)
+------------------------------------------------------------
+Failed Checks: 3
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== short test summary info ==========================================
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_10-originalInput1_20] - check [5.3, 7.3, 9.3, 11.3, 13.3] == [11.3, 13.3, 15.3, 17.3, 19.3]: OR2 failed (MR2)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_11-originalInput1_21] - check [15.8, 26.8, 37.8, 48.8] == [21.8, 32.8, 43.8, 54.8]: OR2 failed (MR2)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_12-originalInput1_22] - check [8.17, 18.08, 23.57, 25.1] == [14.17, 24.08, 29.57, 31.1]: OR2 failed (MR2)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_13-originalInput1_23] - check [8.17, 9.89, 13.27, 16.01, 19.09] == [14.17, 15.89, 19.27, 22.01, 25.09]: OR2 failed (MR2)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_14-originalInput1_24] - check [4.23, 10.81, 14.1, 12.44] == [10.23, 16.81, 20.1, 18.44]: OR2 failed (MR2)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_15-originalInput1_25] - check [12.81, 27.45, 38.56, 44.75] == [18.81, 33.45, 44.56, 50.75]: OR2 failed (MR2)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_16-originalInput1_26] - check [5.42, 8.36, 11.54, 14.69, 17.76] == [11.42, 14.36, 17.54, 20.69, 23.76]: OR2 failed (MR2)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_17-originalInput1_27] - check [9.36, 7.36, 13.36] == [15.36, 13.36, 19.36]: OR2 failed (MR2)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_18-originalInput1_28] - check [102.47, 107.48, 109.79, 107.1] == [108.47, 113.48, 115.79, 113.1]: OR2 failed (MR2)
+FAILED mutants/tests/cal_DiffTest.py::test_cal_Diff_with_func[originalInput1_19-originalInput1_29] - check [9.36, 7.36, 13.36] == [15.36, 13.36, 19.36]: OR2 failed (MR2)
+10 failed, 1 warning in 0.02s
+❌ x_cal_Diff__mutmut_8 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_Diff.py :: x_cal_Diff__mutmut_orig  -  2025-10-16T13:47:23.301787
+================================================================================
+
+>>> 当前使用的函数: x_cal_Diff__mutmut_orig
+函数源码如下：
+def x_cal_Diff__mutmut_orig(x, y):
+    z = []
+
+    for i in range(0, len(x)):
+        z.append(y[i] - x[i])
+
+    return z
+
+..........
+============================================= warnings summary ==============================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cal_Diff__mutmut_orig 所有测试通过

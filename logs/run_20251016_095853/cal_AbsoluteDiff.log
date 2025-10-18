@@ -1,0 +1,533 @@
+
+=== Running tests for single mutant file: cal_AbsoluteDiff.py ===
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_1  -  2025-10-16T09:58:53.605554
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_1
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_1(z):
+    if z != None:
+        return None
+
+    if len(z) == 0:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(abs(i))
+    return zAbs
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cal_AbsoluteDiff__mutmut_1 所有测试通过
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_2  -  2025-10-16T09:58:53.689783
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_2
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_2(z):
+    if z == None:
+        return None
+
+    if len(z) != 0:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(abs(i))
+    return zAbs
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cal_AbsoluteDiff__mutmut_2 所有测试通过
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_3  -  2025-10-16T09:58:53.735524
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_3
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_3(z):
+    if z == None:
+        return None
+
+    if len(z) == 1:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(abs(i))
+    return zAbs
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput0] _______________________________________
+
+FAILURE: check [1.0, 3.3, 2.0, 6.0, 9.0] == [9.0, 6.0, 2.0, 3.3, 1.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput1] _______________________________________
+
+FAILURE: check [2.0, 1.0, 4.6, 4.0, 2.0] == [2.0, 4.0, 4.6, 1.0, 2.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput2] _______________________________________
+
+FAILURE: check [4.0, 2.0, 4.0, 6.0, 2.0] == [2.0, 6.0, 4.0, 2.0, 4.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput3] _______________________________________
+
+FAILURE: check [9.0, 2.0, 1.0, 5.8, 3.5, 2.3] == [2.3, 3.5, 5.8, 1.0, 2.0, 9.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput4] _______________________________________
+
+FAILURE: check [1.2, 9.4, 1.0, 3.0, 3.0] == [3.0, 3.0, 1.0, 9.4, 1.2]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput5] _______________________________________
+
+FAILURE: check [8.0, 3.4, 2.5, 6.9, 2.0, 3.0] == [3.0, 2.0, 6.9, 2.5, 3.4, 8.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput6] _______________________________________
+
+FAILURE: check [1.0, 2.0, 3.3, 4.1, 5.0, 6.0] == [6.0, 5.0, 4.1, 3.3, 2.0, 1.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput7] _______________________________________
+
+FAILURE: check [1.0, 2.0, 4.9, 2.4, 7.0, 5.0] == [5.0, 7.0, 2.4, 4.9, 2.0, 1.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput8] _______________________________________
+
+FAILURE: check [1.3, 1.9, 2.0, 4.8, 1.0, 2.0] == [2.0, 1.0, 4.8, 2.0, 1.9, 1.3]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput9] _______________________________________
+
+FAILURE: check [2.4, 3.0, 1.0, 4.0, 7.0] == [7.0, 4.0, 1.0, 3.0, 2.4]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput0] - check [1.0, 3.3, 2.0, 6.0, 9.0] == [9.0, 6.0, 2.0, 3.3, 1.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput1] - check [2.0, 1.0, 4.6, 4.0, 2.0] == [2.0, 4.0, 4.6, 1.0, 2.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput2] - check [4.0, 2.0, 4.0, 6.0, 2.0] == [2.0, 6.0, 4.0, 2.0, 4.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput3] - check [9.0, 2.0, 1.0, 5.8, 3.5, 2.3] == [2.3, 3.5, 5.8, 1.0, 2.0, 9.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput4] - check [1.2, 9.4, 1.0, 3.0, 3.0] == [3.0, 3.0, 1.0, 9.4, 1.2]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput5] - check [8.0, 3.4, 2.5, 6.9, 2.0, 3.0] == [3.0, 2.0, 6.9, 2.5, 3.4, 8.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput6] - check [1.0, 2.0, 3.3, 4.1, 5.0, 6.0] == [6.0, 5.0, 4.1, 3.3, 2.0, 1.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput7] - check [1.0, 2.0, 4.9, 2.4, 7.0, 5.0] == [5.0, 7.0, 2.4, 4.9, 2.0, 1.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput8] - check [1.3, 1.9, 2.0, 4.8, 1.0, 2.0] == [2.0, 1.0, 4.8, 2.0, 1.9, 1.3]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput9] - check [2.4, 3.0, 1.0, 4.0, 7.0] == [7.0, 4.0, 1.0, 3.0, 2.4]: OR6 failed (MR6)
+10 failed, 1 warning in 0.02s
+❌ x_cal_AbsoluteDiff__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_4  -  2025-10-16T09:58:53.797189
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_4
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_4(z):
+    if z == None:
+        return None
+
+    if len(z) == 0:
+        return None
+
+    zAbs = None
+    for i in z:
+        zAbs.append(abs(i))
+    return zAbs
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput0] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput1] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput2] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput3] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput4] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput5] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput6] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput7] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput8] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput9] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput0] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput1] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput2] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput3] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput4] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput5] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput6] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput7] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput8] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput9] - AttributeError: 'NoneType' object has no attribute 'append'
+10 failed, 1 warning in 0.05s
+❌ x_cal_AbsoluteDiff__mutmut_4 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_5  -  2025-10-16T09:58:53.889557
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_5
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_5(z):
+    if z == None:
+        return None
+
+    if len(z) == 0:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(None)
+    return zAbs
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cal_AbsoluteDiff__mutmut_5 所有测试通过
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_6  -  2025-10-16T09:58:53.937434
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_6
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_6(z):
+    if z == None:
+        return None
+
+    if len(z) == 0:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(abs(None))
+    return zAbs
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput0] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput1] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput2] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput3] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput4] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput5] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput6] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput7] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput8] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput9] _______________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput0] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput1] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput2] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput3] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput4] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput5] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput6] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput7] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput8] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput9] - TypeError: bad operand type for abs(): 'NoneType'
+10 failed, 1 warning in 0.03s
+❌ x_cal_AbsoluteDiff__mutmut_6 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_orig  -  2025-10-16T09:58:54.013360
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_orig
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_orig(z):
+    if z == None:
+        return None
+
+    if len(z) == 0:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(abs(i))
+    return zAbs
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput0] _______________________________________
+
+FAILURE: check [1.0, 3.3, 2.0, 6.0, 9.0] == [9.0, 6.0, 2.0, 3.3, 1.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput1] _______________________________________
+
+FAILURE: check [2.0, 1.0, 4.6, 4.0, 2.0] == [2.0, 4.0, 4.6, 1.0, 2.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput2] _______________________________________
+
+FAILURE: check [4.0, 2.0, 4.0, 6.0, 2.0] == [2.0, 6.0, 4.0, 2.0, 4.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput3] _______________________________________
+
+FAILURE: check [9.0, 2.0, 1.0, 5.8, 3.5, 2.3] == [2.3, 3.5, 5.8, 1.0, 2.0, 9.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput4] _______________________________________
+
+FAILURE: check [1.2, 9.4, 1.0, 3.0, 3.0] == [3.0, 3.0, 1.0, 9.4, 1.2]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput5] _______________________________________
+
+FAILURE: check [8.0, 3.4, 2.5, 6.9, 2.0, 3.0] == [3.0, 2.0, 6.9, 2.5, 3.4, 8.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput6] _______________________________________
+
+FAILURE: check [1.0, 2.0, 3.3, 4.1, 5.0, 6.0] == [6.0, 5.0, 4.1, 3.3, 2.0, 1.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput7] _______________________________________
+
+FAILURE: check [1.0, 2.0, 4.9, 2.4, 7.0, 5.0] == [5.0, 7.0, 2.4, 4.9, 2.0, 1.0]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput8] _______________________________________
+
+FAILURE: check [1.3, 1.9, 2.0, 4.8, 1.0, 2.0] == [2.0, 1.0, 4.8, 2.0, 1.9, 1.3]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+______________________________________ test_cal_AbsoluteDiff_with_func[originalInput9] _______________________________________
+
+FAILURE: check [2.4, 3.0, 1.0, 4.0, 7.0] == [7.0, 4.0, 1.0, 3.0, 2.4]: OR6 failed (MR6)
+mutants/tests/cal_AbsoluteDiffTest.py:162 in test_cal_AbsoluteDiff_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cal_AbsoluteDiffTest.py:123 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput0] - check [1.0, 3.3, 2.0, 6.0, 9.0] == [9.0, 6.0, 2.0, 3.3, 1.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput1] - check [2.0, 1.0, 4.6, 4.0, 2.0] == [2.0, 4.0, 4.6, 1.0, 2.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput2] - check [4.0, 2.0, 4.0, 6.0, 2.0] == [2.0, 6.0, 4.0, 2.0, 4.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput3] - check [9.0, 2.0, 1.0, 5.8, 3.5, 2.3] == [2.3, 3.5, 5.8, 1.0, 2.0, 9.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput4] - check [1.2, 9.4, 1.0, 3.0, 3.0] == [3.0, 3.0, 1.0, 9.4, 1.2]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput5] - check [8.0, 3.4, 2.5, 6.9, 2.0, 3.0] == [3.0, 2.0, 6.9, 2.5, 3.4, 8.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput6] - check [1.0, 2.0, 3.3, 4.1, 5.0, 6.0] == [6.0, 5.0, 4.1, 3.3, 2.0, 1.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput7] - check [1.0, 2.0, 4.9, 2.4, 7.0, 5.0] == [5.0, 7.0, 2.4, 4.9, 2.0, 1.0]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput8] - check [1.3, 1.9, 2.0, 4.8, 1.0, 2.0] == [2.0, 1.0, 4.8, 2.0, 1.9, 1.3]: OR6 failed (MR6)
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput9] - check [2.4, 3.0, 1.0, 4.0, 7.0] == [7.0, 4.0, 1.0, 3.0, 2.4]: OR6 failed (MR6)
+10 failed, 1 warning in 0.02s
+❌ x_cal_AbsoluteDiff__mutmut_orig 存在失败 (退出码 1)

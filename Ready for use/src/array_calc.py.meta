@@ -1,0 +1,13 @@
+{
+    "exit_code_by_key": {
+        "array_calc.x_array_calc__mutmut_1": 33,
+        "array_calc.x_array_calc__mutmut_2": 33,
+        "array_calc.x_array_calc__mutmut_3": 33,
+        "array_calc.x_array_calc__mutmut_4": 33,
+        "array_calc.x_array_calc__mutmut_5": 33,
+        "array_calc.x_array_calc__mutmut_6": 33,
+        "array_calc.x_array_calc__mutmut_7": 33,
+        "array_calc.x_array_calc__mutmut_8": 33
+    },
+    "hash_by_function_name": {}
+}

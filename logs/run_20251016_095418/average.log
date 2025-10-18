@@ -1,0 +1,731 @@
+
+=== Running tests for single mutant file: average.py ===
+
+================================================================================
+RUNNING average.py :: x_average__mutmut_1  -  2025-10-16T09:54:18.159632
+================================================================================
+
+>>> 当前使用的函数: x_average__mutmut_1
+函数源码如下：
+def x_average__mutmut_1(a):
+    sum = None
+    for i in a:
+        sum += i
+
+    return sum/len(a)
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+__________________________________________________________________ test_average_with_func[originalInput0] ___________________________________________________________________
+mutants/tests/averageTest.py:188: in test_average_with_func
+    originalResult = func(originalInput)
+mutants/src/average.py:42: in x_average__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________________________________ test_average_with_func[originalInput1] ___________________________________________________________________
+mutants/tests/averageTest.py:188: in test_average_with_func
+    originalResult = func(originalInput)
+mutants/src/average.py:42: in x_average__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________________________________ test_average_with_func[originalInput2] ___________________________________________________________________
+mutants/tests/averageTest.py:188: in test_average_with_func
+    originalResult = func(originalInput)
+mutants/src/average.py:42: in x_average__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________________________________ test_average_with_func[originalInput3] ___________________________________________________________________
+mutants/tests/averageTest.py:188: in test_average_with_func
+    originalResult = func(originalInput)
+mutants/src/average.py:42: in x_average__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________________________________ test_average_with_func[originalInput4] ___________________________________________________________________
+mutants/tests/averageTest.py:188: in test_average_with_func
+    originalResult = func(originalInput)
+mutants/src/average.py:42: in x_average__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________________________________ test_average_with_func[originalInput5] ___________________________________________________________________
+mutants/tests/averageTest.py:188: in test_average_with_func
+    originalResult = func(originalInput)
+mutants/src/average.py:42: in x_average__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________________________________ test_average_with_func[originalInput6] ___________________________________________________________________
+mutants/tests/averageTest.py:188: in test_average_with_func
+    originalResult = func(originalInput)
+mutants/src/average.py:42: in x_average__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________________________________ test_average_with_func[originalInput7] ___________________________________________________________________
+mutants/tests/averageTest.py:188: in test_average_with_func
+    originalResult = func(originalInput)
+mutants/src/average.py:42: in x_average__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________________________________ test_average_with_func[originalInput8] ___________________________________________________________________
+mutants/tests/averageTest.py:188: in test_average_with_func
+    originalResult = func(originalInput)
+mutants/src/average.py:42: in x_average__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+__________________________________________________________________ test_average_with_func[originalInput9] ___________________________________________________________________
+mutants/tests/averageTest.py:188: in test_average_with_func
+    originalResult = func(originalInput)
+mutants/src/average.py:42: in x_average__mutmut_1
+    sum += i
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput0] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput1] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput2] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput3] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput4] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput5] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput6] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput7] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput8] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput9] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+10 failed, 1 warning in 0.07s
+❌ x_average__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING average.py :: x_average__mutmut_2  -  2025-10-16T09:54:18.301055
+================================================================================
+
+>>> 当前使用的函数: x_average__mutmut_2
+函数源码如下：
+def x_average__mutmut_2(a):
+    sum = 1
+    for i in a:
+        sum += i
+
+    return sum/len(a)
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+__________________________________________________________________ test_average_with_func[originalInput0] ___________________________________________________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:120 in applyMR_Assert() -> check.is_true(math.isclose(originalResult * 2, transformResult5, abs_tol=delta),
+
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR12 failed (MR12)
+------------------------------------------------------------
+Failed Checks: 4
+__________________________________________________________________ test_average_with_func[originalInput1] ___________________________________________________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:120 in applyMR_Assert() -> check.is_true(math.isclose(originalResult * 2, transformResult5, abs_tol=delta),
+
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR12 failed (MR12)
+------------------------------------------------------------
+Failed Checks: 4
+__________________________________________________________________ test_average_with_func[originalInput2] ___________________________________________________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:120 in applyMR_Assert() -> check.is_true(math.isclose(originalResult * 2, transformResult5, abs_tol=delta),
+
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR12 failed (MR12)
+------------------------------------------------------------
+Failed Checks: 4
+__________________________________________________________________ test_average_with_func[originalInput3] ___________________________________________________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:120 in applyMR_Assert() -> check.is_true(math.isclose(originalResult * 2, transformResult5, abs_tol=delta),
+
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR12 failed (MR12)
+------------------------------------------------------------
+Failed Checks: 4
+__________________________________________________________________ test_average_with_func[originalInput4] ___________________________________________________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:120 in applyMR_Assert() -> check.is_true(math.isclose(originalResult * 2, transformResult5, abs_tol=delta),
+
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR12 failed (MR12)
+------------------------------------------------------------
+Failed Checks: 4
+__________________________________________________________________ test_average_with_func[originalInput5] ___________________________________________________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:120 in applyMR_Assert() -> check.is_true(math.isclose(originalResult * 2, transformResult5, abs_tol=delta),
+
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR12 failed (MR12)
+------------------------------------------------------------
+Failed Checks: 4
+__________________________________________________________________ test_average_with_func[originalInput6] ___________________________________________________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:120 in applyMR_Assert() -> check.is_true(math.isclose(originalResult * 2, transformResult5, abs_tol=delta),
+
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR12 failed (MR12)
+------------------------------------------------------------
+Failed Checks: 4
+__________________________________________________________________ test_average_with_func[originalInput7] ___________________________________________________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:120 in applyMR_Assert() -> check.is_true(math.isclose(originalResult * 2, transformResult5, abs_tol=delta),
+
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR12 failed (MR12)
+------------------------------------------------------------
+Failed Checks: 4
+__________________________________________________________________ test_average_with_func[originalInput8] ___________________________________________________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:120 in applyMR_Assert() -> check.is_true(math.isclose(originalResult * 2, transformResult5, abs_tol=delta),
+
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR12 failed (MR12)
+------------------------------------------------------------
+Failed Checks: 4
+__________________________________________________________________ test_average_with_func[originalInput9] ___________________________________________________________________
+
+FAILURE: check bool(False): OR5 failed (MR5)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:120 in applyMR_Assert() -> check.is_true(math.isclose(originalResult * 2, transformResult5, abs_tol=delta),
+
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR12 failed (MR12)
+------------------------------------------------------------
+Failed Checks: 4
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput0] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput1] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput2] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput3] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput4] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput5] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput6] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput7] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput8] - check bool(False): OR5 failed (MR5)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput9] - check bool(False): OR5 failed (MR5)
+10 failed, 1 warning in 0.08s
+❌ x_average__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING average.py :: x_average__mutmut_3  -  2025-10-16T09:54:18.427975
+================================================================================
+
+>>> 当前使用的函数: x_average__mutmut_3
+函数源码如下：
+def x_average__mutmut_3(a):
+    sum = 0
+    for i in a:
+        sum = i
+
+    return sum/len(a)
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+__________________________________________________________________ test_average_with_func[originalInput0] ___________________________________________________________________
+
+FAILURE: check bool(False): OR1 failed (MR1)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:103 in applyMR_Assert() -> check.is_true(math.isclose(originalResult, transformResult1, abs_tol=delta),
+
+FAILURE: check bool(False): OR2 failed (MR2)
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 4
+__________________________________________________________________ test_average_with_func[originalInput1] ___________________________________________________________________
+
+FAILURE: check bool(False): OR1 failed (MR1)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:103 in applyMR_Assert() -> check.is_true(math.isclose(originalResult, transformResult1, abs_tol=delta),
+
+FAILURE: check bool(False): OR2 failed (MR2)
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 5
+__________________________________________________________________ test_average_with_func[originalInput2] ___________________________________________________________________
+
+FAILURE: check bool(False): OR1 failed (MR1)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:103 in applyMR_Assert() -> check.is_true(math.isclose(originalResult, transformResult1, abs_tol=delta),
+
+FAILURE: check bool(False): OR2 failed (MR2)
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 6
+__________________________________________________________________ test_average_with_func[originalInput3] ___________________________________________________________________
+
+FAILURE: check bool(False): OR1 failed (MR1)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:103 in applyMR_Assert() -> check.is_true(math.isclose(originalResult, transformResult1, abs_tol=delta),
+
+FAILURE: check bool(False): OR2 failed (MR2)
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 6
+__________________________________________________________________ test_average_with_func[originalInput4] ___________________________________________________________________
+
+FAILURE: check bool(False): OR1 failed (MR1)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:103 in applyMR_Assert() -> check.is_true(math.isclose(originalResult, transformResult1, abs_tol=delta),
+
+FAILURE: check bool(False): OR2 failed (MR2)
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR4 failed (MR4)
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+------------------------------------------------------------
+Failed Checks: 7
+__________________________________________________________________ test_average_with_func[originalInput5] ___________________________________________________________________
+
+FAILURE: check bool(False): OR1 failed (MR1)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:103 in applyMR_Assert() -> check.is_true(math.isclose(originalResult, transformResult1, abs_tol=delta),
+
+FAILURE: check bool(False): OR2 failed (MR2)
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 6
+__________________________________________________________________ test_average_with_func[originalInput6] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 3
+__________________________________________________________________ test_average_with_func[originalInput7] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 5
+__________________________________________________________________ test_average_with_func[originalInput8] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR8 failed (MR8)
+FAILURE: check bool(False): OR9 failed (MR9)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 5
+__________________________________________________________________ test_average_with_func[originalInput9] ___________________________________________________________________
+
+FAILURE: check bool(False): OR1 failed (MR1)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:103 in applyMR_Assert() -> check.is_true(math.isclose(originalResult, transformResult1, abs_tol=delta),
+
+FAILURE: check bool(False): OR2 failed (MR2)
+FAILURE: check bool(False): OR6 failed (MR6)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 4
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput0] - check bool(False): OR1 failed (MR1)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput1] - check bool(False): OR1 failed (MR1)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput2] - check bool(False): OR1 failed (MR1)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput3] - check bool(False): OR1 failed (MR1)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput4] - check bool(False): OR1 failed (MR1)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput5] - check bool(False): OR1 failed (MR1)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput6] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput7] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput8] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput9] - check bool(False): OR1 failed (MR1)
+10 failed, 1 warning in 0.01s
+❌ x_average__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING average.py :: x_average__mutmut_4  -  2025-10-16T09:54:18.484575
+================================================================================
+
+>>> 当前使用的函数: x_average__mutmut_4
+函数源码如下：
+def x_average__mutmut_4(a):
+    sum = 0
+    for i in a:
+        sum -= i
+
+    return sum/len(a)
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+__________________________________________________________________ test_average_with_func[originalInput0] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR4 failed (MR4)
+FAILURE: check bool(False): OR10 failed (MR10)
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 6
+__________________________________________________________________ test_average_with_func[originalInput1] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR4 failed (MR4)
+FAILURE: check bool(False): OR10 failed (MR10)
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 6
+__________________________________________________________________ test_average_with_func[originalInput2] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR4 failed (MR4)
+FAILURE: check bool(False): OR10 failed (MR10)
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 7
+__________________________________________________________________ test_average_with_func[originalInput3] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR4 failed (MR4)
+FAILURE: check bool(False): OR10 failed (MR10)
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 6
+__________________________________________________________________ test_average_with_func[originalInput4] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR4 failed (MR4)
+FAILURE: check bool(False): OR10 failed (MR10)
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 7
+__________________________________________________________________ test_average_with_func[originalInput5] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR4 failed (MR4)
+FAILURE: check bool(False): OR10 failed (MR10)
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 6
+__________________________________________________________________ test_average_with_func[originalInput6] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR4 failed (MR4)
+FAILURE: check bool(False): OR10 failed (MR10)
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 7
+__________________________________________________________________ test_average_with_func[originalInput7] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR4 failed (MR4)
+FAILURE: check bool(False): OR10 failed (MR10)
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 6
+__________________________________________________________________ test_average_with_func[originalInput8] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR4 failed (MR4)
+FAILURE: check bool(False): OR10 failed (MR10)
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 6
+__________________________________________________________________ test_average_with_func[originalInput9] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR4 failed (MR4)
+FAILURE: check bool(False): OR10 failed (MR10)
+FAILURE: check bool(False): OR11 failed (MR11)
+FAILURE: check bool(False): OR13 failed (MR13)
+FAILURE: check bool(False): OR14 failed (MR14)
+------------------------------------------------------------
+Failed Checks: 7
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput0] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput1] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput2] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput3] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput4] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput5] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput6] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput7] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput8] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput9] - check bool(False): OR2 failed (MR2)
+10 failed, 1 warning in 0.01s
+❌ x_average__mutmut_4 存在失败 (退出码 1)
+
+================================================================================
+RUNNING average.py :: x_average__mutmut_5  -  2025-10-16T09:54:18.539070
+================================================================================
+
+>>> 当前使用的函数: x_average__mutmut_5
+函数源码如下：
+def x_average__mutmut_5(a):
+    sum = 0
+    for i in a:
+        sum += i
+
+    return sum * len(a)
+
+FFFFFFFFFF
+================================================================================= FAILURES ==================================================================================
+__________________________________________________________________ test_average_with_func[originalInput0] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 3
+__________________________________________________________________ test_average_with_func[originalInput1] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 3
+__________________________________________________________________ test_average_with_func[originalInput2] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 3
+__________________________________________________________________ test_average_with_func[originalInput3] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 3
+__________________________________________________________________ test_average_with_func[originalInput4] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 3
+__________________________________________________________________ test_average_with_func[originalInput5] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 3
+__________________________________________________________________ test_average_with_func[originalInput6] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 3
+__________________________________________________________________ test_average_with_func[originalInput7] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 3
+__________________________________________________________________ test_average_with_func[originalInput8] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 3
+__________________________________________________________________ test_average_with_func[originalInput9] ___________________________________________________________________
+
+FAILURE: check bool(False): OR2 failed (MR2)
+mutants/tests/averageTest.py:189 in test_average_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/averageTest.py:107 in applyMR_Assert() -> check.is_true(math.isclose(originalResult + 3, transformResult2, abs_tol=delta),
+
+FAILURE: check bool(False): OR3_1 failed (MR3_1)
+FAILURE: check bool(False): OR8 failed (MR8)
+------------------------------------------------------------
+Failed Checks: 3
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================================== short test summary info ==========================================================================
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput0] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput1] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput2] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput3] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput4] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput5] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput6] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput7] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput8] - check bool(False): OR2 failed (MR2)
+FAILED mutants/tests/averageTest.py::test_average_with_func[originalInput9] - check bool(False): OR2 failed (MR2)
+10 failed, 1 warning in 0.01s
+❌ x_average__mutmut_5 存在失败 (退出码 1)
+
+================================================================================
+RUNNING average.py :: x_average__mutmut_orig  -  2025-10-16T09:54:18.596130
+================================================================================
+
+>>> 当前使用的函数: x_average__mutmut_orig
+函数源码如下：
+def x_average__mutmut_orig(a):
+    sum = 0
+    for i in a:
+        sum += i
+
+    return sum/len(a)
+
+..........
+============================================================================= warnings summary ==============================================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_average__mutmut_orig 所有测试通过

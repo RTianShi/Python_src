@@ -1,0 +1,893 @@
+
+=== Running tests for single mutant file: cnt_zeroes.py ===
+
+================================================================================
+RUNNING cnt_zeroes.py :: x_cnt_zeroes__mutmut_1  -  2025-10-16T10:09:55.592343
+================================================================================
+
+>>> 当前使用的函数: x_cnt_zeroes__mutmut_1
+函数源码如下：
+def x_cnt_zeroes__mutmut_1(a):
+
+    cnt = None
+    for i in a:
+        if i == 0:
+            cnt += 1
+
+    return cnt
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_________________________________________ test_cnt_zeroes_with_func[originalInput0] __________________________________________
+mutants/tests/cnt_zeroesTest.py:118: in test_cnt_zeroes_with_func
+    originalResult = func(originalInput)
+mutants/src/cnt_zeroes.py:46: in x_cnt_zeroes__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+_________________________________________ test_cnt_zeroes_with_func[originalInput1] __________________________________________
+mutants/tests/cnt_zeroesTest.py:119: in test_cnt_zeroes_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:16: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/cnt_zeroes.py:46: in x_cnt_zeroes__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+_________________________________________ test_cnt_zeroes_with_func[originalInput2] __________________________________________
+mutants/tests/cnt_zeroesTest.py:118: in test_cnt_zeroes_with_func
+    originalResult = func(originalInput)
+mutants/src/cnt_zeroes.py:46: in x_cnt_zeroes__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+_________________________________________ test_cnt_zeroes_with_func[originalInput3] __________________________________________
+mutants/tests/cnt_zeroesTest.py:118: in test_cnt_zeroes_with_func
+    originalResult = func(originalInput)
+mutants/src/cnt_zeroes.py:46: in x_cnt_zeroes__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+_________________________________________ test_cnt_zeroes_with_func[originalInput4] __________________________________________
+mutants/tests/cnt_zeroesTest.py:119: in test_cnt_zeroes_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:16: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/cnt_zeroes.py:46: in x_cnt_zeroes__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+_________________________________________ test_cnt_zeroes_with_func[originalInput5] __________________________________________
+mutants/tests/cnt_zeroesTest.py:118: in test_cnt_zeroes_with_func
+    originalResult = func(originalInput)
+mutants/src/cnt_zeroes.py:46: in x_cnt_zeroes__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+_________________________________________ test_cnt_zeroes_with_func[originalInput6] __________________________________________
+mutants/tests/cnt_zeroesTest.py:118: in test_cnt_zeroes_with_func
+    originalResult = func(originalInput)
+mutants/src/cnt_zeroes.py:46: in x_cnt_zeroes__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+_________________________________________ test_cnt_zeroes_with_func[originalInput7] __________________________________________
+mutants/tests/cnt_zeroesTest.py:119: in test_cnt_zeroes_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:16: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/cnt_zeroes.py:46: in x_cnt_zeroes__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+_________________________________________ test_cnt_zeroes_with_func[originalInput8] __________________________________________
+mutants/tests/cnt_zeroesTest.py:118: in test_cnt_zeroes_with_func
+    originalResult = func(originalInput)
+mutants/src/cnt_zeroes.py:46: in x_cnt_zeroes__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+_________________________________________ test_cnt_zeroes_with_func[originalInput9] __________________________________________
+mutants/tests/cnt_zeroesTest.py:118: in test_cnt_zeroes_with_func
+    originalResult = func(originalInput)
+mutants/src/cnt_zeroes.py:46: in x_cnt_zeroes__mutmut_1
+    cnt += 1
+E   TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput0] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput1] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput2] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput3] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput4] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput5] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput6] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput7] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput8] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput9] - TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
+10 failed, 1 warning in 0.06s
+❌ x_cnt_zeroes__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cnt_zeroes.py :: x_cnt_zeroes__mutmut_2  -  2025-10-16T10:09:55.731033
+================================================================================
+
+>>> 当前使用的函数: x_cnt_zeroes__mutmut_2
+函数源码如下：
+def x_cnt_zeroes__mutmut_2(a):
+
+    cnt = 1
+    for i in a:
+        if i == 0:
+            cnt += 1
+
+    return cnt
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_________________________________________ test_cnt_zeroes_with_func[originalInput0] __________________________________________
+
+FAILURE: check 6 == 5: MR8 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:90 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult8, "MR8 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput1] __________________________________________
+
+FAILURE: check 2 == 1: MR8 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:90 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult8, "MR8 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput2] __________________________________________
+
+FAILURE: check 10 == 9: MR8 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:90 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult8, "MR8 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput3] __________________________________________
+
+FAILURE: check 8 == 7: MR8 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:90 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult8, "MR8 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput4] __________________________________________
+
+FAILURE: check 2 == 1: MR8 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:90 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult8, "MR8 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput5] __________________________________________
+
+FAILURE: check 10 == 9: MR8 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:90 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult8, "MR8 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput6] __________________________________________
+
+FAILURE: check 4 == 3: MR8 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:90 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult8, "MR8 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput7] __________________________________________
+
+FAILURE: check 2 == 1: MR8 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:90 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult8, "MR8 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput8] __________________________________________
+
+FAILURE: check 10 == 9: MR8 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:90 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult8, "MR8 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput9] __________________________________________
+
+FAILURE: check 16 == 15: MR8 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:90 in applyMR_Assert() -> check.equal(originalResult * 2, transformResult8, "MR8 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput0] - check 6 == 5: MR8 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput1] - check 2 == 1: MR8 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput2] - check 10 == 9: MR8 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput3] - check 8 == 7: MR8 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput4] - check 2 == 1: MR8 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput5] - check 10 == 9: MR8 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput6] - check 4 == 3: MR8 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput7] - check 2 == 1: MR8 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput8] - check 10 == 9: MR8 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput9] - check 16 == 15: MR8 failed
+10 failed, 1 warning in 0.02s
+❌ x_cnt_zeroes__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cnt_zeroes.py :: x_cnt_zeroes__mutmut_3  -  2025-10-16T10:09:55.785405
+================================================================================
+
+>>> 当前使用的函数: x_cnt_zeroes__mutmut_3
+函数源码如下：
+def x_cnt_zeroes__mutmut_3(a):
+
+    cnt = 0
+    for i in a:
+        if i != 0:
+            cnt += 1
+
+    return cnt
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_________________________________________ test_cnt_zeroes_with_func[originalInput0] __________________________________________
+
+FAILURE: check 4 == 3: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 3 == 4: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 4
+_________________________________________ test_cnt_zeroes_with_func[originalInput1] __________________________________________
+
+FAILURE: check 6 == 5: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 5 == 6: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 4
+_________________________________________ test_cnt_zeroes_with_func[originalInput2] __________________________________________
+
+FAILURE: check 1 == 0: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 0 == 1: MR3_2 failed
+------------------------------------------------------------
+Failed Checks: 2
+_________________________________________ test_cnt_zeroes_with_func[originalInput3] __________________________________________
+
+FAILURE: check 3 == 2: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 2 == 3: MR3_2 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 3
+_________________________________________ test_cnt_zeroes_with_func[originalInput4] __________________________________________
+
+FAILURE: check 4 == 3: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 3 == 4: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 4
+_________________________________________ test_cnt_zeroes_with_func[originalInput5] __________________________________________
+
+FAILURE: check 4 == 3: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 3 == 4: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 4
+_________________________________________ test_cnt_zeroes_with_func[originalInput6] __________________________________________
+
+FAILURE: check 5 == 4: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 4 == 5: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 4
+_________________________________________ test_cnt_zeroes_with_func[originalInput7] __________________________________________
+
+FAILURE: check 5 == 4: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 4 == 5: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 4
+_________________________________________ test_cnt_zeroes_with_func[originalInput8] __________________________________________
+
+FAILURE: check 4 == 3: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 3 == 4: MR3_2 failed
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 4
+_________________________________________ test_cnt_zeroes_with_func[originalInput9] __________________________________________
+
+FAILURE: check 1 == 0: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 0 == 1: MR3_2 failed
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput0] - check 4 == 3: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput1] - check 6 == 5: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput2] - check 1 == 0: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput3] - check 3 == 2: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput4] - check 4 == 3: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput5] - check 4 == 3: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput6] - check 5 == 4: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput7] - check 5 == 4: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput8] - check 4 == 3: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput9] - check 1 == 0: MR3_1 failed
+10 failed, 1 warning in 0.01s
+❌ x_cnt_zeroes__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cnt_zeroes.py :: x_cnt_zeroes__mutmut_4  -  2025-10-16T10:09:55.838510
+================================================================================
+
+>>> 当前使用的函数: x_cnt_zeroes__mutmut_4
+函数源码如下：
+def x_cnt_zeroes__mutmut_4(a):
+
+    cnt = 0
+    for i in a:
+        if i == 1:
+            cnt += 1
+
+    return cnt
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_________________________________________ test_cnt_zeroes_with_func[originalInput0] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 1 == 2: MR3_2 failed
+FAILURE: check 1 == 0: MR5 failed
+FAILURE: check 1 == 0: MR9 failed
+FAILURE: check 1 == 0: MR12 failed
+------------------------------------------------------------
+Failed Checks: 5
+_________________________________________ test_cnt_zeroes_with_func[originalInput1] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 1 == 2: MR3_2 failed
+FAILURE: check 1 == 0: MR5 failed
+FAILURE: check 1 == 0: MR9 failed
+FAILURE: check 1 == 0: MR12 failed
+------------------------------------------------------------
+Failed Checks: 5
+_________________________________________ test_cnt_zeroes_with_func[originalInput2] __________________________________________
+
+FAILURE: check 1 == 0: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 0 == 1: MR3_2 failed
+------------------------------------------------------------
+Failed Checks: 2
+_________________________________________ test_cnt_zeroes_with_func[originalInput3] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 1 == 2: MR3_2 failed
+FAILURE: check 1 == 0: MR5 failed
+FAILURE: check 1 == 0: MR9 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 5
+_________________________________________ test_cnt_zeroes_with_func[originalInput4] __________________________________________
+
+FAILURE: check 1 == 0: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 0 == 1: MR3_2 failed
+------------------------------------------------------------
+Failed Checks: 2
+_________________________________________ test_cnt_zeroes_with_func[originalInput5] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 1 == 2: MR3_2 failed
+FAILURE: check 1 == 0: MR5 failed
+FAILURE: check 1 == 0: MR9 failed
+FAILURE: check 1 == 0: MR12 failed
+------------------------------------------------------------
+Failed Checks: 5
+_________________________________________ test_cnt_zeroes_with_func[originalInput6] __________________________________________
+
+FAILURE: check 1 == 0: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 0 == 1: MR3_2 failed
+------------------------------------------------------------
+Failed Checks: 2
+_________________________________________ test_cnt_zeroes_with_func[originalInput7] __________________________________________
+
+FAILURE: check 1 == 0: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 0 == 1: MR3_2 failed
+FAILURE: check 0 == 1: MR12 failed
+------------------------------------------------------------
+Failed Checks: 3
+_________________________________________ test_cnt_zeroes_with_func[originalInput8] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 1 == 2: MR3_2 failed
+FAILURE: check 1 == 0: MR5 failed
+FAILURE: check 1 == 0: MR9 failed
+FAILURE: check 1 == 0: MR12 failed
+------------------------------------------------------------
+Failed Checks: 5
+_________________________________________ test_cnt_zeroes_with_func[originalInput9] __________________________________________
+
+FAILURE: check 1 == 0: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 0 == 1: MR3_2 failed
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput0] - check 2 == 1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput1] - check 2 == 1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput2] - check 1 == 0: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput3] - check 2 == 1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput4] - check 1 == 0: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput5] - check 2 == 1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput6] - check 1 == 0: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput7] - check 1 == 0: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput8] - check 2 == 1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput9] - check 1 == 0: MR3_1 failed
+10 failed, 1 warning in 0.01s
+❌ x_cnt_zeroes__mutmut_4 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cnt_zeroes.py :: x_cnt_zeroes__mutmut_5  -  2025-10-16T10:09:55.892422
+================================================================================
+
+>>> 当前使用的函数: x_cnt_zeroes__mutmut_5
+函数源码如下：
+def x_cnt_zeroes__mutmut_5(a):
+
+    cnt = 0
+    for i in a:
+        if i == 0:
+            cnt = 1
+
+    return cnt
+
+F.FF.FF.FF
+========================================================== FAILURES ==========================================================
+_________________________________________ test_cnt_zeroes_with_func[originalInput0] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 2 == 1: MR8 failed
+------------------------------------------------------------
+Failed Checks: 2
+_________________________________________ test_cnt_zeroes_with_func[originalInput2] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 2 == 1: MR8 failed
+------------------------------------------------------------
+Failed Checks: 2
+_________________________________________ test_cnt_zeroes_with_func[originalInput3] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 2 == 1: MR8 failed
+------------------------------------------------------------
+Failed Checks: 2
+_________________________________________ test_cnt_zeroes_with_func[originalInput5] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 2 == 1: MR8 failed
+------------------------------------------------------------
+Failed Checks: 2
+_________________________________________ test_cnt_zeroes_with_func[originalInput6] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 2 == 1: MR8 failed
+------------------------------------------------------------
+Failed Checks: 2
+_________________________________________ test_cnt_zeroes_with_func[originalInput8] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 2 == 1: MR8 failed
+------------------------------------------------------------
+Failed Checks: 2
+_________________________________________ test_cnt_zeroes_with_func[originalInput9] __________________________________________
+
+FAILURE: check 2 == 1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check 2 == 1: MR8 failed
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput0] - check 2 == 1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput2] - check 2 == 1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput3] - check 2 == 1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput5] - check 2 == 1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput6] - check 2 == 1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput8] - check 2 == 1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput9] - check 2 == 1: MR3_1 failed
+7 failed, 3 passed, 1 warning in 0.01s
+❌ x_cnt_zeroes__mutmut_5 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cnt_zeroes.py :: x_cnt_zeroes__mutmut_6  -  2025-10-16T10:09:55.943508
+================================================================================
+
+>>> 当前使用的函数: x_cnt_zeroes__mutmut_6
+函数源码如下：
+def x_cnt_zeroes__mutmut_6(a):
+
+    cnt = 0
+    for i in a:
+        if i == 0:
+            cnt -= 1
+
+    return cnt
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_________________________________________ test_cnt_zeroes_with_func[originalInput0] __________________________________________
+
+FAILURE: check -1 == -3: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR16 failed
+------------------------------------------------------------
+Failed Checks: 4
+_________________________________________ test_cnt_zeroes_with_func[originalInput1] __________________________________________
+
+FAILURE: check 1 == -1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 3
+_________________________________________ test_cnt_zeroes_with_func[originalInput2] __________________________________________
+
+FAILURE: check -3 == -5: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check bool(False): MR14 failed
+FAILURE: check bool(False): MR16 failed
+------------------------------------------------------------
+Failed Checks: 3
+_________________________________________ test_cnt_zeroes_with_func[originalInput3] __________________________________________
+
+FAILURE: check -2 == -4: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 2
+_________________________________________ test_cnt_zeroes_with_func[originalInput4] __________________________________________
+
+FAILURE: check 1 == -1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 3
+_________________________________________ test_cnt_zeroes_with_func[originalInput5] __________________________________________
+
+FAILURE: check -3 == -5: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR16 failed
+------------------------------------------------------------
+Failed Checks: 4
+_________________________________________ test_cnt_zeroes_with_func[originalInput6] __________________________________________
+
+FAILURE: check 0 == -2: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 3
+_________________________________________ test_cnt_zeroes_with_func[originalInput7] __________________________________________
+
+FAILURE: check 1 == -1: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+------------------------------------------------------------
+Failed Checks: 3
+_________________________________________ test_cnt_zeroes_with_func[originalInput8] __________________________________________
+
+FAILURE: check -3 == -5: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check bool(False): MR4 failed
+FAILURE: check bool(False): MR11 failed
+FAILURE: check bool(False): MR16 failed
+------------------------------------------------------------
+Failed Checks: 4
+_________________________________________ test_cnt_zeroes_with_func[originalInput9] __________________________________________
+
+FAILURE: check -6 == -8: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+FAILURE: check bool(False): MR14 failed
+FAILURE: check bool(False): MR16 failed
+------------------------------------------------------------
+Failed Checks: 3
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput0] - check -1 == -3: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput1] - check 1 == -1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput2] - check -3 == -5: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput3] - check -2 == -4: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput4] - check 1 == -1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput5] - check -3 == -5: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput6] - check 0 == -2: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput7] - check 1 == -1: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput8] - check -3 == -5: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput9] - check -6 == -8: MR3_1 failed
+10 failed, 1 warning in 0.01s
+❌ x_cnt_zeroes__mutmut_6 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cnt_zeroes.py :: x_cnt_zeroes__mutmut_7  -  2025-10-16T10:09:55.997224
+================================================================================
+
+>>> 当前使用的函数: x_cnt_zeroes__mutmut_7
+函数源码如下：
+def x_cnt_zeroes__mutmut_7(a):
+
+    cnt = 0
+    for i in a:
+        if i == 0:
+            cnt += 2
+
+    return cnt
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+_________________________________________ test_cnt_zeroes_with_func[originalInput0] __________________________________________
+
+FAILURE: check 5 == 6: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput1] __________________________________________
+
+FAILURE: check 1 == 2: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput2] __________________________________________
+
+FAILURE: check 9 == 10: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput3] __________________________________________
+
+FAILURE: check 7 == 8: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput4] __________________________________________
+
+FAILURE: check 1 == 2: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput5] __________________________________________
+
+FAILURE: check 9 == 10: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput6] __________________________________________
+
+FAILURE: check 3 == 4: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput7] __________________________________________
+
+FAILURE: check 1 == 2: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput8] __________________________________________
+
+FAILURE: check 9 == 10: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+_________________________________________ test_cnt_zeroes_with_func[originalInput9] __________________________________________
+
+FAILURE: check 15 == 16: MR3_1 failed
+mutants/tests/cnt_zeroesTest.py:119 in test_cnt_zeroes_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/cnt_zeroesTest.py:83 in applyMR_Assert() -> check.equal(originalResult + 1, transformResult3_1, "MR3_1 failed")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput0] - check 5 == 6: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput1] - check 1 == 2: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput2] - check 9 == 10: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput3] - check 7 == 8: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput4] - check 1 == 2: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput5] - check 9 == 10: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput6] - check 3 == 4: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput7] - check 1 == 2: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput8] - check 9 == 10: MR3_1 failed
+FAILED mutants/tests/cnt_zeroesTest.py::test_cnt_zeroes_with_func[originalInput9] - check 15 == 16: MR3_1 failed
+10 failed, 1 warning in 0.01s
+❌ x_cnt_zeroes__mutmut_7 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cnt_zeroes.py :: x_cnt_zeroes__mutmut_orig  -  2025-10-16T10:09:56.051405
+================================================================================
+
+>>> 当前使用的函数: x_cnt_zeroes__mutmut_orig
+函数源码如下：
+def x_cnt_zeroes__mutmut_orig(a):
+
+    cnt = 0
+    for i in a:
+        if i == 0:
+            cnt += 1
+
+    return cnt
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cnt_zeroes__mutmut_orig 所有测试通过

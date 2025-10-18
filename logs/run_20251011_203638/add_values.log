@@ -1,0 +1,14 @@
+
+=== Running tests for add_values.py ===
+add执行了
+
+================================================================================
+RUNNING add_values.py :: x_add_values__mutmut_1  -  2025-10-11T20:36:38.611932
+================================================================================
+UNEXPECTED ERROR IN MAIN:
+Traceback (most recent call last):
+  File "/home/rts/下载/Python_src/test_mutants_runner.py", line 230, in main
+    run_tests_for_mutant(name, func)
+  File "/home/rts/下载/Python_src/test_mutants_runner.py", line 146, in run_tests_for_mutant
+    runner.CURRENT_MUTANT_FUNC = mutant_func
+NameError: name 'runner' is not defined

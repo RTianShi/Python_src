@@ -1,0 +1,17 @@
+{
+    "exit_code_by_key": {
+        "mean_abs_error.x_mean_abs_error__mutmut_1": 33,
+        "mean_abs_error.x_mean_abs_error__mutmut_2": 33,
+        "mean_abs_error.x_mean_abs_error__mutmut_3": 33,
+        "mean_abs_error.x_mean_abs_error__mutmut_4": 33,
+        "mean_abs_error.x_mean_abs_error__mutmut_5": 33,
+        "mean_abs_error.x_mean_abs_error__mutmut_6": 33,
+        "mean_abs_error.x_mean_abs_error__mutmut_7": 33,
+        "mean_abs_error.x_mean_abs_error__mutmut_8": 33,
+        "mean_abs_error.x_mean_abs_error__mutmut_9": 33,
+        "mean_abs_error.x_mean_abs_error__mutmut_10": 33,
+        "mean_abs_error.x_mean_abs_error__mutmut_11": 33,
+        "mean_abs_error.x_mean_abs_error__mutmut_12": 33
+    },
+    "hash_by_function_name": {}
+}

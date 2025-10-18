@@ -1,0 +1,5 @@
+start_time: 2025-10-11T20:41:30.454299
+run_dir: logs/run_20251011_204130
+default_log_name: add_values.log
+end_time: 2025-10-11T20:41:31.258678
+final_log_path: logs/run_20251011_204130/add_values.log

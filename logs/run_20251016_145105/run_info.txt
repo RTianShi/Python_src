@@ -1,0 +1,8 @@
+start_time: 2025-10-16T14:51:05.477069
+run_dir: logs/run_20251016_145105
+default_log_name: clip.log
+mutant_file: clip.py
+test_file: clipTest.py
+mutant_prefix: x_clip__mutmut
+end_time: 2025-10-16T14:51:06.508878
+final_log_path: logs/run_20251016_145105/clip.log

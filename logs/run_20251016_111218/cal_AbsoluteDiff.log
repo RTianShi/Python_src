@@ -1,0 +1,349 @@
+
+=== Running tests for single mutant file: cal_AbsoluteDiff.py ===
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_1  -  2025-10-16T11:12:18.079250
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_1
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_1(z):
+    if z != None:
+        return None
+
+    if len(z) == 0:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(abs(i))
+    return zAbs
+
+..........
+==================================================== warnings summary ====================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cal_AbsoluteDiff__mutmut_1 所有测试通过
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_2  -  2025-10-16T11:12:18.159898
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_2
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_2(z):
+    if z == None:
+        return None
+
+    if len(z) != 0:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(abs(i))
+    return zAbs
+
+..........
+==================================================== warnings summary ====================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cal_AbsoluteDiff__mutmut_2 所有测试通过
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_3  -  2025-10-16T11:12:18.204367
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_3
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_3(z):
+    if z == None:
+        return None
+
+    if len(z) == 1:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(abs(i))
+    return zAbs
+
+..........
+==================================================== warnings summary ====================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cal_AbsoluteDiff__mutmut_3 所有测试通过
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_4  -  2025-10-16T11:12:18.248928
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_4
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_4(z):
+    if z == None:
+        return None
+
+    if len(z) == 0:
+        return None
+
+    zAbs = None
+    for i in z:
+        zAbs.append(abs(i))
+    return zAbs
+
+FFFFFFFFFF
+======================================================== FAILURES ========================================================
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput0] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput1] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput2] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput3] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput4] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput5] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput6] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput7] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput8] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput9] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:86: in x_cal_AbsoluteDiff__mutmut_4
+    zAbs.append(abs(i))
+E   AttributeError: 'NoneType' object has no attribute 'append'
+==================================================== warnings summary ====================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================ short test summary info =================================================
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput0] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput1] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput2] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput3] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput4] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput5] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput6] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput7] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput8] - AttributeError: 'NoneType' object has no attribute 'append'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput9] - AttributeError: 'NoneType' object has no attribute 'append'
+10 failed, 1 warning in 0.06s
+❌ x_cal_AbsoluteDiff__mutmut_4 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_5  -  2025-10-16T11:12:18.351215
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_5
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_5(z):
+    if z == None:
+        return None
+
+    if len(z) == 0:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(None)
+    return zAbs
+
+..........
+==================================================== warnings summary ====================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cal_AbsoluteDiff__mutmut_5 所有测试通过
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_6  -  2025-10-16T11:12:18.403049
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_6
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_6(z):
+    if z == None:
+        return None
+
+    if len(z) == 0:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(abs(None))
+    return zAbs
+
+FFFFFFFFFF
+======================================================== FAILURES ========================================================
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput0] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput1] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput2] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput3] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput4] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput5] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput6] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput7] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput8] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+____________________________________ test_cal_AbsoluteDiff_with_func[originalInput9] _____________________________________
+mutants/tests/cal_AbsoluteDiffTest.py:161: in test_cal_AbsoluteDiff_with_func
+    originalResult = func(originalInput)
+mutants/src/cal_AbsoluteDiff.py:108: in x_cal_AbsoluteDiff__mutmut_6
+    zAbs.append(abs(None))
+E   TypeError: bad operand type for abs(): 'NoneType'
+==================================================== warnings summary ====================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================ short test summary info =================================================
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput0] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput1] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput2] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput3] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput4] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput5] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput6] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput7] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput8] - TypeError: bad operand type for abs(): 'NoneType'
+FAILED mutants/tests/cal_AbsoluteDiffTest.py::test_cal_AbsoluteDiff_with_func[originalInput9] - TypeError: bad operand type for abs(): 'NoneType'
+10 failed, 1 warning in 0.03s
+❌ x_cal_AbsoluteDiff__mutmut_6 存在失败 (退出码 1)
+
+================================================================================
+RUNNING cal_AbsoluteDiff.py :: x_cal_AbsoluteDiff__mutmut_orig  -  2025-10-16T11:12:18.475089
+================================================================================
+
+>>> 当前使用的函数: x_cal_AbsoluteDiff__mutmut_orig
+函数源码如下：
+def x_cal_AbsoluteDiff__mutmut_orig(z):
+    if z == None:
+        return None
+
+    if len(z) == 0:
+        return None
+
+    zAbs = []
+    for i in z:
+        zAbs.append(abs(i))
+    return zAbs
+
+..........
+==================================================== warnings summary ====================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_cal_AbsoluteDiff__mutmut_orig 所有测试通过

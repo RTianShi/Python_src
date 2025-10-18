@@ -1,0 +1,8 @@
+start_time: 2025-10-16T19:36:13.061419
+run_dir: logs/run_20251016_193613
+default_log_name: bi_SearchFromTo.log
+mutant_file: bi_SearchFromTo.py
+test_file: bi_SearchFromToTest.py
+mutant_prefix: x_bi_SearchFromTo__mutmut
+end_time: 2025-10-16T19:36:29.987486
+final_log_path: logs/run_20251016_193613/bi_SearchFromTo.log

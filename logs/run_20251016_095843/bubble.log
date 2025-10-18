@@ -1,0 +1,2141 @@
+
+=== Running tests for single mutant file: bubble.py ===
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_1  -  2025-10-16T09:58:43.557418
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_1
+函数源码如下：
+def x_bubble__mutmut_1(elements):
+    for n in range(None, 0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:43: in x_bubble__mutmut_1
+    for n in range(None, 0, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:43: in x_bubble__mutmut_1
+    for n in range(None, 0, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:43: in x_bubble__mutmut_1
+    for n in range(None, 0, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:43: in x_bubble__mutmut_1
+    for n in range(None, 0, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:43: in x_bubble__mutmut_1
+    for n in range(None, 0, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:43: in x_bubble__mutmut_1
+    for n in range(None, 0, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:43: in x_bubble__mutmut_1
+    for n in range(None, 0, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:43: in x_bubble__mutmut_1
+    for n in range(None, 0, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:43: in x_bubble__mutmut_1
+    for n in range(None, 0, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:43: in x_bubble__mutmut_1
+    for n in range(None, 0, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.08s
+❌ x_bubble__mutmut_1 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_10  -  2025-10-16T09:58:43.712819
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_10
+函数源码如下：
+def x_bubble__mutmut_10(elements):
+    for n in range(len(elements)-1, 0, +1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+
+FAILURE: check [1, 3, 2, 6, 9] == [1, 9, 2, 3, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 3, 2, 6, 9] == [9, 6, 2, 3, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+
+FAILURE: check [2, 1, 4, 4, 2] == [4, 1, 2, 4, 2]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [2, 1, 4, 4, 2] == [2, 4, 4, 1, 2]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+
+FAILURE: check [4, -2, 4, 6, 2] == [6, 4, -2, 4, 2]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [4, -2, 4, 6, 2] == [2, 6, 4, -2, 4]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+
+FAILURE: check [9, 2, 1, 5, 3, 2] == [1, 5, 9, 2, 2, 3]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [9, 2, 1, 5, 3, 2] == [2, 3, 5, 1, 2, 9]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+
+FAILURE: check [-1, 9, 1, -3, -3] == [9, 1, -1, -3, -3]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-1, 9, 1, -3, -3] == [-3, -3, 1, 9, -1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+
+FAILURE: check [8, 3, 2, 6, 2, 3] == [3, 2, 8, 3, 2, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [8, 3, 2, 6, 2, 3] == [3, 2, 6, 2, 3, 8]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+
+FAILURE: check [1, 2, 3, 4, -5, 6] == [4, 2, 1, 6, 3, -5]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 3, 4, -5, 6] == [6, -5, 4, 3, 2, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+
+FAILURE: check [1, 2, 4, 2, 7, 5] == [2, 7, 4, 2, 1, 5]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 4, 2, 7, 5] == [5, 7, 2, 4, 2, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+
+FAILURE: check [1, 1, 2, 4, 1, 2] == [4, 1, 2, 1, 2, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 1, 2, 4, 1, 2] == [2, 1, 4, 2, 1, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+
+FAILURE: check [-2, 3, 1, 4, 7] == [4, 7, 3, -2, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-2, 3, 1, 4, 7] == [7, 4, 1, 3, -2]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - check [1, 3, 2, 6, 9] == [1, 9, 2, 3, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - check [2, 1, 4, 4, 2] == [4, 1, 2, 4, 2]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - check [4, -2, 4, 6, 2] == [6, 4, -2, 4, 2]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - check [9, 2, 1, 5, 3, 2] == [1, 5, 9, 2, 2, 3]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - check [-1, 9, 1, -3, -3] == [9, 1, -1, -3, -3]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - check [8, 3, 2, 6, 2, 3] == [3, 2, 8, 3, 2, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - check [1, 2, 3, 4, -5, 6] == [4, 2, 1, 6, 3, -5]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - check [1, 2, 4, 2, 7, 5] == [2, 7, 4, 2, 1, 5]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - check [1, 1, 2, 4, 1, 2] == [4, 1, 2, 1, 2, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - check [-2, 3, 1, 4, 7] == [4, 7, 3, -2, 1]: OR1 failed (MR1)
+10 failed, 1 warning in 0.02s
+❌ x_bubble__mutmut_10 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_11  -  2025-10-16T09:58:43.767092
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_11
+函数源码如下：
+def x_bubble__mutmut_11(elements):
+    for n in range(len(elements)-1, 0, -2):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+
+FAILURE: check [1, 2, 3, 6, 9] == [2, 3, 6, 1, 9]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 3, 6, 9] == [3, 2, 6, 1, 9]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+
+FAILURE: check [1, 2, 4, 2, 4] == [2, 2, 4, 1, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 4, 2, 4] == [2, 2, 4, 1, 4]: OR6 failed (MR6)
+FAILURE: check [1, 2, 4, 2, 4] == [1, 2, 2, 4, 4]: OR7_1 failed (MR7_1)
+FAILURE: check [1, 2, 4, 2, 4] == [1, 2, 2, 4, 4]: OR7_2 failed (MR7_2)
+FAILURE: check [1, 2, 4, 2, 4] == [1, 2, 2, 4, 4]: OR22 failed (MR22)
+------------------------------------------------------------
+Failed Checks: 5
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+
+FAILURE: check [-2, 4, 4, 2, 6] == [-2, 2, 4, 4, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-2, 4, 4, 2, 6] == [2, 4, 4, -2, 6]: OR6 failed (MR6)
+FAILURE: check [-2, 4, 4, 2, 6] == [-2, 2, 4, 4, 6]: OR7_1 failed (MR7_1)
+FAILURE: check [-2, 4, 4, 2, 6] == [-2, 2, 4, 4, 6]: OR7_2 failed (MR7_2)
+FAILURE: check [-2, 4, 4, 2, 6] == [-2, 2, 4, 4, 6]: OR22 failed (MR22)
+------------------------------------------------------------
+Failed Checks: 5
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+
+FAILURE: check [1, 2, 3, 5, 2, 9] == [1, 2, 2, 3, 5, 9]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 3, 5, 2, 9] == [2, 3, 2, 5, 1, 9]: OR6 failed (MR6)
+FAILURE: check [1, 2, 3, 5, 2, 9] == [1, 2, 2, 3, 5, 9]: OR7_1 failed (MR7_1)
+FAILURE: check [1, 2, 3, 5, 2, 9] == [1, 2, 2, 3, 5, 9]: OR7_2 failed (MR7_2)
+FAILURE: check [1, 2, 3, 5, 2, 9] == [1, 2, 2, 3, 5, 9]: OR22 failed (MR22)
+------------------------------------------------------------
+Failed Checks: 5
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+
+FAILURE: check [-1, -3, 1, -3, 9] == [-3, -3, 1, -1, 9]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-1, -3, 1, -3, 9] == [-3, -3, 1, -1, 9]: OR6 failed (MR6)
+FAILURE: check [-1, -3, 1, -3, 9] == [-3, -3, -1, 1, 9]: OR7_1 failed (MR7_1)
+FAILURE: check [-1, -3, 1, -3, 9] == [-3, -3, -1, 1, 9]: OR7_2 failed (MR7_2)
+FAILURE: check [-1, -3, 1, -3, 9] == [-3, -3, -1, 1, 9]: OR22 failed (MR22)
+------------------------------------------------------------
+Failed Checks: 5
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+
+FAILURE: check [2, 3, 2, 6, 3, 8] == [2, 3, 2, 3, 6, 8]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [2, 3, 2, 6, 3, 8] == [2, 3, 3, 6, 2, 8]: OR6 failed (MR6)
+FAILURE: check [2, 3, 2, 6, 3, 8] == [2, 2, 3, 3, 6, 8]: OR7_1 failed (MR7_1)
+FAILURE: check [2, 3, 2, 6, 3, 8] == [2, 2, 3, 3, 6, 8]: OR7_2 failed (MR7_2)
+FAILURE: check [2, 3, 2, 6, 3, 8] == [2, 2, 3, 3, 6, 8]: OR22 failed (MR22)
+------------------------------------------------------------
+Failed Checks: 5
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+
+FAILURE: check [1, 2, -5, 3, 4, 6] == [-5, 1, 3, 4, 2, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, -5, 3, 4, 6] == [-5, 3, 2, 4, 1, 6]: OR6 failed (MR6)
+FAILURE: check [1, 2, -5, 3, 4, 6] == [-5, 1, 2, 3, 4, 6]: OR7_1 failed (MR7_1)
+FAILURE: check [1, 2, -5, 3, 4, 6] == [-5, 1, 2, 3, 4, 6]: OR7_2 failed (MR7_2)
+FAILURE: check [1, 2, -5, 3, 4, 6] == [-5, 1, 2, 3, 4, 6]: OR22 failed (MR22)
+------------------------------------------------------------
+Failed Checks: 5
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [1, 4, 2, 5, 2, 7]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [2, 4, 2, 5, 1, 7]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [1, 2, 1, 2, 1, 4]: OR6 failed (MR6)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:118 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+
+FAILURE: check [-2, 1, 3, 4, 7] == [1, 3, 4, -2, 7]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-2, 1, 3, 4, 7] == [3, 1, 4, -2, 7]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - check [1, 2, 3, 6, 9] == [2, 3, 6, 1, 9]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - check [1, 2, 4, 2, 4] == [2, 2, 4, 1, 4]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - check [-2, 4, 4, 2, 6] == [-2, 2, 4, 4, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - check [1, 2, 3, 5, 2, 9] == [1, 2, 2, 3, 5, 9]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - check [-1, -3, 1, -3, 9] == [-3, -3, 1, -1, 9]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - check [2, 3, 2, 6, 3, 8] == [2, 3, 2, 3, 6, 8]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - check [1, 2, -5, 3, 4, 6] == [-5, 1, 3, 4, 2, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - check [1, 2, 2, 4, 5, 7] == [1, 4, 2, 5, 2, 7]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - check [1, 1, 1, 2, 2, 4] == [1, 2, 1, 2, 1, 4]: OR6 failed (MR6)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - check [-2, 1, 3, 4, 7] == [1, 3, 4, -2, 7]: OR1 failed (MR1)
+10 failed, 1 warning in 0.01s
+❌ x_bubble__mutmut_11 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_12  -  2025-10-16T09:58:43.824476
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_12
+函数源码如下：
+def x_bubble__mutmut_12(elements):
+    for n in range(len(elements)-1, 0, -1):
+        for i in range(None):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:143: in x_bubble__mutmut_12
+    for i in range(None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:143: in x_bubble__mutmut_12
+    for i in range(None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:143: in x_bubble__mutmut_12
+    for i in range(None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:143: in x_bubble__mutmut_12
+    for i in range(None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:143: in x_bubble__mutmut_12
+    for i in range(None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:143: in x_bubble__mutmut_12
+    for i in range(None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:143: in x_bubble__mutmut_12
+    for i in range(None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:143: in x_bubble__mutmut_12
+    for i in range(None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:143: in x_bubble__mutmut_12
+    for i in range(None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:143: in x_bubble__mutmut_12
+    for i in range(None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.05s
+❌ x_bubble__mutmut_12 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_13  -  2025-10-16T09:58:43.911659
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_13
+函数源码如下：
+def x_bubble__mutmut_13(elements):
+    for n in range(len(elements)-1, 0, -1):
+        for i in range(n):
+
+            if elements[i] >= elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_bubble__mutmut_13 所有测试通过
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_14  -  2025-10-16T09:58:43.959468
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_14
+函数源码如下：
+def x_bubble__mutmut_14(elements):
+    for n in range(len(elements)-1, 0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i - 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+
+FAILURE: check [1, 9, 2, 3, 6] == [3, 2, 9, 6, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 9, 2, 3, 6] == [2, 9, 3, 6, 1]: OR6 failed (MR6)
+FAILURE: check [1, 9, 2, 3, 6] == [1, 2, 3, 6, 9]: OR7_1 failed (MR7_1)
+FAILURE: check [1, 9, 2, 3, 6] == [1, 2, 3, 6, 9]: OR7_2 failed (MR7_2)
+FAILURE: check [1, 9, 2, 3, 6] == [1, 2, 3, 6, 9]: OR22 failed (MR22)
+------------------------------------------------------------
+Failed Checks: 5
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 4] == [2, 2, 1, 4, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 4] == [4, 4, 2, 2, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+
+FAILURE: check [-2, 6, 2, 4, 4] == [2, -2, 4, 4, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-2, 6, 2, 4, 4] == [4, 4, 2, -2, 6]: OR6 failed (MR6)
+FAILURE: check [-2, 6, 2, 4, 4] == [-2, 2, 4, 4, 6]: OR7_1 failed (MR7_1)
+FAILURE: check [-2, 6, 2, 4, 4] == [-2, 2, 4, 4, 6]: OR7_2 failed (MR7_2)
+FAILURE: check [-2, 6, 2, 4, 4] == [-2, 2, 4, 4, 6]: OR22 failed (MR22)
+------------------------------------------------------------
+Failed Checks: 5
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [2, 2, 3, 9, 5, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [5, 3, 2, 2, 1, 9]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+
+FAILURE: check [-3, -3, -1, 1, 9] == [-1, -3, -3, 9, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-3, -3, -1, 1, 9] == [1, -1, -3, -3, 9]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+
+FAILURE: check [2, 2, 3, 3, 8, 6] == [2, 3, 3, 6, 2, 8]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [2, 2, 3, 3, 8, 6] == [3, 3, 2, 6, 8, 2]: OR6 failed (MR6)
+FAILURE: check [2, 2, 3, 3, 8, 6] == [2, 2, 3, 3, 6, 8]: OR7_1 failed (MR7_1)
+FAILURE: check [2, 2, 3, 3, 8, 6] == [2, 2, 3, 3, 6, 8]: OR7_2 failed (MR7_2)
+FAILURE: check [2, 2, 3, 3, 8, 6] == [2, 2, 3, 3, 6, 8]: OR22 failed (MR22)
+------------------------------------------------------------
+Failed Checks: 5
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+
+FAILURE: check [-5, 1, 4, 2, 3, 6] == [2, 1, -5, 3, 6, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-5, 1, 4, 2, 3, 6] == [3, 2, 1, -5, 4, 6]: OR6 failed (MR6)
+FAILURE: check [-5, 1, 4, 2, 3, 6] == [-5, 1, 3, 2, 4, 6]: OR7_1 failed (MR7_1)
+FAILURE: check [-5, 1, 4, 2, 3, 6] == [-5, 1, 3, 2, 4, 6]: OR7_2 failed (MR7_2)
+FAILURE: check [-5, 1, 4, 2, 3, 6] == [-5, 1, 3, 2, 4, 6]: OR22 failed (MR22)
+------------------------------------------------------------
+Failed Checks: 5
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [2, 5, 4, 2, 7, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [5, 4, 2, 2, 1, 7]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [2, 2, 1, 1, 1, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [2, 2, 1, 1, 1, 4]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+
+FAILURE: check [-2, 7, 1, 3, 4] == [1, 3, 4, 7, -2]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-2, 7, 1, 3, 4] == [1, 7, 3, 4, -2]: OR6 failed (MR6)
+FAILURE: check [-2, 7, 1, 3, 4] == [-2, 1, 3, 4, 7]: OR7_1 failed (MR7_1)
+FAILURE: check [-2, 7, 1, 3, 4] == [-2, 1, 3, 4, 7]: OR7_2 failed (MR7_2)
+FAILURE: check [-2, 7, 1, 3, 4] == [-2, 1, 3, 4, 7]: OR22 failed (MR22)
+------------------------------------------------------------
+Failed Checks: 5
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - check [1, 9, 2, 3, 6] == [3, 2, 9, 6, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - check [1, 2, 2, 4, 4] == [2, 2, 1, 4, 4]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - check [-2, 6, 2, 4, 4] == [2, -2, 4, 4, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - check [1, 2, 2, 3, 5, 9] == [2, 2, 3, 9, 5, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - check [-3, -3, -1, 1, 9] == [-1, -3, -3, 9, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - check [2, 2, 3, 3, 8, 6] == [2, 3, 3, 6, 2, 8]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - check [-5, 1, 4, 2, 3, 6] == [2, 1, -5, 3, 6, 4]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - check [1, 2, 2, 4, 5, 7] == [2, 5, 4, 2, 7, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - check [1, 1, 1, 2, 2, 4] == [2, 2, 1, 1, 1, 4]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - check [-2, 7, 1, 3, 4] == [1, 3, 4, 7, -2]: OR1 failed (MR1)
+10 failed, 1 warning in 0.02s
+❌ x_bubble__mutmut_14 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_15  -  2025-10-16T09:58:44.014090
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_15
+函数源码如下：
+def x_bubble__mutmut_15(elements):
+    for n in range(len(elements)-1, 0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 2]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:172: in x_bubble__mutmut_15
+    if elements[i] > elements[i + 2]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:172: in x_bubble__mutmut_15
+    if elements[i] > elements[i + 2]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:172: in x_bubble__mutmut_15
+    if elements[i] > elements[i + 2]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:172: in x_bubble__mutmut_15
+    if elements[i] > elements[i + 2]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:172: in x_bubble__mutmut_15
+    if elements[i] > elements[i + 2]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:172: in x_bubble__mutmut_15
+    if elements[i] > elements[i + 2]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:172: in x_bubble__mutmut_15
+    if elements[i] > elements[i + 2]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:172: in x_bubble__mutmut_15
+    if elements[i] > elements[i + 2]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:172: in x_bubble__mutmut_15
+    if elements[i] > elements[i + 2]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:172: in x_bubble__mutmut_15
+    if elements[i] > elements[i + 2]:
+E   IndexError: list index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - IndexError: list index out of range
+10 failed, 1 warning in 0.05s
+❌ x_bubble__mutmut_15 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_16  -  2025-10-16T09:58:44.106176
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_16
+函数源码如下：
+def x_bubble__mutmut_16(elements):
+    for n in range(len(elements)-1, 0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = None
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:183: in x_bubble__mutmut_16
+    elements[i], elements[i + 1] = None
+E   TypeError: cannot unpack non-iterable NoneType object
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:183: in x_bubble__mutmut_16
+    elements[i], elements[i + 1] = None
+E   TypeError: cannot unpack non-iterable NoneType object
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:183: in x_bubble__mutmut_16
+    elements[i], elements[i + 1] = None
+E   TypeError: cannot unpack non-iterable NoneType object
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:183: in x_bubble__mutmut_16
+    elements[i], elements[i + 1] = None
+E   TypeError: cannot unpack non-iterable NoneType object
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:183: in x_bubble__mutmut_16
+    elements[i], elements[i + 1] = None
+E   TypeError: cannot unpack non-iterable NoneType object
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:183: in x_bubble__mutmut_16
+    elements[i], elements[i + 1] = None
+E   TypeError: cannot unpack non-iterable NoneType object
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:183: in x_bubble__mutmut_16
+    elements[i], elements[i + 1] = None
+E   TypeError: cannot unpack non-iterable NoneType object
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:183: in x_bubble__mutmut_16
+    elements[i], elements[i + 1] = None
+E   TypeError: cannot unpack non-iterable NoneType object
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:183: in x_bubble__mutmut_16
+    elements[i], elements[i + 1] = None
+E   TypeError: cannot unpack non-iterable NoneType object
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:183: in x_bubble__mutmut_16
+    elements[i], elements[i + 1] = None
+E   TypeError: cannot unpack non-iterable NoneType object
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - TypeError: cannot unpack non-iterable NoneType object
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - TypeError: cannot unpack non-iterable NoneType object
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - TypeError: cannot unpack non-iterable NoneType object
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - TypeError: cannot unpack non-iterable NoneType object
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - TypeError: cannot unpack non-iterable NoneType object
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - TypeError: cannot unpack non-iterable NoneType object
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - TypeError: cannot unpack non-iterable NoneType object
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - TypeError: cannot unpack non-iterable NoneType object
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - TypeError: cannot unpack non-iterable NoneType object
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - TypeError: cannot unpack non-iterable NoneType object
+10 failed, 1 warning in 0.05s
+❌ x_bubble__mutmut_16 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_17  -  2025-10-16T09:58:44.198921
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_17
+函数源码如下：
+def x_bubble__mutmut_17(elements):
+    for n in range(len(elements)-1, 0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i - 1] = elements[i + 1], elements[i]
+
+    return elements
+
+.F.FF..FF.
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 4] == [2, 2, 2, 2, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 4] == [1, 1, 1, 1, 2]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [2, 2, 2, 2, 2, 5]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [2, 2, 2, 2, 2, 3]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+
+FAILURE: check [-3, -3, -1, 1, 9] == [-3, -3, -3, -3, 9]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-3, -3, -1, 1, 9] == [-3, -3, -3, -3, -1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [2, 2, 2, 2, 4, 7]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [2, 2, 2, 2, 2, 4]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [1, 1, 1, 1, 1, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [1, 1, 1, 1, 1, 2]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - check [1, 2, 2, 4, 4] == [2, 2, 2, 2, 4]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - check [1, 2, 2, 3, 5, 9] == [2, 2, 2, 2, 2, 5]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - check [-3, -3, -1, 1, 9] == [-3, -3, -3, -3, 9]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - check [1, 2, 2, 4, 5, 7] == [2, 2, 2, 2, 4, 7]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - check [1, 1, 1, 2, 2, 4] == [1, 1, 1, 1, 1, 4]: OR1 failed (MR1)
+5 failed, 5 passed, 1 warning in 0.01s
+❌ x_bubble__mutmut_17 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_18  -  2025-10-16T09:58:44.250160
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_18
+函数源码如下：
+def x_bubble__mutmut_18(elements):
+    for n in range(len(elements)-1, 0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 2] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/bubble.py:201: in x_bubble__mutmut_18
+    elements[i], elements[i + 2] = elements[i + 1], elements[i]
+E   IndexError: list assignment index out of range
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/bubble.py:201: in x_bubble__mutmut_18
+    elements[i], elements[i + 2] = elements[i + 1], elements[i]
+E   IndexError: list assignment index out of range
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/bubble.py:201: in x_bubble__mutmut_18
+    elements[i], elements[i + 2] = elements[i + 1], elements[i]
+E   IndexError: list assignment index out of range
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/bubble.py:201: in x_bubble__mutmut_18
+    elements[i], elements[i + 2] = elements[i + 1], elements[i]
+E   IndexError: list assignment index out of range
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/bubble.py:201: in x_bubble__mutmut_18
+    elements[i], elements[i + 2] = elements[i + 1], elements[i]
+E   IndexError: list assignment index out of range
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:201: in x_bubble__mutmut_18
+    elements[i], elements[i + 2] = elements[i + 1], elements[i]
+E   IndexError: list assignment index out of range
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:201: in x_bubble__mutmut_18
+    elements[i], elements[i + 2] = elements[i + 1], elements[i]
+E   IndexError: list assignment index out of range
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/bubble.py:201: in x_bubble__mutmut_18
+    elements[i], elements[i + 2] = elements[i + 1], elements[i]
+E   IndexError: list assignment index out of range
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/bubble.py:201: in x_bubble__mutmut_18
+    elements[i], elements[i + 2] = elements[i + 1], elements[i]
+E   IndexError: list assignment index out of range
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:201: in x_bubble__mutmut_18
+    elements[i], elements[i + 2] = elements[i + 1], elements[i]
+E   IndexError: list assignment index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - IndexError: list assignment index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - IndexError: list assignment index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - IndexError: list assignment index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - IndexError: list assignment index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - IndexError: list assignment index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - IndexError: list assignment index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - IndexError: list assignment index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - IndexError: list assignment index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - IndexError: list assignment index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - IndexError: list assignment index out of range
+10 failed, 1 warning in 0.06s
+❌ x_bubble__mutmut_18 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_19  -  2025-10-16T09:58:44.345816
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_19
+函数源码如下：
+def x_bubble__mutmut_19(elements):
+    for n in range(len(elements)-1, 0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i - 1], elements[i]
+
+    return elements
+
+.F.FF..FF.
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 4] == [1, 4, 4, 4, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 4] == [4, 4, 4, 4, 4]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [1, 1, 1, 1, 1, 9]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [1, 1, 1, 1, 1, 9]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+
+FAILURE: check [-3, -3, -1, 1, 9] == [-1, -1, -1, 1, 9]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-3, -3, -1, 1, 9] == [-3, -3, -3, -3, 9]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [2, 4, 4, 4, 4, 7]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [1, 1, 1, 1, 1, 7]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [2, 2, 2, 2, 2, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [1, 1, 1, 1, 1, 4]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - check [1, 2, 2, 4, 4] == [1, 4, 4, 4, 4]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - check [1, 2, 2, 3, 5, 9] == [1, 1, 1, 1, 1, 9]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - check [-3, -3, -1, 1, 9] == [-1, -1, -1, 1, 9]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - check [1, 2, 2, 4, 5, 7] == [2, 4, 4, 4, 4, 7]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - check [1, 1, 1, 2, 2, 4] == [2, 2, 2, 2, 2, 4]: OR1 failed (MR1)
+5 failed, 5 passed, 1 warning in 0.01s
+❌ x_bubble__mutmut_19 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_2  -  2025-10-16T09:58:44.396301
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_2
+函数源码如下：
+def x_bubble__mutmut_2(elements):
+    for n in range(len(elements)-1, None, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:52: in x_bubble__mutmut_2
+    for n in range(len(elements)-1, None, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:52: in x_bubble__mutmut_2
+    for n in range(len(elements)-1, None, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:52: in x_bubble__mutmut_2
+    for n in range(len(elements)-1, None, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:52: in x_bubble__mutmut_2
+    for n in range(len(elements)-1, None, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:52: in x_bubble__mutmut_2
+    for n in range(len(elements)-1, None, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:52: in x_bubble__mutmut_2
+    for n in range(len(elements)-1, None, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:52: in x_bubble__mutmut_2
+    for n in range(len(elements)-1, None, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:52: in x_bubble__mutmut_2
+    for n in range(len(elements)-1, None, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:52: in x_bubble__mutmut_2
+    for n in range(len(elements)-1, None, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:52: in x_bubble__mutmut_2
+    for n in range(len(elements)-1, None, -1):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.05s
+❌ x_bubble__mutmut_2 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_20  -  2025-10-16T09:58:44.486552
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_20
+函数源码如下：
+def x_bubble__mutmut_20(elements):
+    for n in range(len(elements)-1, 0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 2], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:219: in x_bubble__mutmut_20
+    elements[i], elements[i + 1] = elements[i + 2], elements[i]
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/bubble.py:219: in x_bubble__mutmut_20
+    elements[i], elements[i + 1] = elements[i + 2], elements[i]
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:219: in x_bubble__mutmut_20
+    elements[i], elements[i + 1] = elements[i + 2], elements[i]
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:219: in x_bubble__mutmut_20
+    elements[i], elements[i + 1] = elements[i + 2], elements[i]
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:21: in applyMR_Assert
+    transformResult3_1 = func(transformInput3_1)
+mutants/src/bubble.py:219: in x_bubble__mutmut_20
+    elements[i], elements[i + 1] = elements[i + 2], elements[i]
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:219: in x_bubble__mutmut_20
+    elements[i], elements[i + 1] = elements[i + 2], elements[i]
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:219: in x_bubble__mutmut_20
+    elements[i], elements[i + 1] = elements[i + 2], elements[i]
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:219: in x_bubble__mutmut_20
+    elements[i], elements[i + 1] = elements[i + 2], elements[i]
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:219: in x_bubble__mutmut_20
+    elements[i], elements[i + 1] = elements[i + 2], elements[i]
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+mutants/tests/bubbleTest.py:155: in test_bubble_with_func
+    applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:13: in applyMR_Assert
+    transformResult1 = func(transformInput1)
+mutants/src/bubble.py:219: in x_bubble__mutmut_20
+    elements[i], elements[i + 1] = elements[i + 2], elements[i]
+E   IndexError: list index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - IndexError: list index out of range
+10 failed, 1 warning in 0.06s
+❌ x_bubble__mutmut_20 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_3  -  2025-10-16T09:58:44.583568
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_3
+函数源码如下：
+def x_bubble__mutmut_3(elements):
+    for n in range(len(elements)-1, 0, None):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:61: in x_bubble__mutmut_3
+    for n in range(len(elements)-1, 0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:61: in x_bubble__mutmut_3
+    for n in range(len(elements)-1, 0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:61: in x_bubble__mutmut_3
+    for n in range(len(elements)-1, 0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:61: in x_bubble__mutmut_3
+    for n in range(len(elements)-1, 0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:61: in x_bubble__mutmut_3
+    for n in range(len(elements)-1, 0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:61: in x_bubble__mutmut_3
+    for n in range(len(elements)-1, 0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:61: in x_bubble__mutmut_3
+    for n in range(len(elements)-1, 0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:61: in x_bubble__mutmut_3
+    for n in range(len(elements)-1, 0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:61: in x_bubble__mutmut_3
+    for n in range(len(elements)-1, 0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:61: in x_bubble__mutmut_3
+    for n in range(len(elements)-1, 0, None):
+E   TypeError: 'NoneType' object cannot be interpreted as an integer
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - TypeError: 'NoneType' object cannot be interpreted as an integer
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - TypeError: 'NoneType' object cannot be interpreted as an integer
+10 failed, 1 warning in 0.05s
+❌ x_bubble__mutmut_3 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_4  -  2025-10-16T09:58:44.673434
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_4
+函数源码如下：
+def x_bubble__mutmut_4(elements):
+    for n in range(0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+
+FAILURE: check [6, 6, 6, 6, 9] == [6, 6, 9, 6, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [6, 6, 6, 6, 9] == [9, 6, 6, 6, 6]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 4] == [4, 4, 1, 2, 2]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 4] == [4, 4, 2, 2, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+
+FAILURE: check [4, 4, 4, 4, 6] == [6, 4, 4, 4, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [4, 4, 4, 4, 6] == [6, 4, 4, 4, 4]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [1, 5, 9, 2, 2, 3]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [9, 5, 3, 2, 2, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+
+FAILURE: check [-3, -3, -1, 1, 9] == [-3, -1, -3, 9, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-3, -3, -1, 1, 9] == [9, 1, -1, -3, -3]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+
+FAILURE: check [6, 6, 6, 6, 6, 8] == [8, 6, 6, 6, 6, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [6, 6, 6, 6, 6, 8] == [8, 6, 6, 6, 6, 6]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+
+FAILURE: check [3, 3, 3, 3, 3, 4] == [3, 3, 3, 3, 4, 3]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [3, 3, 3, 3, 3, 4] == [4, 3, 3, 3, 3, 3]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [7, 2, 4, 1, 2, 5]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [7, 5, 4, 2, 2, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [2, 2, 4, 1, 1, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [4, 2, 2, 1, 1, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+
+FAILURE: check [4, 4, 4, 4, 7] == [4, 4, 4, 7, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [4, 4, 4, 4, 7] == [7, 4, 4, 4, 4]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - check [6, 6, 6, 6, 9] == [6, 6, 9, 6, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - check [1, 2, 2, 4, 4] == [4, 4, 1, 2, 2]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - check [4, 4, 4, 4, 6] == [6, 4, 4, 4, 4]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - check [1, 2, 2, 3, 5, 9] == [1, 5, 9, 2, 2, 3]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - check [-3, -3, -1, 1, 9] == [-3, -1, -3, 9, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - check [6, 6, 6, 6, 6, 8] == [8, 6, 6, 6, 6, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - check [3, 3, 3, 3, 3, 4] == [3, 3, 3, 3, 4, 3]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - check [1, 2, 2, 4, 5, 7] == [7, 2, 4, 1, 2, 5]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - check [1, 1, 1, 2, 2, 4] == [2, 2, 4, 1, 1, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - check [4, 4, 4, 4, 7] == [4, 4, 4, 7, 4]: OR1 failed (MR1)
+10 failed, 1 warning in 0.01s
+❌ x_bubble__mutmut_4 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_5  -  2025-10-16T09:58:44.728254
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_5
+函数源码如下：
+def x_bubble__mutmut_5(elements):
+    for n in range(len(elements)-1, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+
+FAILURE: check [6, 6, 6, 6, 9] == [6, 9, 6, 6, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [6, 6, 6, 6, 9] == [9, 6, 6, 6, 6]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 4] == [4, 4, 2, 1, 2]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 4] == [4, 4, 2, 2, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+
+FAILURE: check [4, 4, 4, 4, 6] == [6, 4, 4, 4, 4]: OR6 failed (MR6)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:118 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [2, 1, 5, 9, 2, 3]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [9, 5, 3, 2, 2, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+
+FAILURE: check [-3, -3, -1, 1, 9] == [-3, 1, 9, -1, -3]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-3, -3, -1, 1, 9] == [9, 1, -1, -3, -3]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+
+FAILURE: check [6, 6, 6, 6, 6, 8] == [8, 6, 6, 6, 6, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [6, 6, 6, 6, 6, 8] == [8, 6, 6, 6, 6, 6]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+
+FAILURE: check [3, 3, 3, 3, 3, 4] == [3, 3, 3, 3, 4, 3]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [3, 3, 3, 3, 3, 4] == [4, 3, 3, 3, 3, 3]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [4, 2, 7, 5, 2, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [7, 5, 4, 2, 2, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [2, 2, 4, 1, 1, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [4, 2, 2, 1, 1, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+
+FAILURE: check [4, 4, 4, 4, 7] == [7, 4, 4, 4, 4]: OR6 failed (MR6)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:118 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - check [6, 6, 6, 6, 9] == [6, 9, 6, 6, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - check [1, 2, 2, 4, 4] == [4, 4, 2, 1, 2]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - check [4, 4, 4, 4, 6] == [6, 4, 4, 4, 4]: OR6 failed (MR6)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - check [1, 2, 2, 3, 5, 9] == [2, 1, 5, 9, 2, 3]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - check [-3, -3, -1, 1, 9] == [-3, 1, 9, -1, -3]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - check [6, 6, 6, 6, 6, 8] == [8, 6, 6, 6, 6, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - check [3, 3, 3, 3, 3, 4] == [3, 3, 3, 3, 4, 3]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - check [1, 2, 2, 4, 5, 7] == [4, 2, 7, 5, 2, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - check [1, 1, 1, 2, 2, 4] == [2, 2, 4, 1, 1, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - check [4, 4, 4, 4, 7] == [7, 4, 4, 4, 4]: OR6 failed (MR6)
+10 failed, 1 warning in 0.01s
+❌ x_bubble__mutmut_5 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_6  -  2025-10-16T09:58:44.782950
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_6
+函数源码如下：
+def x_bubble__mutmut_6(elements):
+    for n in range(len(elements)-1, 0, ):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+
+FAILURE: check [6, 6, 6, 6, 9] == [6, 9, 6, 6, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [6, 6, 6, 6, 9] == [9, 6, 6, 6, 6]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 4] == [4, 4, 2, 2, 1]: OR6 failed (MR6)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:118 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+
+FAILURE: check [4, 4, 4, 4, 6] == [6, 4, 4, 4, 4]: OR6 failed (MR6)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:118 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [2, 1, 2, 5, 9, 3]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [9, 5, 3, 2, 2, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+
+FAILURE: check [-3, -3, -1, 1, 9] == [-1, -3, 9, 1, -3]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-3, -3, -1, 1, 9] == [9, 1, -1, -3, -3]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+
+FAILURE: check [6, 6, 6, 6, 6, 8] == [8, 6, 6, 6, 6, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [6, 6, 6, 6, 6, 8] == [8, 6, 6, 6, 6, 6]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+
+FAILURE: check [3, 3, 3, 3, 3, 4] == [3, 4, 3, 3, 3, 3]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [3, 3, 3, 3, 3, 4] == [4, 3, 3, 3, 3, 3]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [2, 4, 2, 5, 1, 7]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [7, 5, 4, 2, 2, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [1, 1, 4, 2, 2, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [4, 2, 2, 1, 1, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+
+FAILURE: check [4, 4, 4, 4, 7] == [4, 4, 4, 7, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [4, 4, 4, 4, 7] == [7, 4, 4, 4, 4]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - check [6, 6, 6, 6, 9] == [6, 9, 6, 6, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - check [1, 2, 2, 4, 4] == [4, 4, 2, 2, 1]: OR6 failed (MR6)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - check [4, 4, 4, 4, 6] == [6, 4, 4, 4, 4]: OR6 failed (MR6)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - check [1, 2, 2, 3, 5, 9] == [2, 1, 2, 5, 9, 3]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - check [-3, -3, -1, 1, 9] == [-1, -3, 9, 1, -3]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - check [6, 6, 6, 6, 6, 8] == [8, 6, 6, 6, 6, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - check [3, 3, 3, 3, 3, 4] == [3, 4, 3, 3, 3, 3]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - check [1, 2, 2, 4, 5, 7] == [2, 4, 2, 5, 1, 7]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - check [1, 1, 1, 2, 2, 4] == [1, 1, 4, 2, 2, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - check [4, 4, 4, 4, 7] == [4, 4, 4, 7, 4]: OR1 failed (MR1)
+10 failed, 1 warning in 0.01s
+❌ x_bubble__mutmut_6 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_7  -  2025-10-16T09:58:44.836464
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_7
+函数源码如下：
+def x_bubble__mutmut_7(elements):
+    for n in range(len(elements) + 1, 0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:100: in x_bubble__mutmut_7
+    if elements[i] > elements[i + 1]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:100: in x_bubble__mutmut_7
+    if elements[i] > elements[i + 1]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:100: in x_bubble__mutmut_7
+    if elements[i] > elements[i + 1]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:100: in x_bubble__mutmut_7
+    if elements[i] > elements[i + 1]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:100: in x_bubble__mutmut_7
+    if elements[i] > elements[i + 1]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:100: in x_bubble__mutmut_7
+    if elements[i] > elements[i + 1]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:100: in x_bubble__mutmut_7
+    if elements[i] > elements[i + 1]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:100: in x_bubble__mutmut_7
+    if elements[i] > elements[i + 1]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:100: in x_bubble__mutmut_7
+    if elements[i] > elements[i + 1]:
+E   IndexError: list index out of range
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+mutants/tests/bubbleTest.py:154: in test_bubble_with_func
+    originalResult = func(originalInput)
+mutants/src/bubble.py:100: in x_bubble__mutmut_7
+    if elements[i] > elements[i + 1]:
+E   IndexError: list index out of range
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - IndexError: list index out of range
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - IndexError: list index out of range
+10 failed, 1 warning in 0.05s
+❌ x_bubble__mutmut_7 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_8  -  2025-10-16T09:58:44.925969
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_8
+函数源码如下：
+def x_bubble__mutmut_8(elements):
+    for n in range(len(elements)-2, 0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+FFFFFFFFFF
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput0] ____________________________________________
+
+FAILURE: check [6, 6, 6, 6, 9] == [6, 6, 6, 9, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [6, 6, 6, 6, 9] == [6, 6, 6, 9, 6]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 4] == [1, 2, 4, 4, 2]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 4] == [2, 2, 4, 4, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput2] ____________________________________________
+
+FAILURE: check [4, 4, 4, 4, 6] == [4, 4, 4, 6, 4]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [4, 4, 4, 4, 6] == [4, 4, 4, 6, 4]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [1, 2, 3, 5, 9, 2]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [2, 2, 3, 5, 9, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput4] ____________________________________________
+
+FAILURE: check [-3, -3, -1, 1, 9] == [-3, -3, -1, 9, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [-3, -3, -1, 1, 9] == [-3, -1, 1, 9, -3]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput5] ____________________________________________
+
+FAILURE: check [6, 6, 6, 6, 6, 8] == [6, 6, 6, 6, 8, 6]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [6, 6, 6, 6, 6, 8] == [6, 6, 6, 6, 8, 6]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput6] ____________________________________________
+
+FAILURE: check [3, 3, 3, 3, 3, 4] == [3, 3, 3, 3, 4, 3]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [3, 3, 3, 3, 3, 4] == [3, 3, 3, 3, 4, 3]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [2, 2, 4, 5, 7, 1]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [2, 2, 4, 5, 7, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput8] ____________________________________________
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [1, 1, 1, 2, 4, 2]: OR1 failed (MR1)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:100 in applyMR_Assert() -> check.equal(originalResult, transformResult1, "OR1 failed (MR1)")
+
+FAILURE: check [1, 1, 1, 2, 2, 4] == [1, 1, 2, 2, 4, 1]: OR6 failed (MR6)
+------------------------------------------------------------
+Failed Checks: 2
+___________________________________________ test_bubble_with_func[originalInput9] ____________________________________________
+
+FAILURE: check [4, 4, 4, 4, 7] == [4, 4, 4, 7, 4]: OR6 failed (MR6)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:118 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput0] - check [6, 6, 6, 6, 9] == [6, 6, 6, 9, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - check [1, 2, 2, 4, 4] == [1, 2, 4, 4, 2]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput2] - check [4, 4, 4, 4, 6] == [4, 4, 4, 6, 4]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - check [1, 2, 2, 3, 5, 9] == [1, 2, 3, 5, 9, 2]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput4] - check [-3, -3, -1, 1, 9] == [-3, -3, -1, 9, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput5] - check [6, 6, 6, 6, 6, 8] == [6, 6, 6, 6, 8, 6]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput6] - check [3, 3, 3, 3, 3, 4] == [3, 3, 3, 3, 4, 3]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - check [1, 2, 2, 4, 5, 7] == [2, 2, 4, 5, 7, 1]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput8] - check [1, 1, 1, 2, 2, 4] == [1, 1, 1, 2, 4, 2]: OR1 failed (MR1)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput9] - check [4, 4, 4, 4, 7] == [4, 4, 4, 7, 4]: OR6 failed (MR6)
+10 failed, 1 warning in 0.01s
+❌ x_bubble__mutmut_8 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_9  -  2025-10-16T09:58:44.981167
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_9
+函数源码如下：
+def x_bubble__mutmut_9(elements):
+    for n in range(len(elements)-1, 1, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+.F.F...F..
+========================================================== FAILURES ==========================================================
+___________________________________________ test_bubble_with_func[originalInput1] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 4] == [2, 1, 2, 4, 4]: OR6 failed (MR6)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:118 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+___________________________________________ test_bubble_with_func[originalInput3] ____________________________________________
+
+FAILURE: check [1, 2, 2, 3, 5, 9] == [2, 1, 2, 3, 5, 9]: OR6 failed (MR6)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:118 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+___________________________________________ test_bubble_with_func[originalInput7] ____________________________________________
+
+FAILURE: check [1, 2, 2, 4, 5, 7] == [2, 1, 2, 4, 5, 7]: OR6 failed (MR6)
+mutants/tests/bubbleTest.py:155 in test_bubble_with_func() -> applyMR_Assert(originalInput, originalResult)
+mutants/tests/bubbleTest.py:118 in applyMR_Assert() -> check.equal(originalResult, transformResult6, "OR6 failed (MR6)")
+
+------------------------------------------------------------
+Failed Checks: 1
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================== short test summary info ===================================================
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput1] - check [1, 2, 2, 4, 4] == [2, 1, 2, 4, 4]: OR6 failed (MR6)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput3] - check [1, 2, 2, 3, 5, 9] == [2, 1, 2, 3, 5, 9]: OR6 failed (MR6)
+FAILED mutants/tests/bubbleTest.py::test_bubble_with_func[originalInput7] - check [1, 2, 2, 4, 5, 7] == [2, 1, 2, 4, 5, 7]: OR6 failed (MR6)
+3 failed, 7 passed, 1 warning in 0.01s
+❌ x_bubble__mutmut_9 存在失败 (退出码 1)
+
+================================================================================
+RUNNING bubble.py :: x_bubble__mutmut_orig  -  2025-10-16T09:58:45.031584
+================================================================================
+
+>>> 当前使用的函数: x_bubble__mutmut_orig
+函数源码如下：
+def x_bubble__mutmut_orig(elements):
+    for n in range(len(elements)-1, 0, -1):
+        for i in range(n):
+
+            if elements[i] > elements[i + 1]:
+
+                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+
+    return elements
+
+..........
+====================================================== warnings summary ======================================================
+../../anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474
+  /home/rts/anaconda3/envs/mutmut39/lib/python3.9/site-packages/_pytest/config/__init__.py:1474: PytestConfigWarning: Unknown config option: pytest -vv --tb
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 0.01s
+✅ x_bubble__mutmut_orig 所有测试通过

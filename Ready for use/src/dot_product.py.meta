@@ -1,0 +1,15 @@
+{
+    "exit_code_by_key": {
+        "dot_product.x_dot_product__mutmut_1": 33,
+        "dot_product.x_dot_product__mutmut_2": 33,
+        "dot_product.x_dot_product__mutmut_3": 33,
+        "dot_product.x_dot_product__mutmut_4": 33,
+        "dot_product.x_dot_product__mutmut_5": 33,
+        "dot_product.x_dot_product__mutmut_6": 33,
+        "dot_product.x_dot_product__mutmut_7": 33,
+        "dot_product.x_dot_product__mutmut_8": 33,
+        "dot_product.x_dot_product__mutmut_9": 33,
+        "dot_product.x_dot_product__mutmut_10": 33
+    },
+    "hash_by_function_name": {}
+}
